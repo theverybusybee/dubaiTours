@@ -1,0 +1,57 @@
+@import "@/styles/settings/settings.scss";
+
+.main {
+  background-color: $greyBg;
+}
+
+.contentContainer {
+  padding: 70px 0 70px 20px;
+  max-width: 1560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.buttonContainer {
+  margin: 60px auto 0;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.button {
+  width: 100%;
+  padding: 14px 37.5px !important;
+  justify-content: center;
+}
+
+.card {
+  max-width: 288px;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    max-width: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .slider {
+    align-items: baseline;
+  }
+  .buttonContainer {
+    margin: 32px auto 0;
+    width: 100%;
+  }
+}

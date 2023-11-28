@@ -1,0 +1,34 @@
+@import "@/styles/settings/settings.scss";
+
+.title {
+  @include subtitle;
+  padding-bottom: 40px;
+  width: fit-content;
+  text-align: center;
+
+  &_position {
+    &_left {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &_center {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    @include subtitleMobile;
+    padding-bottom: 20px;
+    max-width: fit-content;
+  }
+}
+
+// @media screen and (max-width: 600px) {
+//   .title {
+//     @include subtitleMobile;
+//     padding-bottom: 20px;
+//   }
+// }
