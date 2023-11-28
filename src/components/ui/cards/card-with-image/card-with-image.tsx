@@ -10,6 +10,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import HeartTransparent from "@/images/logos/icons/heartTransparent.svg";
 import Heart from "@/images/logos/icons/heart-solid.svg";
+import StarIcon from "@/images/logos/icons/star.svg";
+import Image from "next/image";
 
 interface IProps {
   cardExtraClass?: string;
@@ -83,7 +85,7 @@ function CardWithImage({
   };
 
   return (
-    <Link className={styles.link} href={`${pathName}/${title.toLowerCase()} `}>
+     <Link className={styles.link} href={`/`}>
       <div
         className={`${styles.container} ${cardExtraClass}`}
         onClick={onClick}
@@ -115,10 +117,22 @@ function CardWithImage({
         <div className={styles.imageContainer}>
           {" "}
           {typeof image === "string" && (
-            <img className={imageClassName} src={image} alt="photo" />
+            <Image
+              className={imageClassName}
+              src={image}
+              alt="photo"
+              width={368}
+              height={288}
+            />
           )}
           {Array.isArray(image) && image.length === 1 ? (
-            <img className={imageClassName} src={image[0].url} alt="photo" />
+            <Image
+              className={imageClassName}
+              src={image[0].url}
+              alt="photo"
+              width={288}
+              height={288}
+            />
           ) : (
             <Splide
               hasTrack={false}
@@ -154,10 +168,12 @@ function CardWithImage({
                   image?.map((el: { url: string }, index: number) => {
                     return (
                       <SplideSlide key={index} className={styles.splideSlide}>
-                        <img
+                        <Image
                           className={imageClassName}
                           src={el?.url}
                           alt="photo"
+                          width={288}
+                          height={288}
                         />
                       </SplideSlide>
                     );
@@ -172,7 +188,7 @@ function CardWithImage({
         <div className={styles.content}>
           {rating && (
             <div className={styles.rating}>
-              <img className={styles.star} src={star} alt="star" />
+              <StarIcon alt="star icon" width={20} height={20} />
               <p className={styles.ratingContent}>{rating}</p>
             </div>
           )}

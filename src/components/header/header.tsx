@@ -12,6 +12,8 @@ import MagnifyingGlassThin from "../../images/logos/icons/headLoop.svg";
 import MagnifyingGlassThinDark from "../../images/logos/icons/magnifying-glass-dark.svg";
 import BurgerMenuIcon from "../../images/logos/icons/burger-menu.svg";
 import BurgerMenuIconDark from "../../images/logos/icons/burger-menu-dark.svg";
+import Logo from "@/images/logos/main-logo.svg";
+import LocationClip from "@/images/logos/icons/location-clip.svg";
 
 import MultipleDropDown from "../ui/dropdown/multiple-dropdown/multiple-dropdown";
 import BurgerMenu from "../modals/burger-menu/burger-menu";
@@ -42,7 +44,6 @@ function Header({
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenLogin, setLoginModal] = useState(false);
   const [isOpenLoc, setOpenLoc] = useState(false);
-  const [countryName, setCountryName] = useState(false);
   const headerApiData = data?.Header;
   const token = getCookie("token");
 
@@ -71,13 +72,12 @@ function Header({
       <div className={styles.container}>
         <div className={styles.mainContentContainer}>
           <Link className={styles.link} href={"/"}>
-            <Image
+            <Logo
               className={styles.mainLogo}
-              src={headerApiData.logo}
-              alt="logo"
               width={253}
               height={106}
               priority
+              alt="logo"
             />
           </Link>
 
@@ -91,22 +91,23 @@ function Header({
                       setOpenLoc(true);
                     }}
                   >
-                    <Image
+                    <LocationClip
                       className={styles.locationIcon}
-                      src={headerApiData.location.icon}
                       alt="location clip"
                       width={30}
                       height={30}
                       priority
                     />
-                    <p className={styles.locationContent}>{countryName}</p>
+                    <p className={styles.locationContent}>
+                      {headerApiData.location.city}
+                    </p>
                   </div>
-                  {/* <MultipleDropDown
+                  <MultipleDropDown
                     arrWithLanguages={headerApiData.language.list}
                     arrWithCurrency={headerApiData.currency.exchange}
                     arrow={true}
                     color={colorTheme === "light" ? "darkBlue" : "white"}
-                  /> */}
+                  />
                 </div>
                 <ul className={styles.menuContainer}>
                   <Link className={styles.link} href={"/en/tour"}>
@@ -198,9 +199,8 @@ function Header({
               {searchSectionSize === "full" ||
                 (locationContainer && (
                   <div className={styles.locationContainer}>
-                    <Image
+                    <LocationClip
                       className={styles.locationIcon}
-                      src={headerApiData.location.icon}
                       alt="location clip"
                       width={30}
                       height={30}
@@ -216,12 +216,6 @@ function Header({
           )}
         </div>
       </div>
-      {/* <CityModal
-        isOpen={isOpenLoc}
-        setOpen={setOpenLoc}
-        setCountryName={setCountryName}
-        cities={data["window"]["locationWondow"]["city"]}
-      /> */}
     </header>
   );
 }
