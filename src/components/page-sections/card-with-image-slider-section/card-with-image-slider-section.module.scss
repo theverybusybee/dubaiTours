@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+.sectionContainer {
+  padding-left: 20px;
+}
+
 .card {
   max-width: 288px;
 }
@@ -50,7 +54,7 @@
 
 @media screen and (max-width: 450px) {
   .cardsContainer:after {
-   left: 5px;
+    left: 5px;
     background: linear-gradient(270deg, $white 0%, rgba(255, 255, 255, 0) 30%);
   }
 }

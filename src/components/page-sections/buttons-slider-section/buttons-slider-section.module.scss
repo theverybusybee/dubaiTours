@@ -4,6 +4,7 @@
   max-width: 1560px;
   margin: 0 auto;
   padding-left: 20px;
+  padding-top: 30px;
 }
 
 .attractions {
@@ -44,7 +45,6 @@
 
 @media screen and (max-width: 600px) {
   .section {
-    margin-bottom: 40px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     margin-top: -20px;

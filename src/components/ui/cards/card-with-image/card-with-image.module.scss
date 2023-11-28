@@ -15,6 +15,7 @@
 .image_type_square {
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  height: auto;
 }
 
 .image_type_cover {
@@ -197,6 +198,12 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .image_type_cover {
+    max-height: 180px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .title {
     @include cardContentSemiBoldMobile;
@@ -231,16 +238,17 @@
       }
     }
   }
-  .image_type_square {
-    width: 100%;
-    height: 100%;
-  }
-  .image_type_cover {
-    width: 180px;
-    height: 120px;
+  .image_type {
+    &_square {
+      width: 100%;
+      height: 100%;
+    }
+    &_cover {
+      width: 180px;
+      height: 120px;
+    }
   }
 }
-
 
 .link {
   text-decoration: none;
