@@ -21,21 +21,23 @@ const CardWithImageSliderSection = ({
 }: Props) => {
   return (
     <section className={`${styles.section} ${extraClass}`}>
-      <SectionTitle
-        content={data?.name}
-        position={titlePosition}
-        extraClass={styles.titlePosition}
-      />
-      <div className={styles.cardsContainer}>
-        <SplideMultipleSlider
-          path={path}
-          cardArray={data.cities}
-          cardImageType="cover"
-          like="none"
-          label="none"
-          cardExtraClass={styles.card}
-          hasButtons={hasButtons}
+      <div className={styles.sectionContainer}>
+        <SectionTitle
+          content={data?.name}
+          position={titlePosition}
+          extraClass={styles.titlePosition}
         />
+        <div className={styles.cardsContainer}>
+          <SplideMultipleSlider
+            path={path}
+            cardArray={data.cities}
+            cardImageType="cover"
+            like="none"
+            label="none"
+            cardExtraClass={styles.card}
+            hasButtons={hasButtons}
+          />
+        </div>
       </div>
     </section>
   );

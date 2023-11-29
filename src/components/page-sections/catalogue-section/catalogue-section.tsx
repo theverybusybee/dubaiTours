@@ -8,7 +8,6 @@ interface Props {
   data: any;
   title: string;
   titlePosition?: "center" | "left";
-  params: IGetTourDataArgs;
   extraClass?: string;
 }
 
@@ -17,13 +16,11 @@ const CatalogueSection: NextPage<Props> = ({
   title,
   titlePosition,
   extraClass,
-  params,
 }) => {
   return data ? (
     <section className={`${styles.section} ${extraClass}`}>
       <SectionTitle content={title} position={titlePosition} />
       <LazyLoadCards
-        params={params}
         allData={data}
       />
     </section>

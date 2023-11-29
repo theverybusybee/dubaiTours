@@ -6,7 +6,6 @@ import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import CardWithImage from "../../cards/card-with-image/card-with-image";
 import { SyntheticEvent } from "react";
 import Link from "next/link";
-import CardWhite from "../../cards/card-white/card-white";
 
 interface Props {
   cardArray?: any;
