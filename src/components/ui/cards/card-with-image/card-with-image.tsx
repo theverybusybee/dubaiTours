@@ -76,16 +76,22 @@ function CardWithImage({
       labelStyleFiltered?.textColor,
   });
 
-  const setLike = () => {
+  const clickArrow = (e: React.MouseEvent<HTMLElement>) => {
+    e.preventDefault();
+  };
+
+  const setLike = (e: React.MouseEvent<HTMLElement>) => {
+    console.log(e.target);
+    e.preventDefault();
     setLikeState(!likeState);
-    if (token === undefined) {
-      setCookie("array", arr, { "max-age": cookieLiveTime });
-    }
-    pushCookie("array", push);
+    // if (token === undefined) {
+    //   setCookie("array", arr, { "max-age": cookieLiveTime });
+    // }
+    // pushCookie("array", push);
   };
 
   return (
-     <Link className={styles.link} href={`/`}>
+    <Link className={styles.link} href={`/`}>
       <div
         className={`${styles.container} ${cardExtraClass}`}
         onClick={onClick}
@@ -95,15 +101,15 @@ function CardWithImage({
           <div className={styles.likeContainer}>
             {label ? <p className={labelClassName}>{label}</p> : <p></p>}
             <button className={styles.likeButton} onClick={setLike}>
-              {likeState || token?.find((el: any) => el.id !== push.id) ? (
-                <HeartTransparent
+              {likeState ? (
+                <Heart
                   className="like"
                   alt="like icon"
                   width={30}
                   height={30}
                 />
               ) : (
-                <Heart
+                <HeartTransparent
                   className="like"
                   alt="like icon"
                   width={30}
@@ -147,6 +153,7 @@ function CardWithImage({
               {imgType === "square" && (
                 <div className={`splide__arrows ${styles.buttonsContainer}`}>
                   <button
+                    onClick={clickArrow}
                     className={`splide__arrow splide__arrow--prev ${styles.button} ${styles.buttonLeft}`}
                   >
                     <div className={styles.arrowButton}>
@@ -154,6 +161,7 @@ function CardWithImage({
                     </div>
                   </button>
                   <button
+                    onClick={clickArrow}
                     className={`splide__arrow splide__arrow--next ${styles.button} ${styles.buttonRight}`}
                   >
                     <div className={styles.arrowButton}>

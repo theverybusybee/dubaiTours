@@ -39,7 +39,7 @@ function MainPage({ data }: Props) {
         <CardWithImageSliderSection
           data={data?.Destination}
           extraClass={styles.destinationSection}
-          hasButtons={true}
+          hasButtons={false}
         />
         <ComboPackagesSection data={data} hasButtons={true} />
         <StepsSection data={data} />

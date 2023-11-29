@@ -2,7 +2,6 @@
 
 import styles from "./header.module.scss";
 import { useState } from "react";
-import Image from "next/image";
 import DropDown from "../ui/dropdown/dropdown";
 import GlobeLogo from "../../images/logos/icons/globe.svg";
 import DarkGlobe from "@/images/logos/icons/globe-black.svg";
@@ -12,7 +11,9 @@ import MagnifyingGlassThin from "../../images/logos/icons/headLoop.svg";
 import MagnifyingGlassThinDark from "../../images/logos/icons/magnifying-glass-dark.svg";
 import BurgerMenuIcon from "../../images/logos/icons/burger-menu.svg";
 import BurgerMenuIconDark from "../../images/logos/icons/burger-menu-dark.svg";
-import Logo from "@/images/logos/main-logo.svg";
+import Logo from "@/images/logos/footer-logo.svg";
+import LogoDark from "@/images/logos/footer-logo-dark.svg";
+
 import LocationClip from "@/images/logos/icons/location-clip.svg";
 
 import MultipleDropDown from "../ui/dropdown/multiple-dropdown/multiple-dropdown";
@@ -42,7 +43,6 @@ function Header({
 }: Props) {
   const isMobile = useMediaQuery("(max-width:1040px)");
   const [isOpen, setIsOpen] = useState(false);
-  const [isOpenLogin, setLoginModal] = useState(false);
   const [isOpenLoc, setOpenLoc] = useState(false);
   const headerApiData = data?.Header;
   const token = getCookie("token");
@@ -72,13 +72,23 @@ function Header({
       <div className={styles.container}>
         <div className={styles.mainContentContainer}>
           <Link className={styles.link} href={"/"}>
-            <Logo
-              className={styles.mainLogo}
-              width={253}
-              height={106}
-              priority
-              alt="logo"
-            />
+            {colorTheme === "dark" ? (
+              <Logo
+                className={styles.mainLogo}
+                width={253}
+                height={106}
+                priority
+                alt="logo"
+              />
+            ) : (
+              <LogoDark
+                className={styles.mainLogo}
+                width={253}
+                height={106}
+                priority
+                alt="logo"
+              />
+            )}
           </Link>
 
           {!isMobile ? (

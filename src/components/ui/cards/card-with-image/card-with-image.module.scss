@@ -87,6 +87,8 @@
 }
 
 .likeButton {
+  width: 30px;
+  height: 30px;
   @include resetButtonStyles;
   background: $transparent;
 }

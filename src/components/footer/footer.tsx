@@ -11,6 +11,7 @@ import BurgerMenu from "../modals/burger-menu/burger-menu";
 import MenuDropdown from "../ui/dropdown/menu-dropdown/menu-dropdown";
 import HelpLinks from "../ui/help-links/help-links";
 import { useMediaQuery } from "@mui/material";
+import Logo from "@/images/logos/footer-logo.svg";
 
 interface Props {
   data: any;
@@ -28,7 +29,7 @@ function Footer({ data, extraClass }: Props) {
       {!isMobile ? (
         <div className={styles.infoSection}>
           <div className={styles.firstContainer}>
-            <Image
+            <Logo
               className={styles.logoImg}
               src={footerApiState.logo}
               alt="mainLogo"
@@ -54,16 +55,17 @@ function Footer({ data, extraClass }: Props) {
                 {footerApiState?.menu[0].name}
               </h4>
               <ul className={styles.companyContainer}>
-                {footerApiState?.menu[0].nesting ? footerApiState?.menu[0].nesting.map(
-                  (el: any, index: number) => {
-                    return (
-                      <li key={index}>
-                        <p className={styles.textColumn}>{el.name}</p>
-                      </li>
-                    );
-                  }
-                ):
-                null}
+                {footerApiState?.menu[0].nesting
+                  ? footerApiState?.menu[0].nesting.map(
+                      (el: any, index: number) => {
+                        return (
+                          <li key={index}>
+                            <p className={styles.textColumn}>{el.name}</p>
+                          </li>
+                        );
+                      }
+                    )
+                  : null}
               </ul>
             </div>
             <div className={styles.linksContainer}>
@@ -71,16 +73,17 @@ function Footer({ data, extraClass }: Props) {
                 {footerApiState?.menu[1].name}
               </h4>
               <ul className={styles.companyContainer}>
-                {footerApiState?.menu[1].nesting ? footerApiState?.menu[1].nesting.map(
-                  (el: any, index: number) => {
-                    return (
-                      <li key={index}>
-                        <p className={styles.textColumn}>{el.name}</p>
-                      </li>
-                    );
-                  }
-                ):
-                null}
+                {footerApiState?.menu[1].nesting
+                  ? footerApiState?.menu[1].nesting.map(
+                      (el: any, index: number) => {
+                        return (
+                          <li key={index}>
+                            <p className={styles.textColumn}>{el.name}</p>
+                          </li>
+                        );
+                      }
+                    )
+                  : null}
               </ul>
             </div>
 
@@ -89,32 +92,33 @@ function Footer({ data, extraClass }: Props) {
                 {footerApiState?.menu[2].name}
               </h4>
               <ul className={styles.companyContainer}>
-                {footerApiState?.menu[2].nesting ? footerApiState?.menu[2].nesting
-                  .slice(0, 6)
-                  .map((el: any, index: number) => {
-                    return (
-                      <li key={index}>
-                        <p className={styles.textColumn}>{el.name}</p>
-                      </li>
-                    );
-                  })
-                :
-                null}
+                {footerApiState?.menu[2].nesting
+                  ? footerApiState?.menu[2].nesting
+                      .slice(0, 6)
+                      .map((el: any, index: number) => {
+                        return (
+                          <li key={index}>
+                            <p className={styles.textColumn}>{el.name}</p>
+                          </li>
+                        );
+                      })
+                  : null}
               </ul>
             </div>
 
             <div className={styles.linksContainer}>
               <ul className={styles.companyContainer}>
-                {footerApiState?.menu[2].nesting ? footerApiState?.menu[2].nesting
-                  .slice(7)
-                  ?.map((el: any, index: number) => {
-                    return (
-                      <li key={index}>
-                        <p className={styles.textColumn}>{el.name}</p>
-                      </li>
-                    );
-                  }) :
-                  null}
+                {footerApiState?.menu[2].nesting
+                  ? footerApiState?.menu[2].nesting
+                      .slice(7)
+                      ?.map((el: any, index: number) => {
+                        return (
+                          <li key={index}>
+                            <p className={styles.textColumn}>{el.name}</p>
+                          </li>
+                        );
+                      })
+                  : null}
               </ul>
             </div>
           </div>

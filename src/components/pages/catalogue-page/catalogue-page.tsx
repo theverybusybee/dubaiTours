@@ -32,12 +32,12 @@ const CataloguePage: NextPage<Props> = ({ data: data, extraClass }) => {
         hasButtons={false}
         titlePosition="left"
       />
-      {/* <CatalogueSection
+      <CatalogueSection
         extraClass={styles.catalogue}
         data={data}
         title={data?.Catalog?.title}
         titlePosition="left"
-      /> */}
+      />
       <ComboPackagesSection
         data={data}
         hasButtons={false}
