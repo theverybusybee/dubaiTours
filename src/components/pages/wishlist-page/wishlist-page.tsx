@@ -118,7 +118,7 @@ const WishlistPage: NextPage<Props> = ({ data: data }) => {
                       star={el.staricon}
                       likeTransparent={el.hearticon}
                       push={el}
-                      rating={el.startext}
+                      rating={el.starText}
                       image={el?.photo}
                       content={el.desc}
                       label={el?.mark ? el?.mark[0].name : false}

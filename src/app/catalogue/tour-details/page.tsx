@@ -28,7 +28,7 @@ const tourDetailsData = {
         },
       ],
       icon: {
-        arrowicon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
+        arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
       },
     },
     currency: {
@@ -56,7 +56,7 @@ const tourDetailsData = {
       {
         name: "Company",
         url: "/en/company",
-        arrowicon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
+        arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
         nesting: [
           {
             name: "About company",
@@ -87,7 +87,7 @@ const tourDetailsData = {
       {
         name: "Client",
         url: "/en/FAQ",
-        arrowicon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
+        arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
         nesting: [
           {
             name: "Tours",
@@ -443,7 +443,6 @@ const tourDetailsData = {
       title: "Similar experiences",
       product: [
         {
-          sorting: "200",
           id: "1",
           url: "/en/dubai/category/ferraripark",
           photo: [
@@ -471,7 +470,6 @@ const tourDetailsData = {
           oldPrice: "$350",
         },
         {
-          sorting: "200",
           id: "1",
           url: "/en/dubai/category/ferraripark",
           photo: [
@@ -490,8 +488,6 @@ const tourDetailsData = {
               name: "product",
             },
           ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
           startext: "4.5 (200)",
           name: "Ferrari Park Abu Dhabi",
           description: "The largest in the world, area 200,000 m²",

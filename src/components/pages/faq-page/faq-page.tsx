@@ -1,4 +1,3 @@
-import { NextPage } from "next";
 import styles from "./faq-page.module.scss";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
@@ -11,8 +10,6 @@ interface Props {
 }
 
 const FaqPage: FC<Props> = ({ data: data }) => {
-  console.log(data);
-
   return (
     <div>
       <Header data={data} colorTheme="light" />

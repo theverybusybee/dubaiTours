@@ -126,7 +126,7 @@ const BlogDetails: FC<Props> = ({ data: data }) => {
                       like={likeIcon}
                       push={el}
                       star={el?.staricon && el?.staricon}
-                      rating={el?.startext && el.startext}
+                      rating={el?.starText && el.starText}
                       content={el?.description ? el.description : el?.desc}
                       lastPrice={el?.oldPrice && el.oldPrice}
                       currentPrice={el?.price && el.price}
