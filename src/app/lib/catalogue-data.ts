@@ -148,6 +148,7 @@ const catalogue: TCatalogue = {
     nameCategories: "We are Recommend",
     buttons: [
       {
+        id: "1",
         name: "Tickets",
         // icon: "http://38.180.11.127/upload/icon/categori/tickets.svg",
         nesting: [
@@ -170,6 +171,7 @@ const catalogue: TCatalogue = {
         ],
       },
       {
+        id: "2",
         name: "Tour",
         // icon: "http://38.180.11.127/upload/icon/categori/tour.svg",
         nesting: [
@@ -192,6 +194,7 @@ const catalogue: TCatalogue = {
         ],
       },
       {
+        id: "3",
         name: "Landmarks",
         // icon: "http://38.180.11.127/upload/icon/categori/tickets.svg",
         nesting: [
@@ -214,6 +217,7 @@ const catalogue: TCatalogue = {
         ],
       },
       {
+        id: "4",
         name: "Destinations",
         // icon: "http://38.180.11.127/upload/icon/categori/tour.svg",
         nesting: [
@@ -1349,35 +1353,35 @@ const catalogue: TCatalogue = {
   },
   Description: [
     {
-      id: 1,
+      id: "1",
       photo:
         "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZHViYWl8ZW58MHx8MHx8fDA%3D",
       name: "Dubai - everything for rest in dubai and UAE",
       desc: "the largest city of the United Arab Emirates, the capital of the principality of the same name, which is the second largest in the country.",
     },
     {
-      id: 2,
+      id: "2",
       photo:
         "https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZHViYWl8ZW58MHx8MHx8fDA%3D",
       name: "Dubai - everything for rest in dubai and UAE",
       desc: "the largest city of the United Arab Emirates, the capital of the principality of the same name, which is the second largest in the country.",
     },
     {
-      id: 3,
+      id: "3",
       photo:
         "https://images.unsplash.com/flagged/photo-1559717201-fbb671ff56b7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGR1YmFpfGVufDB8fDB8fHww",
       name: "Dubai - everything for rest in dubai and UAE",
       desc: "the largest city of the United Arab Emirates, the capital of the principality of the same name, which is the second largest in the country.",
     },
     {
-      id: 4,
+      id: "4",
       photo:
         "https://images.unsplash.com/photo-1462007895615-c8c073bebcd8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGR1YmFpfGVufDB8fDB8fHww",
       name: "Dubai - everything for rest in dubai and UAE",
       desc: "the largest city of the United Arab Emirates, the capital of the principality of the same name, which is the second largest in the country.",
     },
     {
-      id: 5,
+      id: "5",
       photo:
         "https://images.unsplash.com/photo-1591609073408-f3d66d8fc11d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGR1YmFpfGVufDB8fDB8fHww",
       name: "Dubai - everything for rest in dubai and UAE",

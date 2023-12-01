@@ -38,7 +38,7 @@ export type TRegisterForm = {
 // тестовый
 export const getHomeData = () => {
   const requestOptions: TRequestOptions = {
-    method: "POST",
+    method: "GET",
     credentials: "same-origin",
     cache: "no-cache",
     mode: "cors",
@@ -47,17 +47,9 @@ export const getHomeData = () => {
     },
     redirect: "follow",
     referrerPolicy: "no-referrer",
-    body: JSON.stringify({
-      main: {
-        url: "/en/dubai/", //адрес страницы которую запрашиваешь
-        city: "dubai", //город  по которому идет запрос
-        lang: "english", //язык на котором нужно отдать старницу
-        currency: "usd", //валюта в которой нуно отображать товары
-      },
-    }),
   };
 
-  return fetch(`http://localhost:3000/api/home/`, requestOptions).then(
+  return fetch(`http://localhost:3000/api/main/`, requestOptions).then(
     checkResponse
   );
 };
