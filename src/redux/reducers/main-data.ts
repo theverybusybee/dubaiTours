@@ -44,7 +44,7 @@ const initialState: TMainDataState = {
           },
         ],
         icon: {
-          arrowicon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
+          arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
         },
       },
       currency: {
@@ -72,7 +72,7 @@ const initialState: TMainDataState = {
         {
           name: "Company",
           url: "/en/company",
-          arrowicon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
+          arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
           nesting: [
             {
               name: "About company",
@@ -103,7 +103,7 @@ const initialState: TMainDataState = {
         {
           name: "Client",
           url: "/en/FAQ",
-          arrowicon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
+          arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
           nesting: [
             {
               name: "Tours",
@@ -158,7 +158,6 @@ const initialState: TMainDataState = {
     },
     Categories: [
       {
-        sorting: "200",
         name: "Tickets",
         icon: "http://38.180.11.127/upload/icon/categori/tickets.svg",
         nesting: [
@@ -181,7 +180,6 @@ const initialState: TMainDataState = {
         ],
       },
       {
-        sorting: "100",
         name: "Tour",
         icon: "http://38.180.11.127/upload/icon/categori/tour.svg",
         nesting: [
@@ -227,7 +225,6 @@ const initialState: TMainDataState = {
         ],
       },
       {
-        sorting: "100",
         name: "Tour",
         icon: "http://38.180.11.127/upload/icon/categori/tour.svg",
         nesting: [
@@ -258,7 +255,6 @@ const initialState: TMainDataState = {
       },
       product: [
         {
-          sorting: "200",
           id: "1",
           url: "/en/dubai/category/ferraripark",
           photo: [
@@ -277,16 +273,14 @@ const initialState: TMainDataState = {
               name: "product",
             },
           ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
+
+          starText: "4.5 (200)",
           name: "Ferrari Park Abu Dhabi",
           description: "The largest in the world, area 200,000 m²",
           price: "$250",
           oldPrice: "$350",
         },
         {
-          sorting: "200",
           id: "2",
           url: "/en/dubai/category/ferraripark",
           photo: [
@@ -305,16 +299,13 @@ const initialState: TMainDataState = {
               name: "product",
             },
           ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
+          starText: "4.5 (200)",
           name: "Ferrari Park Abu Dhabi",
           description: "The largest in the world, area 200,000 m²",
           price: "$250",
           oldPrice: "$350",
         },
         {
-          sorting: "200",
           id: "1",
           url: "/en/dubai/category/ferraripark",
           photo: [
@@ -333,16 +324,14 @@ const initialState: TMainDataState = {
               name: "product",
             },
           ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
+
+          starText: "4.5 (200)",
           name: "Ferrari Park Abu Dhabi",
           description: "The largest in the world, area 200,000 m²",
           price: "$250",
           oldPrice: "$350",
         },
         {
-          sorting: "200",
           id: "2",
           url: "/en/dubai/category/ferraripark",
           photo: [
@@ -361,16 +350,13 @@ const initialState: TMainDataState = {
               name: "product",
             },
           ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
+          starText: "4.5 (200)",
           name: "Ferrari Park Abu Dhabi",
           description: "The largest in the world, area 200,000 m²",
           price: "$250",
           oldPrice: "$350",
         },
         {
-          sorting: "200",
           id: "1",
           url: "/en/dubai/category/ferraripark",
           photo: [
@@ -389,16 +375,14 @@ const initialState: TMainDataState = {
               name: "product",
             },
           ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
+
+          starText: "4.5 (200)",
           name: "Ferrari Park Abu Dhabi",
           description: "The largest in the world, area 200,000 m²",
           price: "$250",
           oldPrice: "$350",
         },
         {
-          sorting: "200",
           id: "2",
           url: "/en/dubai/category/ferraripark",
           photo: [
@@ -417,9 +401,8 @@ const initialState: TMainDataState = {
               name: "product",
             },
           ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
+
+          starText: "4.5 (200)",
           name: "Ferrari Park Abu Dhabi",
           description: "The largest in the world, area 200,000 m²",
           price: "$250",
@@ -431,42 +414,36 @@ const initialState: TMainDataState = {
       name: "Destination",
       cities: [
         {
-          sorting: "200",
           url: "/en/dubai/",
           photo: "http://38.180.11.127/upload/photo/destination/001.jpg",
           name: "Dubai",
           description: "United Arab Emirates",
         },
         {
-          sorting: "100",
           url: "/en/dubai/",
           photo: "http://38.180.11.127/upload/photo/destination/002.jpg",
           name: "Bangkok",
           description: "Tailand",
         },
         {
-          sorting: "200",
           url: "/en/dubai/",
           photo: "http://38.180.11.127/upload/photo/destination/003.jpg",
           name: "Hoshimin",
           description: "Vetnam",
         },
         {
-          sorting: "100",
           url: "/en/dubai/",
           photo: "http://38.180.11.127/upload/photo/destination/004.jpg",
           name: "Bali",
           description: "Indonesia",
         },
         {
-          sorting: "200",
           url: "/en/dubai/",
           photo: "http://38.180.11.127/upload/photo/destination/005.jpg",
           name: "Mumbai",
           description: "India",
         },
         {
-          sorting: "100",
           url: "/en/dubai/",
           photo: "http://38.180.11.127/upload/photo/destination/004.jpg",
           name: "Dubai",
@@ -479,7 +456,102 @@ const initialState: TMainDataState = {
       button: "Make your own combo package",
       product: [
         {
-          sorting: "200",
+          id: "1",
+          url: "/en/dubai/cateory/ferraripark",
+          photo: [
+            {
+              url: "http://38.180.11.127/upload/photo/combo/001.jpg",
+            },
+          ],
+          mark: [
+            {
+              name: "New",
+            },
+            {
+              name: "product",
+            },
+          ],
+
+          starText: "4.5 (200)",
+          name: "Ferrari World Abu Dhabi",
+          description:
+            "The largest indoor theme park in the world, located in Abu Dhabi",
+          price: "$250",
+          oldPrice: "$350",
+        },
+        {
+          id: "2",
+          url: "/en/dubai/cateory/ferraripark",
+          photo: [
+            {
+              url: "http://38.180.11.127/upload/photo/combo/002.jpg",
+            },
+          ],
+          mark: [
+            {
+              name: "New",
+            },
+            {
+              name: "product",
+            },
+          ],
+
+          starText: "4.5 (200)",
+          name: "Ferrari World Abu Dhabi",
+          description:
+            "The largest indoor theme park in the world, located in Abu Dhabi",
+          price: "$250",
+          oldPrice: "$350",
+        },
+        {
+          id: "1",
+          url: "/en/dubai/cateory/ferraripark",
+          photo: [
+            {
+              url: "http://38.180.11.127/upload/photo/combo/001.jpg",
+            },
+          ],
+          mark: [
+            {
+              name: "New",
+            },
+            {
+              name: "product",
+            },
+          ],
+
+          starText: "4.5 (200)",
+          name: "Ferrari World Abu Dhabi",
+          description:
+            "The largest indoor theme park in the world, located in Abu Dhabi",
+          price: "$250",
+          oldPrice: "$350",
+        },
+        {
+          id: "2",
+          url: "/en/dubai/cateory/ferraripark",
+          photo: [
+            {
+              url: "http://38.180.11.127/upload/photo/combo/002.jpg",
+            },
+          ],
+          mark: [
+            {
+              name: "New",
+            },
+            {
+              name: "product",
+            },
+          ],
+
+          starText: "4.5 (200)",
+          name: "Ferrari World Abu Dhabi",
+          description:
+            "The largest indoor theme park in the world, located in Abu Dhabi",
+          price: "$250",
+          oldPrice: "$350",
+        },
+        {
           id: "1",
           url: "/en/dubai/cateory/ferraripark",
           photo: [
@@ -496,8 +568,7 @@ const initialState: TMainDataState = {
             },
           ],
           hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
+
           name: "Ferrari World Abu Dhabi",
           description:
             "The largest indoor theme park in the world, located in Abu Dhabi",
@@ -505,7 +576,6 @@ const initialState: TMainDataState = {
           oldPrice: "$350",
         },
         {
-          sorting: "100",
           id: "2",
           url: "/en/dubai/cateory/ferraripark",
           photo: [
@@ -521,113 +591,7 @@ const initialState: TMainDataState = {
               name: "product",
             },
           ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
-          name: "Ferrari World Abu Dhabi",
-          description:
-            "The largest indoor theme park in the world, located in Abu Dhabi",
-          price: "$250",
-          oldPrice: "$350",
-        },
-        {
-          sorting: "200",
-          id: "1",
-          url: "/en/dubai/cateory/ferraripark",
-          photo: [
-            {
-              url: "http://38.180.11.127/upload/photo/combo/001.jpg",
-            },
-          ],
-          mark: [
-            {
-              name: "New",
-            },
-            {
-              name: "product",
-            },
-          ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
-          name: "Ferrari World Abu Dhabi",
-          description:
-            "The largest indoor theme park in the world, located in Abu Dhabi",
-          price: "$250",
-          oldPrice: "$350",
-        },
-        {
-          sorting: "100",
-          id: "2",
-          url: "/en/dubai/cateory/ferraripark",
-          photo: [
-            {
-              url: "http://38.180.11.127/upload/photo/combo/002.jpg",
-            },
-          ],
-          mark: [
-            {
-              name: "New",
-            },
-            {
-              name: "product",
-            },
-          ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
-          name: "Ferrari World Abu Dhabi",
-          description:
-            "The largest indoor theme park in the world, located in Abu Dhabi",
-          price: "$250",
-          oldPrice: "$350",
-        },
-        {
-          sorting: "200",
-          id: "1",
-          url: "/en/dubai/cateory/ferraripark",
-          photo: [
-            {
-              url: "http://38.180.11.127/upload/photo/combo/001.jpg",
-            },
-          ],
-          mark: [
-            {
-              name: "New",
-            },
-            {
-              name: "product",
-            },
-          ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
-          name: "Ferrari World Abu Dhabi",
-          description:
-            "The largest indoor theme park in the world, located in Abu Dhabi",
-          price: "$250",
-          oldPrice: "$350",
-        },
-        {
-          sorting: "100",
-          id: "2",
-          url: "/en/dubai/cateory/ferraripark",
-          photo: [
-            {
-              url: "http://38.180.11.127/upload/photo/combo/002.jpg",
-            },
-          ],
-          mark: [
-            {
-              name: "New",
-            },
-            {
-              name: "product",
-            },
-          ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
+          starText: "4.5 (200)",
           name: "Ferrari World Abu Dhabi",
           description:
             "The largest indoor theme park in the world, located in Abu Dhabi",
@@ -761,7 +725,6 @@ const initialState: TMainDataState = {
     },
     Description: [
       {
-        sorting: "200",
         photo: "http://38.180.11.127/upload/photo/photo3.jpg",
         name: "Dubai - everything for rest in duba and UAE",
         desc: "the largest city of the United Arab Emirates, the capital of the principality of the same name, which is the second largest in the country the largest city of the United Arab Emirates, the capital of the principality of the same name, which is the second largest in the country",
@@ -773,7 +736,6 @@ const initialState: TMainDataState = {
         desc: "the largest city of the United Arab Emirates, the capital of the principality of the same name, which is the second largest in the country the largest city of the United Arab Emirates, the capital of the principality of the same name, which is the second largest in the country",
       },
       {
-        sorting: "200",
         photo: "http://38.180.11.127/upload/photo/photo1.jpg",
         name: "Dubai - everything for rest in duba and UAE",
         desc: "the largest city of the United Arab Emirates, the capital of the principality of the same name, which is the second largest in the country the largest city of the United Arab Emirates, the capital of the principality of the same name, which is the second largest in the country",

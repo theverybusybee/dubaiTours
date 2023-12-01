@@ -21,7 +21,7 @@ export const mainPageData = {
         },
       ],
       icon: {
-        arrowicon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
+        arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
       },
     },
     currency: {
@@ -57,7 +57,7 @@ export const mainPageData = {
       {
         name: "Company",
         url: "/en/company",
-        arrowicon:
+        arrowIcon:
           "http://admin.clicktoguide.com/upload/icon/menu/white/arroww.svg",
         nesting: [
           {
@@ -89,7 +89,7 @@ export const mainPageData = {
       {
         name: "Client",
         url: "/en/FAQ",
-        arrowicon:
+        arrowIcon:
           "http://admin.clicktoguide.com/upload/icon/menu/white/arroww.svg",
         nesting: [
           {
@@ -193,7 +193,7 @@ export const mainPageData = {
     },
     product: [
       {
-        sorting: "200",
+          
         id: "1",
         url: "/en/dubai/category/burjkhalifa",
         photo: [
@@ -212,14 +212,14 @@ export const mainPageData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Burj Khalifa",
         description: "The world's tallest building. ",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "2",
         url: "/en/dubai/category/dubaimall",
         photo: [
@@ -235,7 +235,7 @@ export const mainPageData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Dubai Mall",
         description:
           "It is the largest mall in the world by total land area and the 26th-largest shopping mall in the world",
@@ -243,7 +243,7 @@ export const mainPageData = {
         oldPrice: "$150",
       },
       {
-        sorting: "200",
+          
         id: "3",
         url: "/en/dubai/category/thepalmjumeirah",
         photo: [
@@ -262,7 +262,7 @@ export const mainPageData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "The Palm Jumeirah",
         description:
           "The unique man-made island that resembles a palm tree with 16 leaves and a crescent moon around them",
@@ -270,7 +270,7 @@ export const mainPageData = {
         oldPrice: "$250",
       },
       {
-        sorting: "200",
+          
         id: "4",
         url: "/en/dubai/category/burjkhalifa",
         photo: [
@@ -289,14 +289,14 @@ export const mainPageData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Burj Khalifa",
         description: "The world's tallest building. ",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "5",
         url: "/en/dubai/category/dubaimall",
         photo: [
@@ -312,7 +312,7 @@ export const mainPageData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Dubai Mall",
         description:
           "It is the largest mall in the world by total land area and the 26th-largest shopping mall in the world",
@@ -403,7 +403,7 @@ export const mainPageData = {
             name: "Sale",
           },
         ],
-        startext: "3.5 (2)",
+        starText: "3.5 (2)",
         name: "Ferrari World Park Abu Dabi",
         description: "The first Ferrari-branded theme park in the world",
         price: "350 $",
@@ -433,7 +433,7 @@ export const mainPageData = {
             name: "Sale",
           },
         ],
-        startext: "3.5 (2)",
+        starText: "3.5 (2)",
         name: "Ferrari World Park Abu Dabi",
         description: "The first Ferrari-branded theme park in the world",
         price: "350 $",
@@ -463,7 +463,7 @@ export const mainPageData = {
             name: "Sale",
           },
         ],
-        startext: "3.5 (2)",
+        starText: "3.5 (2)",
         name: "Ferrari World Park Abu Dabi",
         description: "The first Ferrari-branded theme park in the world",
         price: "350 $",
@@ -493,7 +493,7 @@ export const mainPageData = {
             name: "Sale",
           },
         ],
-        startext: "3.5 (2)",
+        starText: "3.5 (2)",
         name: "Ferrari World Park Abu Dabi",
         description: "The first Ferrari-branded theme park in the world",
         price: "350 $",
@@ -523,7 +523,7 @@ export const mainPageData = {
             name: "Sale",
           },
         ],
-        startext: "3.5 (2)",
+        starText: "3.5 (2)",
         name: "Ferrari World Park Abu Dabi",
         description: "The first Ferrari-branded theme park in the world",
         price: "350 $",
@@ -553,7 +553,7 @@ export const mainPageData = {
             name: "Sale",
           },
         ],
-        startext: "3.5 (2)",
+        starText: "3.5 (2)",
         name: "Ferrari World Park Abu Dabi",
         description: "The first Ferrari-branded theme park in the world",
         price: "350 $",
@@ -583,7 +583,7 @@ export const mainPageData = {
             name: "Sale",
           },
         ],
-        startext: "3.5 (2)",
+        starText: "3.5 (2)",
         name: "Ferrari World Park Abu Dabi",
         description: "The first Ferrari-branded theme park in the world",
         price: "350 $",
@@ -906,7 +906,7 @@ export const catalogueData = {
         },
       ],
       icon: {
-        arrowicon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
+        arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
       },
     },
     currency: {
@@ -936,7 +936,7 @@ export const catalogueData = {
       {
         name: "Company",
         url: "/en/company",
-        arrowicon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
+        arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
         nesting: [
           {
             name: "About company",
@@ -967,7 +967,7 @@ export const catalogueData = {
       {
         name: "Client",
         url: "/en/FAQ",
-        arrowicon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
+        arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
         nesting: [
           {
             name: "Tours",
@@ -1126,7 +1126,7 @@ export const catalogueData = {
     title: "Popular",
     product: [
       {
-        sorting: "200",
+          
         id: "1",
         url: "/en/dubai/category/burjkhalifa",
         photo: [
@@ -1145,14 +1145,14 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Burj Khalifa",
         description: "The world's tallest building. ",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "2",
         url: "/en/dubai/category/dubaimall",
         photo: [
@@ -1168,7 +1168,7 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Dubai Mall",
         description:
           "It is the largest mall in the world by total land area and the 26th-largest shopping mall in the world",
@@ -1176,7 +1176,7 @@ export const catalogueData = {
         oldPrice: "$150",
       },
       {
-        sorting: "200",
+          
         id: "3",
         url: "/en/dubai/category/thepalmjumeirah",
         photo: [
@@ -1195,7 +1195,7 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "The Palm Jumeirah",
         description:
           "The unique man-made island that resembles a palm tree with 16 leaves and a crescent moon around them",
@@ -1203,7 +1203,7 @@ export const catalogueData = {
         oldPrice: "$250",
       },
       {
-        sorting: "200",
+          
         id: "4",
         url: "/en/dubai/category/burjkhalifa",
         photo: [
@@ -1222,14 +1222,14 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Burj Khalifa",
         description: "The world's tallest building. ",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "5",
         url: "/en/dubai/category/dubaimall",
         photo: [
@@ -1245,7 +1245,7 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Dubai Mall",
         description:
           "It is the largest mall in the world by total land area and the 26th-largest shopping mall in the world",
@@ -1253,7 +1253,7 @@ export const catalogueData = {
         oldPrice: "$150",
       },
       {
-        sorting: "200",
+          
         id: "6",
         url: "/en/dubai/category/thepalmjumeirah",
         photo: [
@@ -1272,7 +1272,7 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "The Palm Jumeirah",
         description:
           "The unique man-made island that resembles a palm tree with 16 leaves and a crescent moon around them",
@@ -1286,7 +1286,7 @@ export const catalogueData = {
     page: "1",
     product: [
       {
-        sorting: "200",
+          
         id: "1",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1305,14 +1305,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "2",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1331,14 +1331,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "3",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1352,14 +1352,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "4",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1378,14 +1378,14 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "5",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1399,14 +1399,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "6",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1420,14 +1420,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "1",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1446,14 +1446,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "2",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1472,14 +1472,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "3",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1493,14 +1493,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "4",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1519,14 +1519,14 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "5",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1540,14 +1540,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "6",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1561,14 +1561,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "1",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1587,14 +1587,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "2",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1613,14 +1613,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "3",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1634,14 +1634,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "4",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1660,14 +1660,14 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "5",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1682,14 +1682,14 @@ export const catalogueData = {
           },
         ],
 
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "6",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1703,14 +1703,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "1",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1729,14 +1729,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "2",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1755,14 +1755,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "3",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1776,14 +1776,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "4",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1802,14 +1802,14 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "5",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1823,14 +1823,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "6",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1844,14 +1844,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "1",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1870,14 +1870,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "2",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1896,14 +1896,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "3",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1917,14 +1917,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "4",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1943,14 +1943,14 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "5",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1964,14 +1964,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "6",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -1985,14 +1985,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "1",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -2011,14 +2011,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "2",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -2037,14 +2037,14 @@ export const catalogueData = {
             name: "Sale 20%",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "3",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -2058,14 +2058,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "4",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -2084,14 +2084,14 @@ export const catalogueData = {
             name: "Top",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "5",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -2105,14 +2105,14 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
         oldPrice: "$350",
       },
       {
-        sorting: "200",
+          
         id: "6",
         url: "/en/dubai/category/ferraripark",
         photo: [
@@ -2126,7 +2126,7 @@ export const catalogueData = {
             url: "http://38.180.11.127/upload/photo/photo1.jpg",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
         price: "$250",
@@ -2139,7 +2139,7 @@ export const catalogueData = {
     button: "Make your own combo package",
     product: [
       {
-        sorting: "200",
+          
         id: "1",
         url: "/en/dubai/cateory/ferraripark",
         photo: [
@@ -2155,15 +2155,14 @@ export const catalogueData = {
             name: "product",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Combo 1",
         description: "Description of the offer",
         price: "$350",
         oldPrice: "$450",
       },
       {
-        sorting: "100",
-        id: "2",
+          id: "2",
         url: "/en/dubai/category/ferraripark",
         photo: [
           {
@@ -2178,14 +2177,14 @@ export const catalogueData = {
             name: "product",
           },
         ],
-        startext: "4.8 (100)",
+        starText: "4.8 (100)",
         name: "Combo 2",
         description: "Description of the offer",
         price: "$550",
         oldPrice: "$650",
       },
       {
-        sorting: "200",
+          
         id: "1",
         url: "/en/dubai/cateory/ferraripark",
         photo: [
@@ -2201,15 +2200,14 @@ export const catalogueData = {
             name: "product",
           },
         ],
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Combo 1",
         description: "Description of the offer",
         price: "$350",
         oldPrice: "$450",
       },
       {
-        sorting: "100",
-        id: "2",
+          id: "2",
         url: "/en/dubai/category/ferraripark",
         photo: [
           {
@@ -2224,14 +2222,14 @@ export const catalogueData = {
             name: "product",
           },
         ],
-        startext: "4.8 (100)",
+        starText: "4.8 (100)",
         name: "Combo 2",
         description: "Description of the offer",
         price: "$550",
         oldPrice: "$650",
       },
       {
-        sorting: "200",
+          
         id: "1",
         url: "/en/dubai/cateory/ferraripark",
         photo: [
@@ -2248,15 +2246,14 @@ export const catalogueData = {
           },
         ],
 
-        startext: "4.5 (200)",
+        starText: "4.5 (200)",
         name: "Combo 1",
         description: "Description of the offer",
         price: "$350",
         oldPrice: "$450",
       },
       {
-        sorting: "100",
-        id: "2",
+          id: "2",
         url: "/en/dubai/category/ferraripark",
         photo: [
           {
@@ -2272,7 +2269,7 @@ export const catalogueData = {
           },
         ],
 
-        startext: "4.8 (100)",
+        starText: "4.8 (100)",
         name: "Combo 2",
         description: "Description of the offer",
         price: "$550",

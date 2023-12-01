@@ -50,7 +50,6 @@ const SearchSection = ({ data, sectionSize = "full" }: Props) => {
             extraClass={styles.input}
             Icon={magnifyingGlassBold}
             description={bannerApiData.search.text}
-            // refProp={input}
             onChange={onInputChange}
           />
           <div

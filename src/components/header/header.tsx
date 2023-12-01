@@ -20,8 +20,6 @@ import MultipleDropDown from "../ui/dropdown/multiple-dropdown/multiple-dropdown
 import BurgerMenu from "../modals/burger-menu/burger-menu";
 import clsx from "clsx";
 import Link from "next/link";
-import { getCookie } from "@/utils/cookie";
-import CityModal from "@/components/modals/city-modal/CityModal";
 import { useMediaQuery } from "@mui/material";
 
 interface Props {
@@ -41,11 +39,11 @@ function Header({
   locationContainer = true,
   extraClass,
 }: Props) {
+
   const isMobile = useMediaQuery("(max-width:1040px)");
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenLoc, setOpenLoc] = useState(false);
   const headerApiData = data?.Header;
-  const token = getCookie("token");
 
   const headerClassName = clsx(
     styles.transparentContainer,
@@ -77,7 +75,6 @@ function Header({
                 className={styles.mainLogo}
                 width={253}
                 height={106}
-                priority
                 alt="logo"
               />
             ) : (
@@ -85,7 +82,6 @@ function Header({
                 className={styles.mainLogo}
                 width={253}
                 height={106}
-                priority
                 alt="logo"
               />
             )}
@@ -106,7 +102,6 @@ function Header({
                       alt="location clip"
                       width={30}
                       height={30}
-                      priority
                     />
                     <p className={styles.locationContent}>
                       {headerApiData.location.city}
@@ -214,7 +209,6 @@ function Header({
                       alt="location clip"
                       width={30}
                       height={30}
-                      priority
                     />
 
                     <p className={styles.locationContent}>
