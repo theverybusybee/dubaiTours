@@ -1,12 +1,8 @@
-import { IReservationFormState } from "@/redux/types";
 import { baseUrl, checkResponse } from "./constants";
 import {
-  IGetTourData,
   IGetTourDataArgs,
   IGetTourDetailsArgs,
   IReservationFormData,
-  ISendFeedbackParams,
-  IStringObj,
 } from "./types";
 
 export type TRequestOptions = {
@@ -39,31 +35,6 @@ export type TRegisterForm = {
   readonly password: string;
 };
 
-// боевой
-// export const getHomeData = () => {
-//   const requestOptions: TRequestOptions = {
-//     method: "POST",
-//     credentials: "same-origin",
-//     cache: "no-cache",
-//     mode: "cors",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     redirect: "follow",
-//     referrerPolicy: "no-referrer",
-//     body: JSON.stringify({
-//       main: {
-//         url: "/en/dubai/",
-//         city: "dubai",
-//         lang: "english",
-//         currency: "usd",
-//       },
-//     }),
-//   };
-
-//   return fetch(`${baseUrl}/api/home2/`, requestOptions).then(checkResponse);
-// };
-
 // тестовый
 export const getHomeData = () => {
   const requestOptions: TRequestOptions = {
@@ -78,22 +49,22 @@ export const getHomeData = () => {
     referrerPolicy: "no-referrer",
     body: JSON.stringify({
       main: {
-        url: "/en/dubai/",
-        city: "dubai",
-        lang: "english",
-        currency: "usd",
+        url: "/en/dubai/", //адрес страницы которую запрашиваешь
+        city: "dubai", //город  по которому идет запрос
+        lang: "english", //язык на котором нужно отдать старницу
+        currency: "usd", //валюта в которой нуно отображать товары
       },
     }),
   };
 
-  return fetch(`${baseUrl}:8080/frontapi/home/`, requestOptions).then(
+  return fetch(`http://localhost:3000/api/home/`, requestOptions).then(
     checkResponse
   );
 };
 
 export const getCatalogueData = () => {
   const requestOptions: TRequestOptions = {
-    method: "POST",
+    method: "GET",
     credentials: "same-origin",
     cache: "no-cache",
     mode: "cors",
@@ -102,19 +73,9 @@ export const getCatalogueData = () => {
     },
     redirect: "follow",
     referrerPolicy: "no-referrer",
-    body: JSON.stringify({
-      main: {
-        url: "/en/dubai/catalog/",
-        city: "dubai",
-        lang: "english",
-        currency: "usd",
-      },
-    }),
   };
 
-  return fetch(`${baseUrl}:8080/frontapi/catalog/`, requestOptions).then(
-    checkResponse
-  );
+  return fetch(`${baseUrl}/api/catalogue/`, requestOptions).then(checkResponse);
 };
 
 export const getCatalogueCards = (pageNumber: number) => {
@@ -194,7 +155,7 @@ export const getTourDetails = (args: IGetTourDetailsArgs) => {
   );
 };
 
-export const getProfile = (token: string) => {
+export const getProfile = () => {
   const requestOptions: TRequestOptions = {
     method: "POST",
     credentials: "same-origin",
@@ -212,46 +173,10 @@ export const getProfile = (token: string) => {
         lang: "english",
         currency: "usd",
       },
-      People: {
-        key: token,
-      },
     }),
   };
-  return fetch(`${baseUrl}:8080/frontapi/personal/`, requestOptions).then(
-    checkResponse
-  );
+  return fetch(`http://localhost:3000`, requestOptions).then(checkResponse);
 };
-
-// export const getProfile = () => {
-//   const requestOptions: TRequestOptions = {
-//     method: "POST",
-//     credentials: "same-origin",
-//     cache: "no-cache",
-//     mode: "cors",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     redirect: "follow",
-//     referrerPolicy: "no-referrer",
-//     body: JSON.stringify({
-//       main: {
-//         url: "/en/dubai/personal/",
-//         city: "dubai",
-//         lang: "english",
-//         currency: "usd",
-//       },
-//       People: {
-//         key: "mail@mail.ru",
-//       },
-//     }),
-//   };
-//   return fetch(`${baseUrl}:8080/frontapi/personal/`, requestOptions).then(
-//     checkResponse
-//   );
-// };
-
-// getReservationDataByTourId
-// 38.180.11.127/api/createReview2
 
 export const getReservationDataByTourId = (tourId: string) => {
   const requestOptions: TRequestOptions = {
@@ -274,7 +199,6 @@ export const getReservationDataByTourId = (tourId: string) => {
   ).then(checkResponse);
 };
 
-// test query
 // export const getReservationDataByTourId = (tourId: string) => {
 //   const requestOptions: TRequestOptions = {
 //     method: "GET",
@@ -300,35 +224,6 @@ export const getReservationDataByTourId = (tourId: string) => {
 //         adults: "2",
 //         children: "3",
 //         currency: "AED",
-//       }),
-//     requestOptions
-//   ).then(checkResponse);
-// };
-
-// export const getUpdateTourDetailsById = (args: IReservationFormData) => {
-//   const requestOptions: TRequestOptions = {
-//     method: "GET",
-//     credentials: "same-origin",
-//     cache: "no-cache",
-//     mode: "cors",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     redirect: "follow",
-//     referrerPolicy: "no-referrer",
-//   };
-
-//   return fetch(
-//     `${baseUrl}:8080/frontapi/checkout/reserve` +
-//       "?" +
-//       new URLSearchParams({
-//         calc: args.calc,
-//         type: args.type,
-//         id: args.id,
-//         time: args.time,
-//         adults: args.adults,
-//         children: args.children,
-//         options: args.options,
 //       }),
 //     requestOptions
 //   ).then(checkResponse);
@@ -434,33 +329,6 @@ export const registernRequest = async (form: TRegisterForm) => {
     body: JSON.stringify(form),
   }).then(checkResponse);
 };
-
-// export const getGuidCity = (city: any) => {
-//   const requestOptions: TRequestOptions = {
-//     method: "POST",
-
-//     credentials: "same-origin",
-//     cache: "no-cache",
-//     mode: "cors",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     redirect: "follow",
-//     referrerPolicy: "no-referrer",
-//     body: JSON.stringify({
-//       main: {
-//         url: `/en/guide/${city}`,
-//         city: "dubai",
-//         lang: "russian",
-//         currency: "usd",
-//       },
-//     }),
-//   };
-
-//   return fetch(`${baseUrl}/api/guide/catalog`, requestOptions).then(
-//     checkResponse
-//   );
-// };
 
 export const getGuidCity = (city: any) => {
   const requestOptions: TRequestOptions = {
