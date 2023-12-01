@@ -104,9 +104,9 @@ export const getCatalogueCards = (pageNumber: number) => {
   );
 };
 
-export async function getTourData(args: IGetTourDataArgs) {
+export async function getTourData() {
   const requestOptions: TRequestOptions = {
-    method: "POST",
+    method: "GET",
     credentials: "same-origin",
     cache: "no-cache",
     mode: "cors",
@@ -115,18 +115,9 @@ export async function getTourData(args: IGetTourDataArgs) {
     },
     redirect: "follow",
     referrerPolicy: "no-referrer",
-    body: JSON.stringify({
-      main: {
-        url: args.main.url,
-        city: args.main.city,
-        lang: args.main.lang,
-        currency: args.main.currency,
-      },
-      page: args.page,
-    }),
   };
 
-  return fetch(`${baseUrl}/api/tour2`, requestOptions).then(checkResponse);
+  return fetch(`${baseUrl}/api/gallery`, requestOptions).then(checkResponse);
 }
 
 export const getTourDetails = (args: IGetTourDetailsArgs) => {
