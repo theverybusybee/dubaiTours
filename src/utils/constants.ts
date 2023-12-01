@@ -6,4 +6,4 @@ export function checkResponse(res: Response) {
   }
 }
 
-export const baseUrl = "http://38.180.11.127";
+export const baseUrl = "http://localhost:3000";
