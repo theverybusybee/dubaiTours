@@ -64,24 +64,196 @@ export type THeader = {
     icon: {
       iconWorld: string;
     };
-    Contact: {
-      textContact: string;
-      textContactOr: string;
-      wh: {
-        text: string;
-        icon: string;
-      };
-      tl: {
-        text: string;
-        icon: string;
-      };
-    };
+    Contact: TContact;
   };
 };
 
-export type TProduct = {
+export type TBread = {
+  name: string;
+};
 
-}
+export type TTourHeadDetails = {
+  name: string;
+  review: string;
+  star: string;
+  id: string;
+  wishlist: {
+    name: string;
+  };
+};
+
+export type TTourPhoto = {
+  photoDetails: {
+    url: string;
+  }[];
+
+  buttonPhoto: string;
+};
+
+export type TTourAdvantages = {
+  icon: string;
+  property: string;
+  propertyText: string;
+};
+
+export type TTourDescription = {
+  titleDescription: string;
+  smallDescription: string;
+  bigDescription: string;
+};
+
+export type TTourIncluded = {
+  titleGreen: string;
+  titleBlack: string;
+  icon: string;
+  text: {
+    text: string;
+  }[];
+};
+
+export type TTourNotIncluded = {
+  titleBlack: string;
+  titleOrange: string;
+  icon: string;
+  text: {
+    text: string;
+  }[];
+};
+
+export type TTourWarnings = {
+  titleRed: string;
+  icon: string;
+  text: {
+    text: string;
+  }[];
+};
+
+export type TTourMap = {
+  id: number;
+  name: string;
+  address: string;
+  description: string;
+  position: {
+    lat: number;
+    lng: number;
+  };
+};
+
+export type TTourReviews = {
+  starBlock: {
+    titleReviews: string;
+    buttonReviews: string;
+    buttonReviewsWindow: {
+      feedback: {
+        name: string;
+        des: string;
+        starFeedback: {
+          name: string;
+        }[];
+
+        inputName: string;
+        inputDes: string;
+        inputPhoto: string;
+        buttonPhoto: string;
+        buttonNext: string;
+      };
+      feedbackThank: {
+        name: string;
+        des: string;
+        buttonClose: string;
+      };
+    };
+    starReviews: string;
+    starPoints: {
+      titleStar: string;
+      titlePoints: string;
+    }[];
+  };
+  reviewPeople: {
+    reviewsPeopleTitle: [
+      {
+        photoPeople: string;
+        name: string;
+        starReviews: string;
+        description: string;
+        photoReview: {
+          photoReviewUrl: string;
+        }[];
+      }
+    ];
+    allButton: string;
+  };
+};
+
+export type TTourReserve = {
+  priceReserve: {
+    oldPrice: string;
+    price: string;
+    priceTitle: string;
+  };
+  DateTime: {
+    title: string;
+    des: string;
+  };
+  People: {
+    title: string;
+    des: string;
+  };
+  Transfer: {
+    price: string;
+    title: string;
+    des: string;
+  };
+  Button: string;
+};
+
+export type TContact = {
+  textContact: string;
+  textContactOr: string;
+  wh: {
+    text: string;
+    icon: string;
+  };
+  tl: {
+    text: string;
+    icon: string;
+  };
+};
+
+export type TTourFAQ = {
+  titleFaq: string;
+  event: {
+    titleEvent: string;
+    descriptionEvent: string;
+  }[];
+};
+
+export type TTourSimilar = {
+  title: string;
+  product: {
+    id: string;
+    url: string;
+    photo: {
+      url: string;
+    }[];
+
+    mark: {
+      name: string;
+    }[];
+    starText: string;
+    name: string;
+    description: string;
+    price: string;
+    oldPrice: string;
+  }[];
+  Tag: {
+    title: string;
+    nesting: {
+      name: string;
+      url: string;
+    }[];
+  };
+};
 
 export type TBanner = {
   background: string;

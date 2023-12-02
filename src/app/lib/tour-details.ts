@@ -154,7 +154,6 @@ const tourDetails: TTourDetails = {
         star: "4.5",
         id: "ID: 9",
         wishlist: {
-          icon: "http://38.180.11.127/upload/icon/menu/white/heart.svg",
           name: "Add wishlist",
         },
       },
@@ -390,7 +389,7 @@ const tourDetails: TTourDetails = {
       },
       BlockReserve: {
         priceReserve: {
-          oldProce: "$350",
+          oldPrice: "$350",
           price: "$250",
           priceTitle: "price",
         },
@@ -464,9 +463,7 @@ const tourDetails: TTourDetails = {
               name: "product",
             },
           ],
-          hearticon: "http://38.180.11.127/upload/icon/categori/hearts.svg",
-          staricon: "http://38.180.11.127/upload/icon/categori/star.svg",
-          startext: "4.5 (200)",
+          starText: "4.5 (200)",
           name: "Ferrari Park Abu Dhabi",
           description: "The largest in the world, area 200,000 m²",
           price: "$250",
@@ -491,7 +488,7 @@ const tourDetails: TTourDetails = {
               name: "product",
             },
           ],
-          startext: "4.5 (200)",
+          starText: "4.5 (200)",
           name: "Ferrari Park Abu Dhabi",
           description: "The largest in the world, area 200,000 m²",
           price: "$250",
@@ -543,7 +540,7 @@ const tourDetails: TTourDetails = {
             url: "site.com/",
           },
           {
-            name: "Сontacts",
+            name: "Contacts",
             url: "site.com",
           },
           {
