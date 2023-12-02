@@ -79,6 +79,10 @@ export type THeader = {
   };
 };
 
+export type TProduct = {
+
+}
+
 export type TBanner = {
   background: string;
   title: string;
@@ -197,34 +201,4 @@ export type TGuide = {
       url: string;
     }[];
   }[];
-};
-
-export type TCatalogue = {
-  Header: THeader;
-  Banner: TBanner;
-  Categories: TCategories;
-  Popular: TPopular;
-  Catalog: TCatalog;
-  Combo: TCombo;
-  Description: TDescription[];
-  Footer: TFooter;
-  Styles: TStyles;
-};
-
-export type TGallery = {
-  Catalog: TCatalog;
-};
-
-export type TMain = {
-  Header: THeader;
-  Banner: TBanner;
-  Categories: TCategories;
-  Recommend: TRecommend;
-  Destination: TDestination;
-  Combo: TCombo;
-  Step: TStep;
-  Guide: TGuide;
-  Description: TDescription[];
-  Footer: TFooter;
-  Styles: TStyles;
 };

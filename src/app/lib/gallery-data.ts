@@ -1,4 +1,4 @@
-import { TGallery } from "./types";
+import { TGallery } from "./pages-types";
 
 const gallery: TGallery = {
   Catalog: {

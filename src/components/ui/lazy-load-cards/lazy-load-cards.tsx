@@ -5,7 +5,7 @@ import styles from "./lazy-load-cards.module.scss";
 import CardWithImage from "@/components/ui/cards/card-with-image/card-with-image";
 import DotsLoader from "@/components/ui/loader/loader";
 import { getTourData } from "@/utils/fetches";
-import { TCard } from "@/app/lib/types";
+import { TCard } from "@/app/lib/sections-types";
 
 interface Props {
   allData: any;

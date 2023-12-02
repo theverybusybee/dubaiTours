@@ -1,4 +1,4 @@
-import { TCatalogue } from "./types";
+import { TCatalogue } from "./pages-types";
 
 const catalogue: TCatalogue = {
   Header: {
