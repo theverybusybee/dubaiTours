@@ -1,7 +1,5 @@
 import { baseUrl, checkResponse } from "./constants";
 import {
-  IGetTourDataArgs,
-  IGetTourDetailsArgs,
   IReservationFormData,
 } from "./types";
 
@@ -112,9 +110,9 @@ export async function getTourData() {
   return fetch(`${baseUrl}/api/gallery`, requestOptions).then(checkResponse);
 }
 
-export const getTourDetails = (args: IGetTourDetailsArgs) => {
+export const getTourDetails = () => {
   const requestOptions: TRequestOptions = {
-    method: "POST",
+    method: "GET",
     credentials: "same-origin",
     cache: "no-cache",
     mode: "cors",
@@ -123,17 +121,9 @@ export const getTourDetails = (args: IGetTourDetailsArgs) => {
     },
     redirect: "follow",
     referrerPolicy: "no-referrer",
-    body: JSON.stringify({
-      main: {
-        url: args.main.url,
-        city: args.main.city,
-        lang: args.main.lang,
-        currency: args.main.currency,
-      },
-    }),
   };
 
-  return fetch(`${baseUrl}:8080/frontapi/catalog/tour/`, requestOptions).then(
+  return fetch(`${baseUrl}/api/tour-details`, requestOptions).then(
     checkResponse
   );
 };
