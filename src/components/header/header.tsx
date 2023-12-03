@@ -21,9 +21,10 @@ import BurgerMenu from "../modals/burger-menu/burger-menu";
 import clsx from "clsx";
 import Link from "next/link";
 import { useMediaQuery } from "@mui/material";
+import { THeader } from "@/app/lib/sections-types";
 
 interface Props {
-  data: any;
+  headerApiData: THeader;
   searchSectionSize?: "full" | "fixed";
   colorTheme?: "light" | "dark";
   position?: "block" | "absolute";
@@ -32,19 +33,16 @@ interface Props {
 }
 
 function Header({
-  data,
+  headerApiData,
   searchSectionSize = "full",
   colorTheme = "dark",
   position = "absolute",
   locationContainer = true,
   extraClass,
 }: Props) {
-
   const isMobile = useMediaQuery("(max-width:1040px)");
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenLoc, setOpenLoc] = useState(false);
-  const headerApiData = data?.Header;
-
   const headerClassName = clsx(
     styles.transparentContainer,
     {

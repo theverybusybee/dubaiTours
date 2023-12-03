@@ -2,9 +2,7 @@ import { TMain } from "./pages-types";
 
 const mainData: TMain = {
   Header: {
-    logo: "http://admin.clicktoguide.com/upload/logo/logo-black-original.svg",
     location: {
-      icon: "http://admin.clicktoguide.com/upload/icon/menu/white/location.svg",
       city: "Dubai",
     },
     language: {
@@ -179,10 +177,7 @@ const mainData: TMain = {
   },
   Recommend: {
     title: "We Recommend",
-    button: {
-      name: "View all",
-      url: "/en/tour/",
-    },
+    button: "/en/tour/",
     product: [
       {
         id: "1",
@@ -356,7 +351,7 @@ const mainData: TMain = {
     ],
   },
   Combo: {
-    name: "Combo Packages",
+    title: "Combo Packages",
     button: "Make your own combo package",
     product: [
       {
@@ -585,7 +580,7 @@ const mainData: TMain = {
     ],
   },
   Guide: {
-    name: "Guide",
+    title: "Guide",
     description:
       "A useful and detailed guide to information about holidays in Dubai and the OAE",
     countries: [

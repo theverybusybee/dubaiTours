@@ -1212,7 +1212,7 @@ const catalogue: TCatalogue = {
     ],
   },
   Combo: {
-    name: "Combo Packages in Dubai",
+    title: "Combo Packages in Dubai",
     button: "Make your own combo package",
     product: [
       {

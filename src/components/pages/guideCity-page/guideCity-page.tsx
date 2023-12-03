@@ -1,18 +1,13 @@
 "use client";
 import Footer from "@/components/footer/footer";
-import Header from "@/components/header/header";
 import styles from "./guideCatalog-page.module.scss";
 import React, { useState, useEffect } from "react";
-import { montserrat } from "../../../app/fonts";
-import {
-  CardWithImageSliderSection,
-  FAQSection,
-} from "@/components/page-sections/page-sections";
+import { FAQSection } from "@/components/page-sections/page-sections";
 import GuideSection from "@/components/page-sections/guide-section/guide-section";
 import CardWhite from "@/components/ui/cards/card-white/card-white";
 import { getGuidCity } from "@/utils/fetches";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useAppDispatch } from "@/redux/redux-hooks";
 import CardWithImage from "@/components/ui/cards/card-with-image/card-with-image";
 import Link from "next/link";
@@ -43,7 +38,6 @@ function GuideCity() {
 
   return data ? (
     <div>
-      {/* <Header data={data} /> */}
       <h1 className={styles.title}>{data.GuideAll.headTitle.title}</h1>
       <p className={styles.bread}>
         <Link className={styles.link} href={"/"}>
