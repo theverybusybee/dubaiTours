@@ -12,44 +12,41 @@ import {
   ButtonsSliderSection,
 } from "@/components/page-sections/page-sections";
 import Footer from "@/components/footer/footer";
+import { TMain } from "@/app/lib/pages-types";
 
 interface Props {
-  data?: any;
+  data: TMain;
 }
 
 function MainPage({ data }: Props) {
-  const { Categories, Guide } = data;
-
   return data ? (
     <>
-      <Header data={data} />
+      <Header headerApiData={data.Header} />
       <main className={styles.container}>
-        <SearchSection data={data} />
+        <SearchSection bannerApiData={data.Banner} />
         <ButtonsSliderSection
           title="We are Recommend"
           titlePosition="left"
           extraClass={styles.buttonsSlider}
-          data={Categories}
+          data={data.Categories}
         />
-        <CardWithPriceSliderSection
+        {/* <CardWithPriceSliderSection
           extraClass={styles.cardWithPriceSection}
-          data={data}
-          cardsApiData={data?.Recommend}
-        />
+          data={data.P}
+        /> */}
         <CardWithImageSliderSection
           data={data?.Destination}
           extraClass={styles.destinationSection}
           hasButtons={false}
         />
-        <ComboPackagesSection data={data} hasButtons={true} />
+        <ComboPackagesSection data={data.Combo} hasButtons={true} />
         <StepsSection data={data} />
-        {Guide && (
-          <GuideSection
-            name={Guide.name}
-            description={Guide.description}
-            countries={Guide.countries}
-          />
-        )}
+
+        <GuideSection
+          name={data.Guide.title}
+          description={data.Guide.description}
+          countries={data.Guide.countries}
+        />
         <LearnMoreSection data={data} />
       </main>
       <Footer data={data} />

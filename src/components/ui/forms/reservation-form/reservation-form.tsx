@@ -10,29 +10,10 @@ import {
   SET_RESERVATION_MODAL_OPENED,
 } from "@/redux/constants/reservation-modal";
 import { useAppSelector } from "@/redux/redux-hooks";
+import { TTourReserve } from "@/app/lib/sections-types";
 
 interface Props {
-  data: {
-    priceReserve: {
-      oldProce: string;
-      price: string;
-      priceTitle: string;
-    };
-    DateTime: {
-      title: string;
-      des: string;
-    };
-    People: {
-      title: string;
-      des: string;
-    };
-    Transfer: {
-      price: string;
-      title: string;
-      des: string;
-    };
-    Button: string;
-  };
+  data: TTourReserve;
   extraClass?: string;
 }
 
@@ -48,7 +29,7 @@ function ReservationForm({ data, extraClass }: Props) {
         <span
           className={`${styles.span} ${styles.span_color_grey} ${styles.span_textDecoration_lineThrough}`}
         >
-          {data.priceReserve.oldProce}
+          {data.priceReserve.oldPrice}
         </span>
         <span> {data.priceReserve.price} </span>
         <span className={`${styles.span_fontWeight_regular}`}>

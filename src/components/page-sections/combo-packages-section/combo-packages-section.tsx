@@ -1,30 +1,35 @@
+import { TCardWithPriceSliderSection } from "@/app/lib/sections-types";
 import styles from "./combo-packages-section.module.scss";
 import Button from "@/components/ui/buttons/button/button";
 import SectionTitle from "@/components/ui/section-title/section-title";
 import SplideMultipleSlider from "@/components/ui/splide/splide-multiple-slider/splide-multiple-slider";
 
 interface Props {
-  data: any;
+  data: TCardWithPriceSliderSection;
   hasButtons: boolean;
   titlePosition?: "left" | "center";
 }
 
-function ComboPackagesSection({ data, hasButtons, titlePosition }: Props) {
-  const comboApiData = data?.Combo;
-
-  return comboApiData ? (
+function ComboPackagesSection({
+  data,
+  hasButtons,
+  titlePosition,
+}: Props) {
+  return data ? (
     <section className={styles.main}>
       <div className={styles.contentContainer}>
-        <SectionTitle content={comboApiData?.name} position={titlePosition} />
+        <SectionTitle content={data?.title} position={titlePosition} />
         <div className={styles.slider}>
           <SplideMultipleSlider
-            cardArray={comboApiData?.product}
+            cardArray={data?.product}
             hasButtons={hasButtons}
             cardExtraClass={styles.card}
           />
         </div>
         <div className={styles.buttonContainer}>
-          <Button extraClass={styles.button} content={comboApiData?.button} />
+          {data?.button && (
+            <Button extraClass={styles.button} content={data?.button} />
+          )}
         </div>
       </div>
     </section>

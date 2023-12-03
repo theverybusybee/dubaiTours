@@ -233,7 +233,7 @@ function ReservationHandler({ data, tourId }: Props) {
     <>
       <ReservationOverlay
         extraClass={styles.overlay}
-        tourId={data?.Product?.Detal?.HeadDetal?.id}
+        tourId={data?.Product?.Details?.HeadDetails?.id}
         onSubmitClick={onSubmitClick}
         onReturnButtonClick={onReturnClick}
       >

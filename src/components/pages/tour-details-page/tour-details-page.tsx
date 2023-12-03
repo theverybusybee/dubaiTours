@@ -15,14 +15,15 @@ import ReservationForm from "@/components/ui/forms/reservation-form/reservation-
 import Footer from "@/components/footer/footer";
 import SplideSinglePhotoSlider from "@/components/ui/splide/splide-single-photo-slider/splide-single-photo-slider";
 import ReservationHandler from "@/components/modals/reservation-components/reservation-handler/reservation-handler";
+import { TTourDetailsData } from "@/app/lib/pages-types";
 
 interface Props {
-  data: any;
+  data: TTourDetailsData;
   tourId: string;
 }
 
 const TourDetailsPage: NextPage<Props> = ({ data, tourId }) => {
-  const tourDetailsData = data?.Product?.Detal;
+  const tourDetailsData = data?.Product?.Details;
 
   return (
     <div className={styles.page}>
@@ -30,34 +31,34 @@ const TourDetailsPage: NextPage<Props> = ({ data, tourId }) => {
 
       <Header
         extraClass={styles.header}
-        data={data}
+        headerApiData={data.Header}
         colorTheme="light"
         position="block"
         locationContainer={false}
       />
-      {tourDetailsData?.Photo?.photoDetal?.length && (
+      {tourDetailsData?.Photo?.photoDetails?.length && (
         <SplideSinglePhotoSlider
           extraClass={styles.singlePhotoSlider}
-          data={tourDetailsData.Photo.photoDetal}
+          data={tourDetailsData.Photo.photoDetails}
         />
       )}
 
       <div className={styles.main}>
         <TourShortDescriptionSection
           extraClass={styles.tourShortDescription}
-          data={data}
+          data={data.Product}
         />
 
-        {tourDetailsData?.Photo?.photoDetal?.length && (
+        {tourDetailsData?.Photo?.photoDetails?.length && (
           <PhotosGallerySection
             extraClass={styles.photosGallery}
-            data={tourDetailsData.Photo.photoDetal}
+            data={tourDetailsData.Photo.photoDetails}
             buttonContent={tourDetailsData.Photo.buttonPhoto}
           />
         )}
         {tourDetailsData?.BlockReserve && (
           <ReservationForm
-            data={tourDetailsData?.BlockReserve}
+            data={data.Product.Details.BlockReserve}
             extraClass={styles.reservationForm}
           />
         )}
@@ -74,7 +75,7 @@ const TourDetailsPage: NextPage<Props> = ({ data, tourId }) => {
 
         <TourDescriptionSection
           extraClass={styles.tourDescription}
-          data={data}
+          data={data.Product.Details}
         />
 
         {data?.Product && (
@@ -89,7 +90,6 @@ const TourDetailsPage: NextPage<Props> = ({ data, tourId }) => {
           <CardWithPriceSliderSection
             extraClass={styles.cardWithPriceSlider}
             data={data?.Product.Similar}
-            cardsApiData={data?.Product?.Similar}
             hasButtons={false}
             titlePosition="left"
           />
@@ -109,14 +109,14 @@ const TourDetailsPage: NextPage<Props> = ({ data, tourId }) => {
             showAllButton={tourDetailsData.Reviews.reviewPeople.allButton}
           />
         )}
-        {data?.Similar && (
+        {/* {data.Product.Similar && (
           <CardWithPriceSliderSection
             extraClass={styles.cards}
             titlePosition="left"
             data={data}
-            cardsApiData={data.Similar?.product}
+            cardsApiData={data.Product.Similar.product}
           />
-        )}
+        )} */}
 
         {data?.Product?.Similar?.Tag && (
           <ButtonsSection

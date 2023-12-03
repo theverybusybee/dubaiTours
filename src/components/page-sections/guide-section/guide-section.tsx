@@ -6,6 +6,10 @@ import { useEffect, useMemo, useState } from "react";
 import SectionTitle from "@/components/ui/section-title/section-title";
 import { useMediaQuery } from "@mui/material";
 import CardWithImage from "@/components/ui/cards/card-with-image/card-with-image";
+import {
+  TGuideCountries,
+  TGuideProduct,
+} from "@/app/lib/sections-types";
 
 interface IBasicProps {
   titlePosition?: "left" | "center";
@@ -14,29 +18,10 @@ interface IBasicProps {
   extraClass?: string;
 }
 
-interface ICountriesObj {
-  type: string;
-  name: string;
-  product: [
-    {
-      name: string;
-      desc: string;
-      photo: string;
-      url: string;
-    }[]
-  ];
-}
-
-interface IProduct {
-  name: string;
-  desc: string;
-  photo: string;
-  url: string;
-}
-
-type ConditionalProps =
-  | { products?: IProduct[]; countries?: never }
-  | { countries?: ICountriesObj[]; products?: never };
+type ConditionalProps = {
+  products?: TGuideProduct[];
+  countries?: TGuideCountries[];
+};
 
 type combinedProps = IBasicProps & ConditionalProps;
 

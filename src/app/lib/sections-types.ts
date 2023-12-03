@@ -13,6 +13,12 @@ export type TCard = {
   oldPrice: string;
 };
 
+export type TCardWithPriceSliderSection = {
+  title: string;
+  button?: string;
+  product: TCard[];
+};
+
 export type TCity = {
   url: string;
   photo: string;
@@ -265,18 +271,6 @@ export type TBanner = {
   };
 };
 
-// export type TRecommend = {
-//   title: string;
-//   button: string;
-//   product: TCard[];
-// };
-
-export type TCardWithPriceSliderSection = {
-  title: string;
-  button?: string;
-  product: TCard[];
-};
-
 export type TCategories = {
   nameCategories: string;
   buttons: {
@@ -305,12 +299,6 @@ export type TCatalog = {
   page: string;
   product: TCard[];
 };
-
-// export type TCombo = {
-//   title: string;
-//   button: string;
-//   product: TCard[];
-// };
 
 export type TDescription = {
   id: string;

@@ -1,5 +1,6 @@
 "use client";
 
+import { TBanner } from "@/app/lib/sections-types";
 import styles from "./search-section.module.scss";
 import SearchInput from "@/components/ui/inputs/search-input/search-input";
 import RoutePath from "@/components/ui/route-path/route-path";
@@ -9,12 +10,11 @@ import clsx from "clsx";
 import { useEffect, useState } from "react";
 
 interface Props {
-  data: any;
+  bannerApiData: TBanner;
   sectionSize?: "full" | "fixed";
 }
 
-const SearchSection = ({ data, sectionSize = "full" }: Props) => {
-  const bannerApiData = data?.Banner;
+const SearchSection = ({ bannerApiData, sectionSize = "full" }: Props) => {
 
   const [searchState, setSearchState] = useState<string[]>([]);
   const [inputState, setInputState] = useState<string>("");
@@ -38,12 +38,12 @@ const SearchSection = ({ data, sectionSize = "full" }: Props) => {
   return bannerApiData ? (
     <section
       className={containerClassName}
-      style={{ backgroundImage: `url(${data?.Banner.background})` }}
+      style={{ backgroundImage: `url(${bannerApiData.background})` }}
     >
       <div className={styles.inputContainer}>
         <h1 className={styles.title}>{bannerApiData.title}</h1>
 
-        {data?.Banner.bread && <RoutePath data={data?.Banner.bread} />}
+        {bannerApiData.bread && <RoutePath data={bannerApiData.bread} />}
 
         <div className={styles.searchContainer}>
           <SearchInput

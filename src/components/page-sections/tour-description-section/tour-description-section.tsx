@@ -9,14 +9,14 @@ import MapTimeline from "@/components/ui/map-timeline/map-timeline";
 import { useEffect, useMemo, useRef, useState } from "react";
 import clsx from "clsx";
 import { useMediaQuery } from "@mui/material";
+import { TTourDetails } from "@/app/lib/sections-types";
 
 interface Props {
-  data: any;
+  data: TTourDetails;
   extraClass?: string;
 }
 
 function TourDescriptionSection({ data, extraClass }: Props) {
-  const tourDetailData = data?.Product?.Detal;
   const isMobile = useMediaQuery("(max-width:800px)");
 
   const descriptionText = useRef<HTMLParagraphElement>(null);
@@ -49,11 +49,10 @@ function TourDescriptionSection({ data, extraClass }: Props) {
     setIsOverflow(contentHeight > 112.5);
   }, [contentHeight]);
 
-  const { Description, Advantages, Included, NotInclude, Warnings, Map } =
-    tourDetailData;
+  const { Description, Advantages, Included, NotInclude, Warnings, Map } = data;
   return (
     <section className={`${styles.section} ${extraClass}`}>
-      <p className={styles.descriptionText}>{Description?.smalDescription} </p>
+      <p className={styles.descriptionText}>{Description?.smallDescription} </p>
       <div className={styles.buttonsContainer}>
         {Advantages.map((el: any, index: number) => {
           return (
@@ -76,7 +75,7 @@ function TourDescriptionSection({ data, extraClass }: Props) {
           </h3>
           <div className={styles.descriptionContainer}>
             <p className={descriptionTextClassName} ref={descriptionText}>
-              {Description?.smalDescription}
+              {Description?.smallDescription}
             </p>
             {!isOpened && (
               <button

@@ -12,9 +12,10 @@ import {
   SearchSection,
 } from "@/components/page-sections/page-sections";
 import Footer from "@/components/footer/footer";
+import { TCatalogue } from "@/app/lib/pages-types";
 
 interface Props {
-  data: any;
+  data: TCatalogue;
   extraClass?: string;
 }
 
@@ -23,12 +24,12 @@ const CataloguePage: NextPage<Props> = ({ data: data, extraClass }) => {
 
   return (
     <div className={`${styles.container} ${extraClass}`}>
-      <Header data={data} searchSectionSize="fixed" />
-      <SearchSection data={data} sectionSize="fixed" />
+      <Header headerApiData={data.Header} searchSectionSize="fixed" />
+      <SearchSection bannerApiData={data.Banner} sectionSize="fixed" />
       <ButtonsSliderSection data={Categories} titlePosition="left" />
       <CardWithPriceSliderSection
-        data={data}
-        cardsApiData={data?.Popular}
+        data={data.Popular}
+        // cardsApiData={data?.Popular}
         hasButtons={false}
         titlePosition="left"
       />
@@ -39,7 +40,7 @@ const CataloguePage: NextPage<Props> = ({ data: data, extraClass }) => {
         titlePosition="left"
       />
       <ComboPackagesSection
-        data={data}
+        data={data.Combo}
         hasButtons={false}
         titlePosition="left"
       />
