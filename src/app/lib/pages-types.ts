@@ -1,40 +1,25 @@
 import {
   TBanner,
-  TBread,
+  TCardWithPriceSliderSection,
   TCatalog,
   TCategories,
-  TCombo,
-  TContact,
   TDescription,
   TDestination,
   TFooter,
   TGuide,
   THeader,
-  TPopular,
-  TRecommend,
   TStep,
   TStyles,
-  TTourAdvantages,
-  TTourDescription,
-  TTourFAQ,
-  TTourHeadDetails,
-  TTourIncluded,
-  TTourMap,
-  TTourNotIncluded,
-  TTourPhoto,
-  TTourReserve,
-  TTourReviews,
-  TTourSimilar,
-  TTourWarnings,
+  TToursProduct,
 } from "./sections-types";
 
 export type TCatalogue = {
   Header: THeader;
   Banner: TBanner;
   Categories: TCategories;
-  Popular: TPopular;
+  Popular: TCardWithPriceSliderSection;
   Catalog: TCatalog;
-  Combo: TCombo;
+  Combo: TCardWithPriceSliderSection;
   Description: TDescription[];
   Footer: TFooter;
   Styles: TStyles;
@@ -48,9 +33,9 @@ export type TMain = {
   Header: THeader;
   Banner: TBanner;
   Categories: TCategories;
-  Recommend: TRecommend;
+  Recommend: TCardWithPriceSliderSection;
   Destination: TDestination;
-  Combo: TCombo;
+  Combo: TCardWithPriceSliderSection;
   Step: TStep;
   Guide: TGuide;
   Description: TDescription[];
@@ -58,26 +43,9 @@ export type TMain = {
   Styles: TStyles;
 };
 
-export type TTourDetails = {
+export type TTourDetailsData = {
   Header: THeader;
-  Product: {
-    Bread: TBread[];
-    Details: {
-      HeadDetails: TTourHeadDetails;
-      Photo: TTourPhoto;
-      Advantages: TTourAdvantages[];
-      Description: TTourDescription;
-      Included: TTourIncluded;
-      NotInclude: TTourNotIncluded;
-      Warnings: TTourWarnings;
-      Map: TTourMap[];
-      Reviews: TTourReviews;
-      BlockReserve: TTourReserve;
-      Contact: TContact;
-    };
-    Faq: TTourFAQ;
-    Similar: TTourSimilar;
-  };
+  Product: TToursProduct;
   Footer: TFooter;
   Styles: TStyles;
 };

@@ -21,10 +21,8 @@ export type TCity = {
 };
 
 export type THeader = {
-  logo?: string;
   location: {
     city: string;
-    icon?: string;
   };
   language: {
     list: {
@@ -267,12 +265,15 @@ export type TBanner = {
   };
 };
 
-export type TRecommend = {
+// export type TRecommend = {
+//   title: string;
+//   button: string;
+//   product: TCard[];
+// };
+
+export type TCardWithPriceSliderSection = {
   title: string;
-  button: {
-    name: string;
-    url: string;
-  };
+  button?: string;
   product: TCard[];
 };
 
@@ -299,22 +300,17 @@ export type TStep = {
   }[];
 };
 
-export type TPopular = {
-  title: string;
-  product: TCard[];
-};
-
 export type TCatalog = {
   title: string;
   page: string;
   product: TCard[];
 };
 
-export type TCombo = {
-  name: string;
-  button: string;
-  product: TCard[];
-};
+// export type TCombo = {
+//   title: string;
+//   button: string;
+//   product: TCard[];
+// };
 
 export type TDescription = {
   id: string;
@@ -359,18 +355,43 @@ export type TStyles = {
   }[];
 };
 
-export type TGuide = {
+export type TGuideCountries = {
+  type: string;
   name: string;
+  product: TGuideProduct[];
+};
+
+export type TGuideProduct = {
+  city_id: string;
+  name: string;
+  desc: string;
+  photo: string;
+  url: string;
+};
+
+export type TGuide = {
+  title: string;
   description: string;
-  countries: {
-    type: string;
-    name: string;
-    product: {
-      city_id: string;
-      name: string;
-      desc: string;
-      photo: string;
-      url: string;
-    }[];
-  }[];
+  countries: TGuideCountries[];
+};
+
+export type TTourDetails = {
+  HeadDetails: TTourHeadDetails;
+  Photo: TTourPhoto;
+  Advantages: TTourAdvantages[];
+  Description: TTourDescription;
+  Included: TTourIncluded;
+  NotInclude: TTourNotIncluded;
+  Warnings: TTourWarnings;
+  Map: TTourMap[];
+  Reviews: TTourReviews;
+  BlockReserve: TTourReserve;
+  Contact: TContact;
+};
+
+export type TToursProduct = {
+  Bread: TBread[];
+  Details: TTourDetails;
+  Faq: TTourFAQ;
+  Similar: TTourSimilar;
 };
