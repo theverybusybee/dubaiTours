@@ -1,10 +1,8 @@
-import { TTourDetails } from "./pages-types";
+import { TTourDetailsData } from "./pages-types";
 
-const tourDetails: TTourDetails = {
+const tourDetails: TTourDetailsData = {
   Header: {
-    logo: "http://38.180.11.127/upload/logo/logow.svg",
     location: {
-      icon: "http://38.180.11.127/upload/icon/menu/white/location.svg",
       city: "OAE, Dubai",
     },
     language: {
@@ -141,10 +139,10 @@ const tourDetails: TTourDetails = {
         name: "Main",
       },
       {
-        name: "All in Dubai",
+        name: "Catalogue",
       },
       {
-        name: "Ferrari Park Abu Dabi",
+        name: "Tour 1",
       },
     ],
     Details: {
@@ -191,9 +189,9 @@ const tourDetails: TTourDetails = {
       Description: {
         titleDescription: "Description",
         smallDescription:
-          "The first Ferrari-branded theme park in the world, Ferrari World Abu Dhabi celebrates the passionate spirit of the legendary racing marque. Its iconic structure houses numerous high-adrenaline rides featuring the world’s fastest rollercoaster.",
+          "The first Ferrari-branded theme park in the world, Ferrari World Abu Dhabi celebrates the passionate spirit of the legendary racing marque. Its iconic structure houses numerous high-adrenaline rides featuring the world's fastest rollercoaster.",
         bigDescription:
-          "The first Ferrari-branded theme park in the world, Ferrari World Abu Dhabi celebrates the passionate spirit of the legendary racing marque. Its iconic structure houses numerous high-adrenaline rides featuring the world’s fastest rollercoaster, family-friendly attractions",
+          "The first Ferrari-branded theme park in the world, Ferrari World Abu Dhabi celebrates the passionate spirit of the legendary racing marque. Its iconic structure houses numerous high-adrenaline rides featuring the world's fastest rollercoaster, family-friendly attractions",
       },
       Included: {
         titleGreen: "Included",
@@ -446,13 +444,10 @@ const tourDetails: TTourDetails = {
       product: [
         {
           id: "1",
-          url: "/en/dubai/category/ferraripark",
+          url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
           photo: [
             {
-              url: "http://38.180.11.127/upload/photo/photo1.jpg",
-            },
-            {
-              url: "http://38.180.11.127/upload/photo/photo3.jpg",
+              url: "https://images.unsplash.com/photo-1578152882785-df9744e359e5?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             },
           ],
           mark: [
@@ -460,24 +455,27 @@ const tourDetails: TTourDetails = {
               name: "New",
             },
             {
-              name: "product",
+              name: "Popular",
+            },
+            {
+              name: "Top",
+            },
+            {
+              name: "Sale",
             },
           ],
-          starText: "4.5 (200)",
-          name: "Ferrari Park Abu Dhabi",
-          description: "The largest in the world, area 200,000 m²",
-          price: "$250",
-          oldPrice: "$350",
+          starText: "3.5 (2)",
+          name: "Ferrari World Park Abu Dabi",
+          description: "The first Ferrari-branded theme park in the world",
+          price: "350 $",
+          oldPrice: "500 $",
         },
         {
-          id: "1",
-          url: "/en/dubai/category/ferraripark",
+          id: "2",
+          url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
           photo: [
             {
-              url: "http://38.180.11.127/upload/photo/photo1.jpg",
-            },
-            {
-              url: "http://38.180.11.127/upload/photo/photo3.jpg",
+              url: "https://images.unsplash.com/photo-1544161513-0179fe746fd5?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             },
           ],
           mark: [
@@ -485,14 +483,160 @@ const tourDetails: TTourDetails = {
               name: "New",
             },
             {
-              name: "product",
+              name: "Popular",
+            },
+            {
+              name: "Top",
+            },
+            {
+              name: "Sale",
             },
           ],
-          starText: "4.5 (200)",
-          name: "Ferrari Park Abu Dhabi",
-          description: "The largest in the world, area 200,000 m²",
-          price: "$250",
-          oldPrice: "$350",
+          starText: "3.5 (2)",
+          name: "Ferrari World Park Abu Dabi",
+          description: "The first Ferrari-branded theme park in the world",
+          price: "350 $",
+          oldPrice: "500 $",
+        },
+        {
+          id: "3",
+          url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
+          photo: [
+            {
+              url: "https://images.unsplash.com/photo-1578152882785-df9744e359e5?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            },
+          ],
+          mark: [
+            {
+              name: "New",
+            },
+            {
+              name: "Popular",
+            },
+            {
+              name: "Top",
+            },
+            {
+              name: "Sale",
+            },
+          ],
+          starText: "3.5 (2)",
+          name: "Ferrari World Park Abu Dabi",
+          description: "The first Ferrari-branded theme park in the world",
+          price: "350 $",
+          oldPrice: "500 $",
+        },
+        {
+          id: "4",
+          url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
+          photo: [
+            {
+              url: "https://images.unsplash.com/photo-1544161513-0179fe746fd5?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            },
+          ],
+          mark: [
+            {
+              name: "New",
+            },
+            {
+              name: "Popular",
+            },
+            {
+              name: "Top",
+            },
+            {
+              name: "Sale",
+            },
+          ],
+          starText: "3.5 (2)",
+          name: "Ferrari World Park Abu Dabi",
+          description: "The first Ferrari-branded theme park in the world",
+          price: "350 $",
+          oldPrice: "500 $",
+        },
+        {
+          id: "5",
+          url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
+          photo: [
+            {
+              url: "https://images.unsplash.com/photo-1578152882785-df9744e359e5?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            },
+          ],
+          mark: [
+            {
+              name: "New",
+            },
+            {
+              name: "Popular",
+            },
+            {
+              name: "Top",
+            },
+            {
+              name: "Sale",
+            },
+          ],
+          starText: "3.5 (2)",
+          name: "Ferrari World Park Abu Dabi",
+          description: "The first Ferrari-branded theme park in the world",
+          price: "350 $",
+          oldPrice: "500 $",
+        },
+        {
+          id: "6",
+          url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
+          photo: [
+            {
+              url: "https://images.unsplash.com/photo-1544161513-0179fe746fd5?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            },
+          ],
+          mark: [
+            {
+              name: "New",
+            },
+            {
+              name: "Popular",
+            },
+            {
+              name: "Top",
+            },
+            {
+              name: "Sale",
+            },
+          ],
+          starText: "3.5 (2)",
+          name: "Ferrari World Park Abu Dabi",
+          description: "The first Ferrari-branded theme park in the world",
+          price: "350 $",
+          oldPrice: "500 $",
+        },
+        {
+          id: "7",
+          url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
+          photo: [
+            {
+              url: "https://images.unsplash.com/photo-1578152882785-df9744e359e5?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            },
+          ],
+          mark: [
+            {
+              name: "New",
+            },
+            {
+              name: "Popular",
+            },
+            {
+              name: "Top",
+            },
+            {
+              name: "Sale",
+            },
+          ],
+          starText: "3.5 (2)",
+          name: "Ferrari World Park Abu Dabi",
+          description: "The first Ferrari-branded theme park in the world",
+          price: "350 $",
+          oldPrice: "500 $",
         },
       ],
       Tag: {
@@ -656,4 +800,4 @@ const tourDetails: TTourDetails = {
   },
 };
 
-export const getGallery = () => tourDetails;
+export const getToursDetails = () => tourDetails;
