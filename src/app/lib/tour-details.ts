@@ -393,7 +393,7 @@ const tourDetails: TTourDetailsData = {
         },
         DateTime: {
           title: "Date and Time",
-          des: "Tomorrow, 16 June - 10:00",
+          des: "Tomorrow, 16 December - 10:00",
         },
         People: {
           title: "People",

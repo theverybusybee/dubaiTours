@@ -34,9 +34,7 @@ export const getHomeData = () => {
     referrerPolicy: "no-referrer",
   };
 
-  return fetch(`${baseUrl}/api/main/`, requestOptions).then(
-    checkResponse
-  );
+  return fetch(`${baseUrl}/api/main/`, requestOptions).then(checkResponse);
 };
 
 export const getCatalogueData = () => {
@@ -138,7 +136,7 @@ export const getProfile = () => {
   return fetch(`http://localhost:3000`, requestOptions).then(checkResponse);
 };
 
-export const getReservationDataByTourId = (tourId: string) => {
+export const getReservationData = (tourId: string) => {
   const requestOptions: TRequestOptions = {
     method: "GET",
     credentials: "same-origin",
@@ -152,9 +150,9 @@ export const getReservationDataByTourId = (tourId: string) => {
   };
 
   return fetch(
-    `${baseUrl}:8080/frontapi/checkout/reserve` +
+    `${baseUrl}/api/reserve` +
       "?" +
-      new URLSearchParams({ calc: "false", type: "tour", id: tourId }),
+      new URLSearchParams({ id: tourId }),
     requestOptions
   ).then(checkResponse);
 };

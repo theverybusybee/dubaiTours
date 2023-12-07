@@ -1,6 +1,4 @@
-import {
-  getReservationDataByTourId,
-} from "@/utils/fetches";
+import { getReservationData } from "@/utils/fetches";
 import {
   GET_RESERVATION_DATA_FAILED,
   GET_RESERVATION_DATA_REQUEST,
@@ -11,12 +9,12 @@ import { TDispatch } from "../store";
 export function getReservationModalData(id: string) {
   return function (dispatch: TDispatch) {
     dispatch({ type: GET_RESERVATION_DATA_REQUEST });
-    getReservationDataByTourId(id)
+    getReservationData(id)
       .then((res) => {
-        if (res.Reserve) {
+        if (res.message === "OK") {
           dispatch({
             type: GET_RESERVATION_DATA_SUCCESS,
-            payload: res.Reserve,
+            payload: res.res.Reserve,
           });
         } else {
           dispatch({ type: GET_RESERVATION_DATA_FAILED });

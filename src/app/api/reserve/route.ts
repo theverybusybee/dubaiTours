@@ -1,12 +1,12 @@
-import { getReservationDataByTourId } from "@/utils/fetches";
+import { getReserveData } from "@/app/lib/reserve-data";
+import { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";
 
-export const GET = async (req: Request, res: Response) => {
+export const GET = async (req: NextApiRequest, res: NextApiResponse) => {
   try {
-    const getReserveData = getReservationDataByTourId('1');
-    console.log(req)
+    const reservationData = getReserveData();
     return NextResponse.json(
-      { message: "OK", res: getReserveData },
+      { message: "OK", res: reservationData },
       { status: 200 }
     );
   } catch (err) {

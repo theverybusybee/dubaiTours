@@ -7,23 +7,23 @@ export const reserveData: IReservationData = {
       freeDate: [
         {
           nameDay: "Today",
-          DataDay: "15 June",
+          DataDay: "15 December",
         },
         {
           nameDay: "Tomorrow",
-          DataDay: "16 June",
+          DataDay: "16 December",
         },
         {
           nameDay: "Day after tomorrow",
-          DataDay: "17 June",
+          DataDay: "17 December",
         },
         {
           nameDay: "Saturday",
-          DataDay: "18 June",
+          DataDay: "18 December",
         },
         {
           nameDay: "Sunday",
-          DataDay: "19 June",
+          DataDay: "19 December",
         },
       ],
       calendarButton: "Choose another date",

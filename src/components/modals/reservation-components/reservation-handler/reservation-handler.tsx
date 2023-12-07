@@ -44,7 +44,7 @@ function ReservationHandler({ data, tourId }: Props) {
 
   // get initial data for popups
   useEffect(() => {
-    dispatch(getReservationModalData(tourId));
+    dispatch(getReservationModalData('1'));
   }, []);
 
   const choseReturnDate = (e: SyntheticEvent) => {
