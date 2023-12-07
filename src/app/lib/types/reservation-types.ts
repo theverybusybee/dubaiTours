@@ -20,7 +20,7 @@ export interface IReservationOptionsDate {
 }
 
 export interface IReservationReceiptPrice {
-  Newprice: string;
+  NewPrice: string;
   OldPrice: string;
 }
 
@@ -30,7 +30,7 @@ export interface IReservationReceiptSelectOrder {
 
 export interface IReservationReceiptCalculations {
   name: string;
-  pice: string;
+  price: string;
   currency: string;
 }
 
@@ -70,7 +70,7 @@ export interface IReservationModalDataReceipt {
   Price: IReservationReceiptPrice;
   SelectOrder: IReservationReceiptSelectOrder[];
   calculator: IReservationReceiptCalculations[];
-  ButtonReserv: string;
+  ButtonReserve: string;
   ButtonBack?: string;
 }
 

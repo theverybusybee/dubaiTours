@@ -20,7 +20,10 @@ import {
   SET_RESERVATION_LABELS_STATE_TRANSFER,
   SET_TOTAL_FORM_DATA,
 } from "../constants/reservation-modal";
-import { IReservationModalData, ReservationModalDateAlias } from "../types";
+import {
+  IReservationModalData,
+  ReservationModalDateAlias,
+} from "@/app/lib/types/reservation-types";
 
 export interface IGetReservationDataActionRequest {
   readonly type: typeof GET_RESERVATION_DATA_REQUEST;
@@ -133,4 +136,3 @@ export type TApiReservationDataActions =
   | ISetReservationLabelsStateReturnFood
   | ISetReservationLabelsStateReturnTransfer
   | ISetTotalFormData;
-

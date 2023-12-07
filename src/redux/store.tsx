@@ -3,9 +3,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { mainData } from "./reducers/main-data";
 import { reservationModalData } from "./reducers/reservation-modal";
-
 import {profile} from './reducers/profile'
-import { composeWithDevTools } from 'redux-devtools-extension';
 
 const rootReducer = combineReducers({
   mainData: mainData,

@@ -2,7 +2,8 @@ import {
   IReservationFormState,
   IReservationModalData,
   ReservationModalDateAlias,
-} from "../types";
+  ICurrentOpenedModalData,
+} from "@/app/lib/types/reservation-types";
 import { TApiReservationDataActions } from "../actions/reservation-modal";
 import {
   GET_RESERVATION_DATA_FAILED,
@@ -25,7 +26,6 @@ import {
   SET_RESERVATION_LABELS_STATE_FOOD,
   SET_RESERVATION_LABELS_STATE_TRANSFER,
 } from "../constants/reservation-modal";
-import { ICurrentOpenedModalData } from "../types";
 
 type TReservationModalState = {
   allData: IReservationModalData;

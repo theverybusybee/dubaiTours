@@ -4,7 +4,7 @@ import { useTDispatch } from "@/types/types";
 import { SET_RESERVATION_MODAL_CLOSED } from "@/redux/constants/reservation-modal";
 import { useAppSelector } from "@/redux/redux-hooks";
 import { useEffect, useMemo, useState } from "react";
-import { IReservationModalDataReceipt } from "@/redux/types";
+import { IReservationModalDataReceipt } from "@/app/lib/types/reservation-types";
 
 interface Props {
   receiptData: IReservationModalDataReceipt;
@@ -24,7 +24,7 @@ function ReservationReceiptContent({ receiptData, extraClass }: Props) {
 
   const filterPrice = (name: string) => {
     return Number(
-      receiptData?.calculator.filter((el) => el.name === name)[0].pice
+      receiptData?.calculator.filter((el) => el.name === name)[0].price
     );
   };
 
@@ -61,7 +61,7 @@ function ReservationReceiptContent({ receiptData, extraClass }: Props) {
             {receiptData.Price.OldPrice}
           </span>
         </p>
-        <p className={styles.receiptPrice}>{receiptData.Price.Newprice}</p>
+        <p className={styles.receiptPrice}>{receiptData.Price.NewPrice}</p>
       </div>
       <ul className={styles.receiptItemsList}>
         <li className={styles.receiptItem}>
@@ -84,7 +84,7 @@ function ReservationReceiptContent({ receiptData, extraClass }: Props) {
         {reservationFormState.options && (
           <li className={styles.receiptItem}>
             {receiptData.calculator.map((el, index: number) => {
-              const { name, pice, currency } = el;
+              const { name, price, currency } = el;
 
               if (name === "Tour" || name === "Sale") {
                 return (
@@ -97,7 +97,7 @@ function ReservationReceiptContent({ receiptData, extraClass }: Props) {
                     </div>
                     <div className={styles.receiptItemDetailsContent}>
                       {name === "Sale" && "-"}
-                      {pice}
+                      {price}
                       {currency}
                     </div>
                   </div>
@@ -116,7 +116,7 @@ function ReservationReceiptContent({ receiptData, extraClass }: Props) {
                       {name}
                     </div>
                     <div className={styles.receiptItemDetailsContent}>
-                      {pice}
+                      {price}
                       {currency}
                     </div>
                   </div>
@@ -133,7 +133,7 @@ function ReservationReceiptContent({ receiptData, extraClass }: Props) {
                       {name}
                     </div>
                     <div className={styles.receiptItemDetailsContent}>
-                      {pice}
+                      {price}
                       {currency}
                     </div>
                   </div>

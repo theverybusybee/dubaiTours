@@ -120,7 +120,7 @@ function ReservationOverlay({
                     </span>
                   </p>
                   <p className={styles.receiptPrice}>
-                    {currentReservationModalData.Price?.Newprice}
+                    {currentReservationModalData.Price?.NewPrice}
                   </p>
                 </div>
               )}

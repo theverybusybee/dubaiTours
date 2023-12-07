@@ -1,13 +1,11 @@
 "use client";
 import styles from "./reviews-section.module.scss";
-
 import SectionTitle from "@/components/ui/section-title/section-title";
 import Button from "@/components/ui/buttons/button/button";
 import StarRatingProgressBar from "@/components/ui/progress-bars/star-rating-progress-bar/star-rating-progress-bar";
 import LinearProgressBar from "@/components/ui/progress-bars/linear-progress-bar/linear-progress-bar";
 import FeedbackCard from "@/components/ui/cards/feedback-card/feedback-card";
 import { useMediaQuery } from "@mui/material";
-import { getCookie } from "@/utils/cookie";
 import { useState } from "react";
 import FeedbackModal from "@/components/modals/feedback-modal/feedback-modal";
 import { feedbackTestData } from "@/utils/data";
@@ -80,7 +78,6 @@ function ReviewsSection({
 }: Props) {
   const isXs = useMediaQuery("(max-width:800px)");
 
-  const isAuthorized = getCookie("token");
   const [isShowMoreClicked, setShowMoreClicked] = useState<boolean>(false);
   const [isPopupOpened, setIsPopupOpened] = useState<boolean>(false);
 
@@ -98,13 +95,11 @@ function ReviewsSection({
           content={sectionTitle}
           position={sectionTitlePosition}
         />
-        {isAuthorized && (
           <Button
             onClick={() => setIsPopupOpened(true)}
             extraClass={styles.feedbackButton}
             content={feedbackButtonContent}
           />
-        )}
       </div>
 
       <div className={styles.ratingContainer}>

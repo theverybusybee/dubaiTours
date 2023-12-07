@@ -25,7 +25,7 @@ import {
 } from "@/redux/constants/reservation-modal";
 import { getReservationUpdatedData } from "@/utils/fetches";
 import { getOptionsList } from "@/utils/functions";
-import { IReservationModalDataReceipt } from "@/redux/types";
+import { IReservationModalDataReceipt } from "@/app/lib/types/reservation-types";
 
 interface Props {
   data: any;
