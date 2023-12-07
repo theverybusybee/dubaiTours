@@ -1,7 +1,5 @@
 import { baseUrl, checkResponse } from "./constants";
-import {
-  IReservationFormData,
-} from "./types";
+import { IReservationFormData } from "./types";
 
 export type TRequestOptions = {
   method: "POST" | "GET" | "PATCH";
@@ -22,17 +20,6 @@ export type TRequestOptions = {
   body?: any;
 };
 
-export type TLoginForm = {
-  readonly email: string;
-  readonly password: string;
-};
-
-export type TRegisterForm = {
-  readonly email: string;
-  readonly name: string;
-  readonly password: string;
-};
-
 // тестовый
 export const getHomeData = () => {
   const requestOptions: TRequestOptions = {
@@ -47,7 +34,7 @@ export const getHomeData = () => {
     referrerPolicy: "no-referrer",
   };
 
-  return fetch(`http://localhost:3000/api/main/`, requestOptions).then(
+  return fetch(`{baseUrl}/api/main/`, requestOptions).then(
     checkResponse
   );
 };
@@ -172,164 +159,20 @@ export const getReservationDataByTourId = (tourId: string) => {
   ).then(checkResponse);
 };
 
-// export const getReservationDataByTourId = (tourId: string) => {
-//   const requestOptions: TRequestOptions = {
-//     method: "GET",
-//     credentials: "same-origin",
-//     cache: "no-cache",
+// export const registernRequest = async (form: TRegisterForm) => {
+//   return await fetch(`${baseUrl}/api/register`, {
+//     method: "POST",
 //     mode: "cors",
+//     cache: "no-cache",
+//     credentials: "same-origin",
 //     headers: {
 //       "Content-Type": "application/json",
 //     },
 //     redirect: "follow",
 //     referrerPolicy: "no-referrer",
-//   };
-
-//   return fetch(
-//     `${baseUrl}:8080/frontapi/checkout/reserve` +
-//       "?" +
-//       new URLSearchParams({
-//         calc: "1",
-//         type: "tour",
-//         id: tourId,
-//         date: "19 July",
-//         time: "13:48",
-//         adults: "2",
-//         children: "3",
-//         currency: "AED",
-//       }),
-//     requestOptions
-//   ).then(checkResponse);
+//     body: JSON.stringify(form),
+//   }).then(checkResponse);
 // };
-
-export function sendFeedback(formData: FormData) {
-  const requestOptions: TRequestOptions = {
-    method: "POST",
-    credentials: "same-origin",
-    cache: "no-cache",
-    mode: "cors",
-    body: formData,
-    redirect: "follow",
-    referrerPolicy: "no-referrer",
-  };
-
-  return fetch(`${baseUrl}/api/createReview2`, requestOptions).then(
-    checkResponse
-  );
-}
-
-export const loginRequest = async (form: TLoginForm) => {
-  return await fetch(`${baseUrl}/api/login`, {
-    method: "POST",
-    mode: "cors",
-    cache: "no-cache",
-    credentials: "same-origin",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    redirect: "follow",
-    referrerPolicy: "no-referrer",
-    body: JSON.stringify(form),
-  }).then(checkResponse);
-};
-
-// export function sendFeedback(args: ISendFeedbackParams) {
-//   // console.log(args, images)
-//   const requestOptions: TRequestOptions = {
-//     method: "POST",
-//     credentials: "same-origin",
-//     cache: "no-cache",
-//     mode: "cors",
-//     headers: {
-//       // "Content-Type": "multipart/form-data",
-//        "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify({
-//       transport: args.transport,
-//       price_quality: args.price_quality,
-//       service: args.service,
-//       organization: args.organization,
-//       text: args.text,
-//       // images: images,
-//       tour_id: args.tour_id,
-//       user_id: args.user_id,
-//     }),
-//     redirect: "follow",
-//     referrerPolicy: "no-referrer",
-//   };
-
-//   return fetch(`${baseUrl}/api/createReview2`, requestOptions).then(
-//     checkResponse
-//   );
-// }
-
-export const getBlog = () => {
-  const requestOptions: TRequestOptions = {
-    method: "POST",
-    credentials: "same-origin",
-    cache: "no-cache",
-    mode: "cors",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    redirect: "follow",
-    referrerPolicy: "no-referrer",
-    body: JSON.stringify({
-      main: {
-        url: "/en/dubai/",
-        city: "dubai",
-        lang: "english",
-        currency: "usd",
-      },
-      page: "1",
-      tab: "tag1",
-    }),
-  };
-  return fetch(`${baseUrl}/api/blog2`, requestOptions).then(checkResponse);
-};
-
-export const registernRequest = async (form: TRegisterForm) => {
-  return await fetch(`${baseUrl}/api/register`, {
-    method: "POST",
-    mode: "cors",
-    cache: "no-cache",
-    credentials: "same-origin",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    redirect: "follow",
-    referrerPolicy: "no-referrer",
-    body: JSON.stringify(form),
-  }).then(checkResponse);
-};
-
-export const getGuidCity = (city: any) => {
-  const requestOptions: TRequestOptions = {
-    method: "POST",
-
-    credentials: "same-origin",
-    cache: "no-cache",
-    mode: "cors",
-
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-    },
-    redirect: "follow",
-    referrerPolicy: "no-referrer",
-    body: JSON.stringify({
-      main: {
-        url: `/en/guide/${city}`,
-        city: "dubai",
-        lang: "russian",
-        currency: "usd",
-      },
-    }),
-  };
-
-  return fetch(`${baseUrl}/api/guide/catalog`, requestOptions).then(
-    checkResponse
-  );
-};
 
 export const getReservationUpdatedData = (form: IReservationFormData) => {
   const requestOptions: TRequestOptions = {
@@ -360,83 +203,4 @@ export const getReservationUpdatedData = (form: IReservationFormData) => {
     `${baseUrl}:8080/frontapi/checkout/reserve` + "?" + params,
     requestOptions
   ).then(checkResponse);
-};
-
-export const getGuidDetal = (city: any, shopp: any, detal: any) => {
-  const requestOptions: TRequestOptions = {
-    method: "POST",
-    credentials: "same-origin",
-    cache: "no-cache",
-    mode: "cors",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    redirect: "follow",
-    referrerPolicy: "no-referrer",
-    body: JSON.stringify({
-      main: {
-        url: "/en/guide/city1/shopping1/detal1", //здесь адрес раздела
-        city: "dubai",
-        lang: "russian",
-        currency: "usd",
-      },
-    }),
-  };
-
-  return fetch(`${baseUrl}/api/guide/catalog`, requestOptions).then(
-    checkResponse
-  );
-};
-
-export const getGuidShopping = (city: any, shopp: any) => {
-  const requestOptions: TRequestOptions = {
-    method: "POST",
-    credentials: "same-origin",
-    cache: "no-cache",
-    mode: "cors",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    redirect: "follow",
-    referrerPolicy: "no-referrer",
-    body: JSON.stringify({
-      main: {
-        // url: `/en/guide/${city}/${shopp}`,
-        url: `/en/guide/dubai/shopping1`,
-        city: "dubai",
-        lang: "russian",
-        currency: "usd",
-      },
-    }),
-  };
-
-  return fetch(`${baseUrl}/api/guide/catalog`, requestOptions).then(
-    checkResponse
-  );
-};
-
-export const getGuidMain = () => {
-  const requestOptions: TRequestOptions = {
-    method: "POST",
-    credentials: "same-origin",
-    cache: "no-cache",
-    mode: "cors",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    redirect: "follow",
-    referrerPolicy: "no-referrer",
-    body: JSON.stringify({
-      main: {
-        url: "/en/guide",
-        city: "dubai",
-        lang: "russian",
-        currency: "usd",
-      },
-    }),
-  };
-
-  return fetch(`${baseUrl}/api/guide/catalog`, requestOptions).then(
-    checkResponse
-  );
 };
