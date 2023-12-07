@@ -1,4 +1,8 @@
 import { TMain } from "./types/pages-types";
+import greenHeart from "@/images/logos/steps/green-heart.png";
+import greenSheet from "@/images/logos/steps/green-sheet.png";
+import greenLocationClip from "@/images/logos/steps/green-location-clip.png";
+
 
 const mainData: TMain = {
   Header: {
@@ -52,8 +56,6 @@ const mainData: TMain = {
       {
         name: "Company",
         url: "/en/company",
-        arrowIcon:
-          "http://admin.clicktoguide.com/upload/icon/menu/white/arroww.svg",
         nesting: [
           {
             name: "About company",
@@ -84,8 +86,6 @@ const mainData: TMain = {
       {
         name: "Client",
         url: "/en/FAQ",
-        arrowIcon:
-          "http://admin.clicktoguide.com/upload/icon/menu/white/arroww.svg",
         nesting: [
           {
             name: "Tours",
@@ -107,7 +107,6 @@ const mainData: TMain = {
       },
     ],
     wishlist: {
-      icon: "http://admin.clicktoguide.com/upload/icon/menu/white/heart.svg",
       name: "Wishlist",
       url: "/en/wishlist",
     },
@@ -556,17 +555,17 @@ const mainData: TMain = {
     name: "3 steps to tour",
     step: [
       {
-        icon: "http://admin.clicktoguide.com/upload/icon/pr/love.svg",
+        icon: greenHeart,
         text: "Choose your favorite tour on the site",
         subtitle: "Click book and follow the instructions",
       },
       {
-        icon: "http://admin.clicktoguide.com/upload/icon/pr/doc.svg",
+        icon: greenSheet,
         text: "Choose your favorite tour on the site",
         subtitle: "Click book and follow the instructions",
       },
       {
-        icon: "http://admin.clicktoguide.com/upload/icon/pr/loc.svg",
+        icon: greenLocationClip,
         text: "Choose your favorite tour on the site",
         subtitle: "Click book and follow the instructions",
       },
@@ -725,7 +724,6 @@ const mainData: TMain = {
     },
   ],
   Footer: {
-    logo: "http://admin.clicktoguide.com/upload/logo/logo.svg",
     desc: "Unforgettable experience in one click",
     city: "Dubai",
     developerIcon: {

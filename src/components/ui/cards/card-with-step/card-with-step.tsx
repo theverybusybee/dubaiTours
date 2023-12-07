@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./card-with-step.module.scss";
 
 interface Props {
@@ -9,7 +10,13 @@ interface Props {
 function CardWithStep({ image, title, content }: Props) {
   return (
     <li className={styles.container}>
-      <img className={styles.image} src={image} alt={content} />
+      <Image
+        className={styles.image}
+        src={image}
+        alt={content}
+        width={80}
+        height={80}
+      />
       <div className={styles.contentContainer}>
         <p className={styles.title}>{title}</p>
         <p className={styles.content}>{content}</p>

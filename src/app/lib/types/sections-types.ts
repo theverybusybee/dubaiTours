@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type TCard = {
   id: string;
   type?: string;
@@ -55,7 +57,6 @@ export type THeader = {
     }[];
   }[];
   wishlist: {
-    icon: string;
     name: string;
     url: string;
   };
@@ -280,7 +281,7 @@ export type TCategories = {
 export type TStep = {
   name: string;
   step: {
-    icon: string;
+    icon: StaticImageData;
     text: string;
     subtitle: string;
   }[];
@@ -305,7 +306,6 @@ export type TDestination = {
 };
 
 export type TFooter = {
-  logo: string;
   desc: string;
   city: string;
   developerIcon: {

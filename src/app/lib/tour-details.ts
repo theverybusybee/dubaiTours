@@ -104,7 +104,6 @@ const tourDetails: TTourDetailsData = {
       },
     ],
     wishlist: {
-      icon: "http://38.180.11.127/upload/icon/menu/white/heart.svg",
       name: "Wishlist",
       url: "/en/wishlist",
     },
@@ -901,7 +900,6 @@ const tourDetails: TTourDetailsData = {
     },
   },
   Footer: {
-    logo: "http://38.180.11.127/upload/logo/logow.svg",
     desc: "Unforgettable experience in one click",
     city: "ОАЭ, Дубай",
     developerIcon: {
