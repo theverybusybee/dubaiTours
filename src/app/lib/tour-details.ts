@@ -1,4 +1,7 @@
 import { TTourDetailsData } from "./types/pages-types";
+import clockIcon from "@/images/logos/icons/clock.png";
+import personIcon from "@/images/logos/icons/person.png";
+import mapIcon from "@/images/logos/icons/map.png";
 
 const tourDetails: TTourDetailsData = {
   Header: {
@@ -162,17 +165,17 @@ const tourDetails: TTourDetailsData = {
       },
       Advantages: [
         {
-          icon: "http://38.180.11.127/upload/icon/tour/whatch.svg",
+          icon: clockIcon,
           property: "Duration:",
           propertyText: "5 hours",
         },
         {
-          icon: "http://38.180.11.127/upload/icon/tour/people_ok.svg",
+          icon: personIcon,
           property: "For whom:",
           propertyText: "Kids, Adult",
         },
         {
-          icon: "http://38.180.11.127/upload/icon/tour/map.svg",
+          icon: mapIcon,
           property: "How is it going:",
           propertyText: "Walking tour",
         },

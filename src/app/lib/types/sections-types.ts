@@ -92,7 +92,7 @@ export type TTourPhoto = {
 };
 
 export type TTourAdvantages = {
-  icon: string;
+  icon: StaticImageData;
   property: string;
   propertyText: string;
 };

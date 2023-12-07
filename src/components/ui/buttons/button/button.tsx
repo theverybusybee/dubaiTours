@@ -1,3 +1,4 @@
+import Image, { StaticImageData } from "next/image";
 import styles from "./button.module.scss";
 import clsx from "clsx";
 
@@ -10,7 +11,7 @@ export interface ButtonProps
   onSubmit?: React.MouseEventHandler<HTMLButtonElement>;
   extraClass?: string;
   htmlType?: "button" | "submit" | "reset";
-  background?: "white" | "grey" | "darkBlue" | "transparent" | 'orange'
+  background?: "white" | "grey" | "darkBlue" | "transparent" | "orange";
   contentColor?: "white" | "grey" | "darkBlue" | "black";
   content: string;
   spanContent?: string;
@@ -18,7 +19,7 @@ export interface ButtonProps
   Icon?: any;
   IconWidth?: number;
   IconHeight?: number;
-  iconUrl?: string;
+  iconUrl?: string | StaticImageData;
   weight?: "regular" | "medium" | "semiBold";
   iconExtraClass?: string;
 }
@@ -56,11 +57,23 @@ const Button: React.FC<ButtonProps> = ({
   );
 
   return (
-    <button className={className} type={htmlType} onClick={onClick} onSubmit={onSubmit} {...rest}>
+    <button
+      className={className}
+      type={htmlType}
+      onClick={onClick}
+      onSubmit={onSubmit}
+      {...rest}
+    >
       {iconUrl || Icon ? (
         <>
           {iconUrl && (
-            <img src={iconUrl} className={`${styles.icon} ${iconExtraClass}`} />
+            <Image
+              src={iconUrl}
+              alt={content}
+              className={`${styles.icon} ${iconExtraClass}`}
+              width={IconWidth}
+              height={IconHeight}
+            />
           )}
           {Icon && <Icon width={IconWidth} height={IconHeight} />}
           <p className={styles.content}>{content}</p>
