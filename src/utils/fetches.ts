@@ -1,3 +1,4 @@
+import { IReservationData } from "@/app/lib/types/reservation-types";
 import { baseUrl, checkResponse } from "./constants";
 import { IReservationFormData } from "./types";
 
@@ -136,7 +137,9 @@ export const getProfile = () => {
   return fetch(`http://localhost:3000`, requestOptions).then(checkResponse);
 };
 
-export const getReservationData = (tourId: string) => {
+export const getReservationData = (
+  tourId: string
+): Promise<{ message: string; res: IReservationData }> => {
   const requestOptions: TRequestOptions = {
     method: "GET",
     credentials: "same-origin",
@@ -150,9 +153,7 @@ export const getReservationData = (tourId: string) => {
   };
 
   return fetch(
-    `${baseUrl}/api/reserve` +
-      "?" +
-      new URLSearchParams({ id: tourId }),
+    `${baseUrl}/api/reserve` + "?" + new URLSearchParams({ id: tourId }),
     requestOptions
   ).then(checkResponse);
 };
@@ -197,8 +198,7 @@ export const getReservationUpdatedData = (form: IReservationFormData) => {
     options: form.options,
   }).toString();
 
-  return fetch(
-    `${baseUrl}:8080/frontapi/checkout/reserve` + "?" + params,
-    requestOptions
-  ).then(checkResponse);
+  return fetch(`${baseUrl}/api/reserve/checkout` + "?" + params, requestOptions).then(
+    checkResponse
+  );
 };

@@ -23,7 +23,7 @@ import {
   SET_RESERVATION_FORM_STATE_RETURN_DATE,
   SET_RESERVATION_FORM_STATE_RETURN_TIME,
 } from "@/redux/constants/reservation-modal";
-import { getReservationUpdatedData } from "@/utils/fetches";
+import { getReservationData } from "@/utils/fetches";
 import { getOptionsList } from "@/utils/functions";
 import { IReservationModalDataReceipt } from "@/app/lib/types/reservation-types";
 
@@ -150,9 +150,9 @@ function ReservationHandler({ data, tourId }: Props) {
             options: getOptionsList(reservationFormState.options),
           };
 
-          getReservationUpdatedData(formData)
+          getReservationData('1')
             .then((res) => {
-              setReceiptData(res.Reserve.ReserveFive);
+              setReceiptData(res.res.Reserve.ReserveFive);
             })
             .then((res) => {
               dispatch({

@@ -1,7 +1,4 @@
 import styles from "./reservation-receipt-content.module.scss";
-import Button from "@/components/ui/buttons/button/button";
-import { useTDispatch } from "@/types/types";
-import { SET_RESERVATION_MODAL_CLOSED } from "@/redux/constants/reservation-modal";
 import { useAppSelector } from "@/redux/redux-hooks";
 import { useEffect, useMemo, useState } from "react";
 import { IReservationModalDataReceipt } from "@/app/lib/types/reservation-types";
