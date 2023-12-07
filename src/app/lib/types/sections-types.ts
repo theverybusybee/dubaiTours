@@ -174,17 +174,15 @@ export type TTourReviews = {
     }[];
   };
   reviewPeople: {
-    reviewsPeopleTitle: [
-      {
-        photoPeople: string;
-        name: string;
-        starReviews: string;
-        description: string;
-        photoReview: {
-          photoReviewUrl: string;
-        }[];
-      }
-    ];
+    reviewsPeopleTitle: {
+      photoPeople: string;
+      name: string;
+      starReviews: string;
+      description: string;
+      photoReview: {
+        photoReviewUrl: string;
+      }[];
+    }[];
     allButton: string;
   };
 };

@@ -8,7 +8,6 @@ import FeedbackCard from "@/components/ui/cards/feedback-card/feedback-card";
 import { useMediaQuery } from "@mui/material";
 import { useState } from "react";
 import FeedbackModal from "@/components/modals/feedback-modal/feedback-modal";
-import { feedbackTestData } from "@/utils/data";
 
 interface IFeedback {
   name: string;
@@ -72,6 +71,7 @@ function ReviewsSection({
   sectionTitlePosition,
   feedbackButtonContent,
   ratingData,
+  usersReviews,
   showAllButton,
   popupData,
   extraClass,
@@ -133,7 +133,7 @@ function ReviewsSection({
 
       <ul className={styles.reviewsList}>
         {/* {usersReviews.reviewsPeopleTitle.map( */}
-        {feedbackTestData.map((el: IUserReview, index: number) => {
+        {usersReviews.reviewsPeopleTitle.map((el: IUserReview, index: number) => {
           {
             if (index < 4)
               return (
@@ -165,7 +165,7 @@ function ReviewsSection({
           }
         })}
       </ul>
-      {feedbackTestData.length > 3 && !isShowMoreClicked && (
+      {usersReviews.reviewsPeopleTitle.length > 3 && !isShowMoreClicked && (
         // {usersReviews.reviewsPeopleTitle.length > 1 && !isShowMoreClicked && (
         <Button
           onClick={() => setShowMoreClicked(true)}
