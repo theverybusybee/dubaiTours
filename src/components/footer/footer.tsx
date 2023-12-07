@@ -119,12 +119,12 @@ function Footer({ data, extraClass }: Props) {
       ) : (
         <div className={styles.mobileFooter}>
           <div className={styles.mobileLogoContainer}>
-            <Image
-              width={133}
-              height={70}
+            <Logo
               className={styles.logoImg}
               src={footerApiState.logo}
               alt="mainLogo"
+              width={126}
+              height={64}
             />
             <p className={styles.impressions}>{footerApiState.desc}</p>
           </div>

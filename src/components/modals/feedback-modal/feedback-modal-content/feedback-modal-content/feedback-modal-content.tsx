@@ -2,7 +2,7 @@ import Button from "@/components/ui/buttons/button/button";
 import styles from "./feedback-modal-content.module.scss";
 import { FormEvent, SyntheticEvent, useEffect, useState } from "react";
 import StarRatingProgressBar from "@/components/ui/progress-bars/star-rating-progress-bar/star-rating-progress-bar";
-import { sendFeedback } from "@/utils/fetches";
+// import { sendFeedback } from "@/utils/fetches";
 import { IStringObj } from "@/utils/types";
 
 interface Props {
@@ -56,7 +56,7 @@ function FeedbackModalContent({ data, tourId }: Props) {
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    var formData = new FormData(e.target);
+    // var formData = new FormData(e.target);
 
     /*picture.asFile.map((el) => {
       formData.append("images", el);
@@ -70,10 +70,10 @@ function FeedbackModalContent({ data, tourId }: Props) {
       formData.append(key, JSON.stringify(inputsData[key]));
     }
 */
-    Object.keys(inputsData).forEach((val) => {
-      formData.append(val, inputsData[val]);
-    })
-    sendFeedback(formData);
+    // Object.keys(inputsData).forEach((val) => {
+    //   formData.append(val, inputsData[val]);
+    // })
+    // sendFeedback(formData);
   };
 
   function handlePhotosChange(e: SyntheticEvent) {

@@ -52,7 +52,7 @@
       &:nth-child(4) {
         @include flexCenter;
         gap: 8px;
-        justify-content: end;
+        justify-content: flex-end;
         padding: 15px 14px;
       }
 

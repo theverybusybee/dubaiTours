@@ -2,9 +2,10 @@ import SectionTitle from "@/components/ui/section-title/section-title";
 import styles from "./card-with-image-slider-section.module.scss";
 import SplideMultipleSlider from "@/components/ui/splide/splide-multiple-slider/splide-multiple-slider";
 import { SyntheticEvent } from "react";
+import {TDestination } from "@/app/lib/types/sections-types";
 
 interface Props {
-  data: any;
+  data: TDestination;
   hasButtons: boolean;
   titlePosition?: "left" | "center";
   path?: string;

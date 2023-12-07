@@ -22,13 +22,14 @@
   aspect-ratio: 3 / 2;
   max-width: 100vw;
   max-height: 602px;
+  height: auto;
 }
 
 .image {
   aspect-ratio: 3 / 2;
   object-fit: cover;
   width: 100vw;
-  height: 100%;
+  height: auto;
 }
 
 .likeContainer {

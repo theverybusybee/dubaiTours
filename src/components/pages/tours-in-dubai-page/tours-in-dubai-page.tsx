@@ -6,7 +6,6 @@ import {
   ButtonsSection,
   ButtonsSliderSection,
   CardWithImageSliderSection,
-  CatalogueSection,
   FAQSection,
 } from "@/components/page-sections/page-sections";
 import Footer from "@/components/footer/footer";
@@ -37,7 +36,7 @@ const ToursInDubaiPage: NextPage<Props> = ({
     <div className={`${styles.container} ${extraClass}`}>
       <Header
         extraClass={styles.header}
-        data={data}
+        headerApiData={data.Header}
         searchSectionSize="fixed"
         colorTheme="light"
         locationContainer={false}

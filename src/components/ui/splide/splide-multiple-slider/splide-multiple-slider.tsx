@@ -32,7 +32,6 @@ const SplideMultipleSlider = ({
   link,
   cardImageType = "square",
   onCardClick,
-  isCardWhite,
 }: Props) => {
   return (
     <>

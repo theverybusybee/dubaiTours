@@ -110,7 +110,7 @@
     padding-top: 25px;
     padding-bottom: 56px;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
 
     .searchContainer {
       width: inherit;
@@ -159,7 +159,7 @@
     width: 182px;
     text-align: left;
     padding-left: 0;
-    align-self: end;
+    align-self: flex-end;
   }
 
   .inputContainer {
