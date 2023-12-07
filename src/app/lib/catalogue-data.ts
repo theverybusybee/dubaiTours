@@ -119,11 +119,9 @@ const catalogue: TCatalogue = {
         textContactOr: "or",
         wh: {
           text: "WhatsApp",
-          icon: "http://38.180.11.127/upload/icon/menu/contact/whatsapp.svg",
         },
         tl: {
           text: "Telegram",
-          icon: "http://38.180.11.127/upload/icon/menu/contact/telegram.svg",
         },
       },
     },

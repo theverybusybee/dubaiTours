@@ -216,11 +216,9 @@ export type TContact = {
   textContactOr: string;
   wh: {
     text: string;
-    icon: string;
   };
   tl: {
     text: string;
-    icon: string;
   };
 };
 
