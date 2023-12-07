@@ -10,16 +10,22 @@ import CardWhite from "@/components/ui/cards/card-white/card-white";
 import Link from "next/link";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import CardWithImage from "@/components/ui/cards/card-with-image/card-with-image";
+import { TGuideData } from "@/app/lib/pages-types";
+import RoutePath from "@/components/ui/route-path/route-path";
 
-function GuideCatalog({ data }: any) {
+type TProps = {
+  data: TGuideData;
+};
+
+function GuideCatalog({ data }: TProps) {
   const [isMobile, setIsMobile] = useState(false);
-  let guideApiData = data.GuideAll.GuideDetal;
+  let guideApiData = data.GuideAll.GuideDetails;
   const [buttonState, setButtonState] = useState<string>();
   useEffect(() => {
     window.screen.width <= 800 ? setIsMobile(true) : setIsMobile(false);
   }, [buttonState]);
   useEffect(() => {
-    setButtonState(guideApiData?.countries[0]?.name);
+    setButtonState(guideApiData?.countries?.name);
   }, [guideApiData]);
   function targetCity(el: any) {
     setButtonState(el.name);
@@ -28,24 +34,18 @@ function GuideCatalog({ data }: any) {
   const guideCardsData = useMemo(() => {
     return (
       buttonState &&
-      guideApiData?.countries?.filter(
-        (el: any) => el.name.toLowerCase() === buttonState?.toLowerCase()
-      )[0]
+      data.GuideAll.GuideDetails.countries.name.toLowerCase() ===
+        buttonState?.toLowerCase() &&
+      data.GuideAll.GuideDetails.countries.name.toLowerCase()
     );
   }, [guideApiData, buttonState]);
 
   return guideCardsData ? (
     <>
-      <Header data={data} />
+      <Header headerApiData={data.Header} colorTheme="dark"/>
       <h1 className={styles.title}>{data.GuideAll.headTitle.title}</h1>
       <p className={styles.bread}>
-        <Link className={styles.link} href={"/"}>
-          {data.GuideAll.headTitle.bread[0].name}
-        </Link>{" "}
-        {`>`}{" "}
-        <Link className={styles.link} href={"/guide"}>
-          {data.GuideAll.headTitle.bread[1].name}
-        </Link>
+        <RoutePath data={data.GuideAll.headTitle.bread}></RoutePath>
       </p>
       <div>
         <div className={styles.sliderFirst}>
@@ -70,74 +70,83 @@ function GuideCatalog({ data }: any) {
                   className={styles.slider}
                 >
                   <SplideTrack className={styles.splideTrack}>
-                    {data.GuideAll.GuideDetal.countries.map(
-                      (el: any, index: number) => {
-                        return (
-                          <SplideSlide
-                            key={index}
-                            className={styles.splideSlide}
-                          >
-                            <div key={index}>
-                              <button
-                                className={`${styles.tourText} ${
-                                  buttonState === el.name &&
-                                  styles.tourTextActive
-                                }`}
-                                onClick={() => {
-                                  setButtonState(el.name);
-                                }}
-                              >
-                                {el.name}
-                              </button>
-                            </div>
-                          </SplideSlide>
-                        );
-                      }
-                    )}
+                    {/* {data.GuideAll.GuideDetails.countries.map( */}
+                    {/* (el: any, index: number) => { */}
+                    {/* return ( */}
+                    <SplideSlide
+                      // key={index}
+                      className={styles.splideSlide}
+                    >
+                      <div>
+                        <button
+                          className={`${styles.tourText} ${
+                            buttonState ===
+                              data.GuideAll.GuideDetails.countries.name &&
+                            styles.tourTextActive
+                          }`}
+                          onClick={() => {
+                            setButtonState(
+                              data.GuideAll.GuideDetails.countries.name
+                            );
+                          }}
+                        >
+                          {data.GuideAll.GuideDetails.countries.name}
+                        </button>
+                      </div>
+                    </SplideSlide>
+                    {/* ); */}
+                    {/* } */}
+                    {/* )} */}
                   </SplideTrack>
                 </Splide>
               ) : (
                 <div className={styles.tourContainers}>
-                  {data.GuideAll.GuideDetal.countries.map(
+                  {/* {data.GuideAll.GuideDetails.countries.map(
                     (el: any, index: number) => {
-                      return (
-                        <div key={index}>
-                          <button
-                            className={`${styles.tourText} ${
-                              buttonState === el.name && styles.tourTextActive
-                            }`}
-                            onClick={() => {
-                              targetCity(el);
-                            }}
-                          >
-                            {el.name}
-                          </button>
-                        </div>
-                      );
+                      return ( */}
+                  <div>
+                    <button
+                      className={`${styles.tourText} ${
+                        buttonState ===
+                          data.GuideAll.GuideDetails.countries.name &&
+                        styles.tourTextActive
+                      }`}
+                      onClick={() => {
+                        targetCity(data.GuideAll.GuideDetails.countries);
+                      }}
+                    >
+                      {data.GuideAll.GuideDetails.countries.name}
+                    </button>
+                  </div>
+                  {/* );
                     }
-                  )}
+                  )} */}
                 </div>
               )}
               <ul className={styles.tourContainer}>
-                {guideCardsData.product.map((el: any, index: number) => {
-                  return <GuideCity key={index} cityArray={el} />;
-                })}
+                {data.GuideAll.GuideDetails.countries.product.map(
+                  (el: any, index: number) => {
+                    return <GuideCity key={index} cityArray={el} />;
+                  }
+                )}
               </ul>
             </div>
           </div>
         </section>
         <div className={styles.places}>
-          <h4 className={styles.placesTitle}>{guideCardsData.Guide.name}</h4>
+          <h4 className={styles.placesTitle}>
+            {data.GuideAll.GuideDetails.countries.Guide.title}
+          </h4>
           {!isMobile ? (
             <div className={styles.cardsContainer}>
               {data
-                ? guideCardsData?.Guide.product.map(
+                ? data.GuideAll.GuideDetails.countries.Guide.product.map(
                     (el: any, index: number) => {
                       return (
                         <CardWithImage
-                        key={index}
-                        like="none"
-                        cardExtraClass={styles.card}
+                          key={index}
+                          like="none"
+                          cardExtraClass={styles.card}
                           image={el.photo}
                           title={el.name}
                           content={el.desc}
@@ -164,7 +173,7 @@ function GuideCatalog({ data }: any) {
             >
               <SplideTrack className={styles.splideTrack}>
                 {data
-                  ? guideCardsData.Guide.product.map(
+                  ? data.GuideAll.GuideDetails.countries.Guide.product.map(
                       (el: any, index: number) => {
                         return (
                           <SplideSlide

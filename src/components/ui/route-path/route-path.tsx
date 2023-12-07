@@ -5,9 +5,10 @@ import Link from "next/link";
 import ArrowRight from "@/images/logos/icons/arrow-right.svg";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
+import { TBread } from "@/app/lib/sections-types";
 
 interface Props {
-  data: any;
+  data: TBread[];
   colorTheme?: "white" | "grey" | "dark";
   position?: "left" | "center";
   extraClass?: string;
