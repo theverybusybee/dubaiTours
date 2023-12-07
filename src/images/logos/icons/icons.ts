@@ -22,11 +22,25 @@ import magnifyingGlassBold from './magnifyingGlass.svg';
 import magnifyingGlassThin from './headLoop.svg'
 import locationModalImg from './locationModal.svg'
 
+import clockIcon from "./clock.png";
+import personIcon from "./person.png";
+import mapIcon from "./map.png";
+
 import star from "./star.svg";
 import whatsappLogo from './whatsapp-logo.svg'
 import telegramLogo from './telegram.svg'
 
+import greenOkLogo from './green-ok.png'
+import yellowForbiddenLogo from './yellow-forbidden.png'
+import redErrorLogo from './red-error.png'
+
 export {
+  clockIcon,
+  personIcon,
+  mapIcon,
+  greenOkLogo,
+  yellowForbiddenLogo,
+  redErrorLogo,
   locationClip,
   heartTransparent,
   heartWithNotification,

@@ -1,4 +1,6 @@
 import { TCatalogue } from "./types/pages-types";
+import { globe } from "@/images/logos/icons/icons";
+import { magnifyingGlassBold } from "@/images/logos/icons/icons";
 
 const catalogue: TCatalogue = {
   Header: {
@@ -105,7 +107,7 @@ const catalogue: TCatalogue = {
     registration: "Sign up",
     mobile: {
       icon: {
-        iconWorld: "http://38.180.11.127/upload/icon/menu/black/mir.svg",
+        iconWorld: globe,
       },
       Contact: {
         textContact: "We will be happy to help you",
@@ -133,7 +135,7 @@ const catalogue: TCatalogue = {
     ],
     search: {
       text: "Dubai Tours",
-      icon: "http://38.180.11.127/upload/menu/white/search2.svg",
+      icon: magnifyingGlassBold,
     },
   },
   Categories: {
@@ -759,10 +761,6 @@ const catalogue: TCatalogue = {
   Footer: {
     desc: "Unforgettable experience in one click",
     city: "ОАЭ, Дубай",
-    developerIcon: {
-      logo: "http://38.180.11.127/upload/logo/logo_dev.svg",
-      url: "site.com",
-    },
     menu: [
       {
         name: "Company",

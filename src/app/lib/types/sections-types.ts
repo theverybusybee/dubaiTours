@@ -106,7 +106,7 @@ export type TTourDescription = {
 export type TTourIncluded = {
   titleGreen: string;
   titleBlack: string;
-  icon: string;
+  icon: StaticImageData;
   text: {
     text: string;
   }[];
@@ -115,7 +115,7 @@ export type TTourIncluded = {
 export type TTourNotIncluded = {
   titleBlack: string;
   titleOrange: string;
-  icon: string;
+  icon: StaticImageData;
   text: {
     text: string;
   }[];
@@ -123,7 +123,7 @@ export type TTourNotIncluded = {
 
 export type TTourWarnings = {
   titleRed: string;
-  icon: string;
+  icon: StaticImageData;
   text: {
     text: string;
   }[];
@@ -308,10 +308,6 @@ export type TDestination = {
 export type TFooter = {
   desc: string;
   city: string;
-  developerIcon: {
-    logo: string;
-    url: string;
-  };
   menu: {
     name: string;
     url: string;

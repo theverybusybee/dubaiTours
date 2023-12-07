@@ -40,13 +40,6 @@ function Footer({ data, extraClass }: Props) {
               <LocationClip width={17} height={19} />
               <p className={styles.location}>{footerApiState.city}</p>
             </div>
-            <Image
-              className={styles.logoIlnur}
-              src={footerApiState.developerIcon.logo}
-              alt="logoIlnur"
-              width={97}
-              height={61}
-            />
           </div>
           <p className={styles.impressions}>{footerApiState.desc}</p>
           <div className={styles.linksSection}>
@@ -162,13 +155,6 @@ function Footer({ data, extraClass }: Props) {
               />
             )}
           </div>
-          <Image
-            className={styles.logoIlnur}
-            src={footerApiState.developerIcon.logo}
-            alt="logoIlnur"
-            width={97}
-            height={61}
-          />
         </div>
       )}
       {isOpen && (

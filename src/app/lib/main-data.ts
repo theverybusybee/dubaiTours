@@ -2,6 +2,7 @@ import { TMain } from "./types/pages-types";
 import greenHeart from "@/images/logos/steps/green-heart.png";
 import greenSheet from "@/images/logos/steps/green-sheet.png";
 import greenLocationClip from "@/images/logos/steps/green-location-clip.png";
+import { globe, magnifyingGlassBold } from "@/images/logos/icons/icons";
 
 
 const mainData: TMain = {
@@ -112,10 +113,7 @@ const mainData: TMain = {
     },
     registration: "Sign up",
     mobile: {
-      icon: {
-        iconWorld:
-          "http://admin.clicktoguide.com/upload/icon/menu/black/mir.svg",
-      },
+      icon: globe,
       Contact: {
         textContact: "We will be happy to help you",
         textContactOr: "or",
@@ -134,7 +132,7 @@ const mainData: TMain = {
     title: "Dubai very love",
     search: {
       text: "Search destinations or activities",
-      icon: "http://admin.clicktoguide.com/upload/menu/white/search2.svg",
+      icon: magnifyingGlassBold,
     },
   },
   Categories: {
@@ -726,10 +724,6 @@ const mainData: TMain = {
   Footer: {
     desc: "Unforgettable experience in one click",
     city: "Dubai",
-    developerIcon: {
-      logo: "http://admin.clicktoguide.com/upload/logo/logo_dev.svg",
-      url: "site.com",
-    },
     menu: [
       {
         name: "Company",

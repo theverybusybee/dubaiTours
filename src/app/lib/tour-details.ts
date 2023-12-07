@@ -1,7 +1,13 @@
 import { TTourDetailsData } from "./types/pages-types";
-import clockIcon from "@/images/logos/icons/clock.png";
-import personIcon from "@/images/logos/icons/person.png";
-import mapIcon from "@/images/logos/icons/map.png";
+import {
+  clockIcon,
+  personIcon,
+  mapIcon,
+  greenOkLogo,
+  yellowForbiddenLogo,
+  redErrorLogo,
+  globe,
+} from "@/images/logos/icons/icons";
 
 const tourDetails: TTourDetailsData = {
   Header: {
@@ -113,7 +119,7 @@ const tourDetails: TTourDetailsData = {
     registration: "Sign up",
     mobile: {
       icon: {
-        iconWorld: "http://38.180.11.127/upload/icon/menu/black/mir.svg",
+        iconWorld: globe,
       },
       Contact: {
         textContact: "We will be happy to help you",
@@ -190,7 +196,7 @@ const tourDetails: TTourDetailsData = {
       Included: {
         titleGreen: "Included",
         titleBlack: "in the price",
-        icon: "http://38.180.11.127/upload/icon/tour/ok.svg",
+        icon: greenOkLogo,
         text: [
           {
             text: "Transport service throughout the route.",
@@ -206,7 +212,7 @@ const tourDetails: TTourDetailsData = {
       NotInclude: {
         titleBlack: "The price does",
         titleOrange: "not include",
-        icon: "http://38.180.11.127/upload/icon/tour/no.svg",
+        icon: yellowForbiddenLogo,
         text: [
           {
             text: "Ascent by cable car: 400 adults 250 children",
@@ -227,7 +233,7 @@ const tourDetails: TTourDetailsData = {
       },
       Warnings: {
         titleRed: "Important Warnings",
-        icon: "http://38.180.11.127/upload/icon/tour/error.svg",
+        icon: redErrorLogo,
         text: [
           {
             text: "Be sure to have sports shoes, a hat, a windbreaker jacket, a supply of drinking water.",
@@ -905,10 +911,6 @@ const tourDetails: TTourDetailsData = {
   Footer: {
     desc: "Unforgettable experience in one click",
     city: "ОАЭ, Дубай",
-    developerIcon: {
-      logo: "http://38.180.11.127/upload/logo/logo_dev.svg",
-      url: "site.com",
-    },
     menu: [
       {
         name: "Company",
