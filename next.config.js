@@ -15,6 +15,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "i.pinimg.com",
       },
+      {
+        protocol: "https",
+        hostname: "uxwing.com"
+      }
     ],
   },
   webpack(config) {

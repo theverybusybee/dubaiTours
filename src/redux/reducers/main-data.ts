@@ -34,12 +34,12 @@ const initialState: TMainDataState = {
         list: [
           {
             url: "/en/dubai/",
-            icon: "http://38.180.11.127/upload/icon/flag/eng.svg",
+            icon: "https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/united-kingdom-flag-icon.png",
             lang: "English",
           },
           {
             url: "/ru/dubai/",
-            icon: "http://38.180.11.127/upload/icon/flag/rus.svg",
+            icon: "https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/russia-flag-icon.png",
             lang: "Russian",
           },
         ],
