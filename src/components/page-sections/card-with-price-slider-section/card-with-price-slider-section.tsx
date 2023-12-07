@@ -1,7 +1,7 @@
 import styles from "./card-with-price-slider-section.module.scss";
 import SplideMultipleSlider from "@/components/ui/splide/splide-multiple-slider/splide-multiple-slider";
 import SectionTitle from "@/components/ui/section-title/section-title";
-import { TCardWithPriceSliderSection } from "@/app/lib/sections-types";
+import { TCardWithPriceSliderSection } from "@/app/lib/types/sections-types";
 
 interface Props {
   data: TCardWithPriceSliderSection;

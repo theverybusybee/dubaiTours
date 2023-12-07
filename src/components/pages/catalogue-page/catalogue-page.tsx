@@ -12,7 +12,7 @@ import {
   SearchSection,
 } from "@/components/page-sections/page-sections";
 import Footer from "@/components/footer/footer";
-import { TCatalogue } from "@/app/lib/pages-types";
+import { TCatalogue } from "@/app/lib/types/pages-types";
 
 interface Props {
   data: TCatalogue;

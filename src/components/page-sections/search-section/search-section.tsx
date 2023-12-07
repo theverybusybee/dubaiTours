@@ -1,6 +1,6 @@
 "use client";
 
-import { TBanner } from "@/app/lib/sections-types";
+import { TBanner } from "@/app/lib/types/sections-types";
 import styles from "./search-section.module.scss";
 import SearchInput from "@/components/ui/inputs/search-input/search-input";
 import RoutePath from "@/components/ui/route-path/route-path";

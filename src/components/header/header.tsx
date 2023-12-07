@@ -21,7 +21,7 @@ import BurgerMenu from "../modals/burger-menu/burger-menu";
 import clsx from "clsx";
 import Link from "next/link";
 import { useMediaQuery } from "@mui/material";
-import { THeader } from "@/app/lib/sections-types";
+import { THeader } from "@/app/lib/types/sections-types";
 
 interface Props {
   headerApiData: THeader;

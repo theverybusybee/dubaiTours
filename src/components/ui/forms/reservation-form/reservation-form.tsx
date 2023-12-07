@@ -10,7 +10,7 @@ import {
   SET_RESERVATION_MODAL_OPENED,
 } from "@/redux/constants/reservation-modal";
 import { useAppSelector } from "@/redux/redux-hooks";
-import { TTourReserve } from "@/app/lib/sections-types";
+import { TTourReserve } from "@/app/lib/types/sections-types";
 
 interface Props {
   data: TTourReserve;

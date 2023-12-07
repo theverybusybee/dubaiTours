@@ -1,4 +1,4 @@
-import { TMain } from "./pages-types";
+import { TMain } from "./types/pages-types";
 
 const mainData: TMain = {
   Header: {

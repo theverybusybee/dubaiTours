@@ -5,7 +5,7 @@ import Link from "next/link";
 import ArrowRight from "@/images/logos/icons/arrow-right.svg";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
-import { TBread } from "@/app/lib/sections-types";
+import { TBread } from "@/app/lib/types/sections-types";
 
 interface Props {
   data: TBread[];

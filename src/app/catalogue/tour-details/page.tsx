@@ -2,7 +2,7 @@ import styles from "./page.module.scss";
 import { getTourDetails } from "@/utils/fetches";
 import { montserrat } from "@/app/fonts";
 import TourDetailsPage from "@/components/pages/tour-details-page/tour-details-page";
-import { TTourDetailsData } from "@/app/lib/pages-types";
+import { TTourDetailsData } from "@/app/lib/types/pages-types";
 
 export default async function TourDetails() {
   const data: Promise<{ message: string; res: TTourDetailsData }> = getTourDetails();

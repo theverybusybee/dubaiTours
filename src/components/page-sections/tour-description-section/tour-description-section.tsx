@@ -9,7 +9,7 @@ import MapTimeline from "@/components/ui/map-timeline/map-timeline";
 import { useEffect, useMemo, useRef, useState } from "react";
 import clsx from "clsx";
 import { useMediaQuery } from "@mui/material";
-import { TTourDetails } from "@/app/lib/sections-types";
+import { TTourDetails } from "@/app/lib/types/sections-types";
 
 interface Props {
   data: TTourDetails;

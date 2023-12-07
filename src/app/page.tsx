@@ -1,6 +1,6 @@
 import React from "react";
 import MainPage from "@/components/pages/main-page/main-page";
-import { TMain } from "./lib/pages-types";
+import { TMain } from "./lib/types/pages-types";
 import { getHomeData } from "@/utils/fetches";
 
 export default async function Home() {

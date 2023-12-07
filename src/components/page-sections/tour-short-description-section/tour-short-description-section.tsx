@@ -6,7 +6,7 @@ import SectionTitle from "@/components/ui/section-title/section-title";
 import StarRatingProgressBar from "@/components/ui/progress-bars/star-rating-progress-bar/star-rating-progress-bar";
 import Button from "@/components/ui/buttons/button/button";
 import { useMediaQuery } from "@mui/material";
-import { TToursProduct } from "@/app/lib/sections-types";
+import { TToursProduct } from "@/app/lib/types/sections-types";
 
 interface Props {
   data: TToursProduct;

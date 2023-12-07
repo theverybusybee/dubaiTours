@@ -9,7 +9,7 @@ import CardWithImage from "@/components/ui/cards/card-with-image/card-with-image
 import {
   TGuideCountries,
   TGuideProduct,
-} from "@/app/lib/sections-types";
+} from "@/app/lib/types/sections-types";
 
 interface IBasicProps {
   titlePosition?: "left" | "center";

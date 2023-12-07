@@ -1,4 +1,4 @@
-import { TTourDetailsData } from "./pages-types";
+import { TTourDetailsData } from "./types/pages-types";
 
 const tourDetails: TTourDetailsData = {
   Header: {

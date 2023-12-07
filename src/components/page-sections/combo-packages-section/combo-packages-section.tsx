@@ -1,4 +1,4 @@
-import { TCardWithPriceSliderSection } from "@/app/lib/sections-types";
+import { TCardWithPriceSliderSection } from "@/app/lib/types/sections-types";
 import styles from "./combo-packages-section.module.scss";
 import Button from "@/components/ui/buttons/button/button";
 import SectionTitle from "@/components/ui/section-title/section-title";

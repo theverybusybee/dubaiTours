@@ -12,7 +12,7 @@ import {
   ButtonsSliderSection,
 } from "@/components/page-sections/page-sections";
 import Footer from "@/components/footer/footer";
-import { TMain } from "@/app/lib/pages-types";
+import { TMain } from "@/app/lib/types/pages-types";
 
 interface Props {
   data: TMain;

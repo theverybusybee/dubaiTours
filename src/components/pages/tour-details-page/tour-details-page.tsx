@@ -15,7 +15,7 @@ import ReservationForm from "@/components/ui/forms/reservation-form/reservation-
 import Footer from "@/components/footer/footer";
 import SplideSinglePhotoSlider from "@/components/ui/splide/splide-single-photo-slider/splide-single-photo-slider";
 import ReservationHandler from "@/components/modals/reservation-components/reservation-handler/reservation-handler";
-import { TTourDetailsData } from "@/app/lib/pages-types";
+import { TTourDetailsData } from "@/app/lib/types/pages-types";
 
 interface Props {
   data: TTourDetailsData;
