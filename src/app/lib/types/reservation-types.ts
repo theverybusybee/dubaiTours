@@ -74,6 +74,14 @@ export interface IReservationModalDataReceipt {
   ButtonBack?: string;
 }
 
+export interface IReservationData {
+  ReserveOne: IReservationFreeDate;
+  ReserveTwo: IReservationCalendarDate;
+  ReserveThree: IReservationTimeDate;
+  ReserveFour: IReservationOptionsDate;
+  ReserveFive: IReservationReceiptPrice;
+}
+
 export interface IReservationModalData {
   ReserveOne: IReservationModalDataDate | null;
   ReserveTwo: IReservationModalDataCalendar | null;
