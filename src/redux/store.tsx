@@ -3,11 +3,9 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { mainData } from "./reducers/main-data";
 import { reservationModalData } from "./reducers/reservation-modal";
-import {profile} from './reducers/profile'
 
 const rootReducer = combineReducers({
   mainData: mainData,
-  profile: profile,
   reservationModalData: reservationModalData,
 });
 const preloadedState = {};

@@ -34,7 +34,7 @@ export const getHomeData = () => {
     referrerPolicy: "no-referrer",
   };
 
-  return fetch(`{baseUrl}/api/main/`, requestOptions).then(
+  return fetch(`${baseUrl}/api/main/`, requestOptions).then(
     checkResponse
   );
 };
