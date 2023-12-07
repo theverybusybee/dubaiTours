@@ -20,9 +20,6 @@ const mainData: TMain = {
           lang: "Russian",
         },
       ],
-      icon: {
-        arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
-      },
     },
     currency: {
       exchange: [
@@ -42,8 +39,6 @@ const mainData: TMain = {
           code: "aed",
         },
       ],
-      iconArrow:
-        "http://admin.clicktoguide.com/upload/icon/menu/white/arroww.svg",
     },
     menu: [
       {

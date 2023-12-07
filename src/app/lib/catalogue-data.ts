@@ -20,9 +20,6 @@ const catalogue: TCatalogue = {
           lang: "Russian",
         },
       ],
-      icon: {
-        arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
-      },
     },
     currency: {
       exchange: [
@@ -37,7 +34,6 @@ const catalogue: TCatalogue = {
           code: "rub",
         },
       ],
-      iconArrow: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
     },
     menu: [
       {
@@ -51,7 +47,6 @@ const catalogue: TCatalogue = {
       {
         name: "Company",
         url: "/en/company",
-        arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
         nesting: [
           {
             name: "About company",
@@ -82,7 +77,7 @@ const catalogue: TCatalogue = {
       {
         name: "Client",
         url: "/en/FAQ",
-        arrowIcon: "http://38.180.11.127/upload/icon/menu/white/arroww.svg",
+         
         nesting: [
           {
             name: "Tours",

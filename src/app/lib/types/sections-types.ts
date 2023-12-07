@@ -37,9 +37,6 @@ export type THeader = {
       icon: string;
       lang: string;
     }[];
-    icon: {
-      arrowIcon: string;
-    };
   };
   currency: {
     exchange: {
@@ -47,7 +44,6 @@ export type THeader = {
       currency: string;
       code: string;
     }[];
-    iconArrow: string;
   };
   menu: {
     name: string;
