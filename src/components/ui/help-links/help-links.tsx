@@ -1,8 +1,10 @@
+"use client";
+
 import clsx from "clsx";
 import styles from "./help-links.module.scss";
 import Image from "next/image";
 import WhatsappIcon from "@/images/logos/icons/whatsapp-logo.svg";
-import Telegram from "@/images/logos/icons/telegram.svg";
+import TelegramLogo from "@/images/logos/icons/telegram.svg";
 
 interface ILinksData {
   text: string;
@@ -45,7 +47,7 @@ function HelpLinks({
         </a>
         <p className={styles.or}>{orContent}</p>
         <a href="#" className={`${styles.linkContainer} ${styles.telegram}`}>
-          <Telegram width={18} height={18} />
+          <TelegramLogo width={18} height={18} />
           {telegramData?.text}
         </a>
       </div>

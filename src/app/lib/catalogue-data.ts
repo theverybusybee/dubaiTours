@@ -1,5 +1,4 @@
 import { TCatalogue } from "./types/pages-types";
-import ukFlag from "@/images/photos/acquaintance.png"
 
 const catalogue: TCatalogue = {
   Header: {
@@ -11,7 +10,7 @@ const catalogue: TCatalogue = {
         {
           url: "/en/dubai/",
           urlCode: "en",
-          icon: 'https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/united-kingdom-flag-icon.png',
+          icon: "https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/united-kingdom-flag-icon.png",
           lang: "English",
         },
         {
@@ -149,7 +148,6 @@ const catalogue: TCatalogue = {
       {
         id: "1",
         name: "Tickets",
-        // icon: "http://38.180.11.127/upload/icon/categori/tickets.svg",
         nesting: [
           {
             name: "Theme Parks in Dubai1",
@@ -172,7 +170,6 @@ const catalogue: TCatalogue = {
       {
         id: "2",
         name: "Tour",
-        // icon: "http://38.180.11.127/upload/icon/categori/tour.svg",
         nesting: [
           {
             name: "Theme Parks in Dubai",
@@ -195,7 +192,6 @@ const catalogue: TCatalogue = {
       {
         id: "3",
         name: "Landmarks",
-        // icon: "http://38.180.11.127/upload/icon/categori/tickets.svg",
         nesting: [
           {
             name: "Theme Parks in Dubai",
@@ -218,7 +214,6 @@ const catalogue: TCatalogue = {
       {
         id: "4",
         name: "Destinations",
-        // icon: "http://38.180.11.127/upload/icon/categori/tour.svg",
         nesting: [
           {
             name: "Theme Parks in Dubai",
@@ -402,148 +397,13 @@ const catalogue: TCatalogue = {
         url: "/en/dubai/category/ferraripark",
         photo: [
           {
-            url: "http://38.180.11.127/upload/photo/catalog/001.jpg",
+            url: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
+            url: "https://images.unsplash.com/photo-1543579596-2c11997c7706?q=80&w=2242&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Sale 20%",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "2",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/002.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Sale 20%",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "3",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/003.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "4",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/004.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Top",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "5",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/005.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "6",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/006.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "1",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/001.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
+            url: "https://images.unsplash.com/photo-1533395427226-788cee25cc7b?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
         ],
         mark: [
@@ -562,148 +422,13 @@ const catalogue: TCatalogue = {
         url: "/en/dubai/category/ferraripark",
         photo: [
           {
-            url: "http://38.180.11.127/upload/photo/catalog/002.jpg",
+            url: "https://images.unsplash.com/photo-1494675595046-ae42af7dc2ce?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
+            url: "https://images.unsplash.com/photo-1624682791740-654f27e5d9f6?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Sale 20%",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "3",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/003.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "4",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/004.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Top",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "5",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/005.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "6",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/006.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "1",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/001.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Sale 20%",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "2",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/002.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
+            url: "https://images.unsplash.com/photo-1606036858743-c106b6ffbff6?q=80&w=3038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
         ],
         mark: [
@@ -722,15 +447,16 @@ const catalogue: TCatalogue = {
         url: "/en/dubai/category/ferraripark",
         photo: [
           {
-            url: "http://38.180.11.127/upload/photo/catalog/003.jpg",
+            url: "https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
+            url: "https://images.unsplash.com/photo-1605311364334-723fff035793?q=80&w=2981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
+            url: "https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
         ],
+
         starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
@@ -742,13 +468,13 @@ const catalogue: TCatalogue = {
         url: "/en/dubai/category/ferraripark",
         photo: [
           {
-            url: "http://38.180.11.127/upload/photo/catalog/004.jpg",
+            url: "https://images.unsplash.com/photo-1581004089744-afec0123376c?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
+            url: "https://images.unsplash.com/photo-1587898818553-2f4ee6fdf1a5?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
+            url: "https://images.unsplash.com/flagged/photo-1559717201-fbb671ff56b7?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
         ],
         mark: [
@@ -756,6 +482,7 @@ const catalogue: TCatalogue = {
             name: "Top",
           },
         ],
+
         starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
@@ -767,13 +494,13 @@ const catalogue: TCatalogue = {
         url: "/en/dubai/category/ferraripark",
         photo: [
           {
-            url: "http://38.180.11.127/upload/photo/catalog/005.jpg",
+            url: "https://images.unsplash.com/photo-1667592441284-b590021411e3?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
+            url: "https://images.unsplash.com/photo-1683899407868-4232ce9b2684?q=80&w=3164&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
+            url: "https://images.unsplash.com/photo-1692970536179-67e47017c7dc?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
         ],
 
@@ -788,15 +515,16 @@ const catalogue: TCatalogue = {
         url: "/en/dubai/category/ferraripark",
         photo: [
           {
-            url: "http://38.180.11.127/upload/photo/catalog/006.jpg",
+            url: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
+            url: "https://images.unsplash.com/photo-1543579596-2c11997c7706?q=80&w=2242&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
+            url: "https://images.unsplash.com/photo-1533395427226-788cee25cc7b?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
         ],
+
         starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
@@ -804,17 +532,17 @@ const catalogue: TCatalogue = {
         oldPrice: "$350",
       },
       {
-        id: "1",
+        id: "7",
         url: "/en/dubai/category/ferraripark",
         photo: [
           {
-            url: "http://38.180.11.127/upload/photo/catalog/001.jpg",
+            url: "https://images.unsplash.com/photo-1494675595046-ae42af7dc2ce?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
+            url: "https://images.unsplash.com/photo-1624682791740-654f27e5d9f6?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
+            url: "https://images.unsplash.com/photo-1606036858743-c106b6ffbff6?q=80&w=3038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
         ],
         mark: [
@@ -822,6 +550,7 @@ const catalogue: TCatalogue = {
             name: "Sale 20%",
           },
         ],
+
         starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
@@ -829,17 +558,17 @@ const catalogue: TCatalogue = {
         oldPrice: "$350",
       },
       {
-        id: "2",
+        id: "8",
         url: "/en/dubai/category/ferraripark",
         photo: [
           {
-            url: "http://38.180.11.127/upload/photo/catalog/002.jpg",
+            url: "https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
+            url: "https://images.unsplash.com/photo-1605311364334-723fff035793?q=80&w=2981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
           {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
+            url: "https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
         ],
         mark: [
@@ -847,361 +576,7 @@ const catalogue: TCatalogue = {
             name: "Sale 20%",
           },
         ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "3",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/003.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "4",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/004.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Top",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "5",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/005.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "6",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/006.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "1",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/001.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Sale 20%",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "2",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/002.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Sale 20%",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "3",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/003.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "4",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/004.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Top",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "5",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/005.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "6",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/006.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "1",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/001.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Sale 20%",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "2",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/002.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Sale 20%",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "3",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/003.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "4",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/004.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        mark: [
-          {
-            name: "Top",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "5",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/005.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
-        starText: "4.5 (200)",
-        name: "Ferrari Park Abu Dhabi",
-        description: "The largest in the world, area 200,000 m²",
-        price: "$250",
-        oldPrice: "$350",
-      },
-      {
-        id: "6",
-        url: "/en/dubai/category/ferraripark",
-        photo: [
-          {
-            url: "http://38.180.11.127/upload/photo/catalog/006.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo3.jpg",
-          },
-          {
-            url: "http://38.180.11.127/upload/photo/photo1.jpg",
-          },
-        ],
+
         starText: "4.5 (200)",
         name: "Ferrari Park Abu Dhabi",
         description: "The largest in the world, area 200,000 m²",
