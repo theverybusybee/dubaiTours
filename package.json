@@ -2,11 +2,15 @@
   "name": "dubai-tours",
   "version": "0.1.0",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "engines": {
+    "node": ">=18.12"
   },
   "dependencies": {
     "@mui/icons-material": "^5.11.16",
@@ -23,7 +27,8 @@
     "react-calendar": "^4.2.1",
     "react-dom": "18.2.0",
     "react-modal": "^3.16.1",
-    "react-redux": "^8.0.5"
+    "react-redux": "^8.0.5",
+    "vercel": "^32.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
