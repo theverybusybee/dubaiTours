@@ -65,17 +65,20 @@ pnpm dev
 <p align="center">
   <img src='./src/images/imagesForReadMe/ui-components/destination.png' alt="destination-slider" width='500'>
     <br />
+    ---
   <img src='./src/images/imagesForReadMe/ui-components/slider-with-one-pic.png' alt="combo-pkg-slider" width='500'>
     <br />
+    ---
   <img src='./src/images/imagesForReadMe/ui-components/guide.png' alt="guide-slider" width='500'>
     <br />
-  <img src='ui-components/slider-with-one-pic.png' alt="guide-slider" width='500'>
+    ---
+  <img src='./src/images/imagesForReadMe/ui-components/slider-with-one-pic.png' alt="guide-slider" width='500'>
 </p>
 
 <p align="center">
-  <img src='./src/images/imagesForReadMe/ui-components/zoom-slider.png' alt="zoom-slider2" width='400'>
+  <img src='./src/images/imagesForReadMe/ui-components/zoom-slider.png' alt="zoom-slider2" width='367'>
     &nbsp; &nbsp;
-  <img src='./src/images/imagesForReadMe/ui-components/zoom-slider2.png' alt="zoom-slider" width='400'>
+  <img src='./src/images/imagesForReadMe/ui-components/zoom-slider2.png' alt="zoom-slider" width='300'>
 </p>
 
 3. Аккордеон 
@@ -83,6 +86,7 @@ pnpm dev
 <p align="center">
   <img src='./src/images/imagesForReadMe/ui-components/faq.png' alt="accordeon1" width='400'>
   <br />
+  ---
   <img src='./src/images/imagesForReadMe/ui-components/faq2.png' alt="accordeon2" width='400'>
 </p>
 
@@ -91,8 +95,10 @@ pnpm dev
 <p align="center">
   <img src='./src/images/imagesForReadMe/ui-components/feedback.png' alt="feedback" width='400'>
   <br />
+  ---
   <img src='./src/images/imagesForReadMe/ui-components/feedback2.png' alt="feedback2" width='400'>
   <br />
+  ---
   <img src='./src/images/imagesForReadMe/ui-components/feedback-opened.png' alt="map" width='400'>
 </p>
 
@@ -122,6 +128,7 @@ pnpm dev
 
 <p align="center">
   <img src='./src/images/imagesForReadMe/ui-components/options.png' alt="options" width='280'>
+    &nbsp; &nbsp;
   <img src='./src/images/imagesForReadMe/ui-components/checkout.png' alt="checkout" width='230'>
 </p>
 
