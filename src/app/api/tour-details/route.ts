@@ -1,7 +1,7 @@
 import { getToursDetails } from "@/app/lib/tour-details";
 import { NextResponse } from "next/server";
 
-export const GET = async (req: Request, res: Response) => {
+export const GET = async (req: Request, res: Response): Promise<any> => {
   try {
     const tourDetails = getToursDetails();
     return NextResponse.json(

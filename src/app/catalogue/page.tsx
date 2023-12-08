@@ -5,8 +5,7 @@ import { getCatalogueData } from "@/utils/fetches";
 import { TCatalogue } from "../lib/types/pages-types";
 
 export default async function Catalogue() {
-  const data: Promise<{ message: string; res: TCatalogue }> =
-    getCatalogueData();
+  const data = getCatalogueData();
 
   return (
     <div className={`${montserrat.variable} ${styles.container}`}>
