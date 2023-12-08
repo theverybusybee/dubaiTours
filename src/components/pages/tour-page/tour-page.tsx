@@ -10,27 +10,52 @@ import Footer from "@/components/footer/footer";
 import PageTitle from "@/components/ui/page-title/page-title";
 import RoutePath from "@/components/ui/route-path/route-path";
 import { IGetTourDataArgs } from "@/utils/types";
+import {
+  TBread,
+  TCatalog,
+  TCategories,
+  TDestination,
+  TFooter,
+  TGuide,
+  THeader,
+  TTourFAQ,
+} from "@/app/lib/types/sections-types";
 
 interface Props {
-  data: any;
+  data: TTourPage;
   params: IGetTourDataArgs;
   extraClass?: string;
 }
 
-const TourPage: NextPage<Props> = ({ data, params, extraClass }: Props) => {
+type TTourPage = {
+  Header: THeader;
+  Tour: {
+    headTitle: {
+      title: string;
+      bread: TBread[];
+    };
+    Categories: TCategories;
+    Destination: TDestination;
+    Catalog: TCatalog;
+    Faq: TTourFAQ;
+    Guide: TGuide;
+  };
+  Footer: TFooter;
+};
 
+const TourPage: NextPage<Props> = ({ data, params, extraClass }: Props) => {
   return (
     <div className={`${styles.container} ${extraClass}`}>
       <Header
         extraClass={styles.header}
-        data={data}
+        headerApiData={data.Header}
         locationContainer={false}
         searchSectionSize="fixed"
         colorTheme="light"
         position="block"
       />
       <div className={styles.main}>
-        {data?.Tour?.headTitle && (
+        {data?.Tour.headTitle && (
           <PageTitle
             extraClass={styles.title}
             content={data.Tour.headTitle.title}
@@ -56,7 +81,6 @@ const TourPage: NextPage<Props> = ({ data, params, extraClass }: Props) => {
         )}
         {data?.Tour?.Catalog && (
           <CatalogueSection
-            params={params}
             extraClass={styles.catalogue}
             data={data}
             title={data.Tour.Catalog.title}
@@ -72,7 +96,11 @@ const TourPage: NextPage<Props> = ({ data, params, extraClass }: Props) => {
           />
         )}
       </div>
-      <Footer extraClass={styles.footer} data={data} />
+      <Footer
+        extraClass={styles.footer}
+        footerData={data.Footer}
+        headerData={data.Header}
+      />
     </div>
   );
 };

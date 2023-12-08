@@ -45,7 +45,7 @@ const CataloguePage: NextPage<Props> = ({ data: data, extraClass }) => {
         titlePosition="left"
       />
       <LearnMoreSection data={data} />
-      <Footer data={data} />
+      <Footer footerData={data.Footer} headerData={data.Header} />
     </div>
   );
 };

@@ -173,32 +173,32 @@ export const getReservationData = (
 //   }).then(checkResponse);
 // };
 
-export const getReservationUpdatedData = (form: IReservationFormData) => {
-  const requestOptions: TRequestOptions = {
-    method: "GET",
-    credentials: "same-origin",
-    cache: "no-cache",
-    mode: "cors",
+// export const getReservationUpdatedData = (form: IReservationFormData) => {
+//   const requestOptions: TRequestOptions = {
+//     method: "GET",
+//     credentials: "same-origin",
+//     cache: "no-cache",
+//     mode: "cors",
 
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-    },
-    redirect: "follow",
-    referrerPolicy: "no-referrer",
-  };
+//     headers: {
+//       "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+//     },
+//     redirect: "follow",
+//     referrerPolicy: "no-referrer",
+//   };
 
-  const params = new URLSearchParams({
-    calc: form.calc,
-    type: form.type,
-    id: form.id,
-    date: `${form.date.arrivalDate}%20${form.date.returnDate}`,
-    time: form.time,
-    adults: form.adults,
-    children: form.children,
-    options: form.options,
-  }).toString();
+//   const params = new URLSearchParams({
+//     calc: form.calc,
+//     type: form.type,
+//     id: form.id,
+//     date: `${form.date.arrivalDate}%20${form.date.returnDate}`,
+//     time: form.time,
+//     adults: form.adults,
+//     children: form.children,
+//     options: form.options,
+//   }).toString();
 
-  return fetch(`${baseUrl}/api/reserve/checkout` + "?" + params, requestOptions).then(
-    checkResponse
-  );
-};
+//   return fetch(`${baseUrl}/api/reserve/checkout` + "?" + params, requestOptions).then(
+//     checkResponse
+//   );
+// };

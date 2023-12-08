@@ -2,14 +2,14 @@
 
 import Image from "next/image";
 import styles from "./checkout-card.module.scss";
-import photo from "@/images/photos/entertainment.png";
 import Bin from "@/images/logos/icons/bin.svg";
 import Counter from "../../inputs/counter/counter";
 import { useMediaQuery } from "@mui/material";
 
 function CheckoutCard() {
-  
   const isMobile = useMediaQuery("(max-width:700px)");
+  const photo =
+    "https://i.pinimg.com/564x/30/33/29/3033294758f09b3ef695163f26d42c50.jpg";
 
   return (
     <li className={styles.listItem}>
