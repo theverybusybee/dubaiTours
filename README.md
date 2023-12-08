@@ -30,15 +30,15 @@ pnpm dev
 
 В превью представлены некоторые страницы с функционалом, которые были разработаны мною в рамках проекта по бронированию туров:
 
-1. [Основная страница](http://localhost:3000)
+1. Основная страница: http://localhost:3000
 
 ![Скрин главной страницы](./src/images/imagesForReadMe/pages/main.png)
 
-2. [Страница с турами](http://localhost:3000/catalogue)
+2. Страница с турами: http://localhost:3000/catalogue
 
 ![Скрин каталога](./src/images/imagesForReadMe/pages/catalogue.png)
 
-3. [Детальная страница тура](http://localhost:3000/catalogue/tour-details)
+3. Детальная страница тура: http://localhost:3000/catalogue/tour-details
 
 ![Скрин детальной страницы](./src/images/imagesForReadMe/pages/tour-details.png)
 
@@ -48,25 +48,27 @@ pnpm dev
 ![dropdown|317](./src/images/imagesForReadMe/ui-components/dropdown.png)![dropdown2|300](./src/images/imagesForReadMe/ui-components/dropdown2.png "title-2")
 
 2. Разнообразные слайдеры:
-- C кнопками: ![[./src/images/imagesForReadMe/ui-components/buttons-slider.png]]
+
+- C кнопками: 
+![buttons-slider](./src/images/imagesForReadMe/ui-components/buttons-slider.png)
 
 - C изображениями:
-![[./src/images/imagesForReadMe/ui-components/destination.png]]
-![[./src/images/imagesForReadMe/ui-components/combo-pkg.png]]
-![[guide.png]]![[slider-with-one-pic.png]]
-![zoom-slider2|367](./src/images/imagesForReadMe/ui-components/zoom-slider.png)![zoom-slider|300](./src/images/imagesForReadMe/ui-components/zoom-slider2.png)
+![destination-slider](./src/images/imagesForReadMe/ui-components/destination.png)
+![combo-pkg-slider](./src/images/imagesForReadMe/ui-components/combo.png)
+![guide-slider](./src/images/imagesForReadMe/ui-components/slider-with-one-pic.png)
+![zoom-slider2|300](./src/images/imagesForReadMe/ui-components/zoom-slider.png)![zoom-slider|300](./src/images/imagesForReadMe/ui-components/zoom-slider2.png)
 
 3. Аккордеон 
 ![[./src/images/imagesForReadMe/ui-components/faq.png|700]]
 ![[./src/images/imagesForReadMe/ui-components/faq2.png|700]]
 
 4. Отзывы:
-![[feedback]]!(./src/images/imagesForReadMe/ui-components/feedback.png)
-![[feedback2]]!(./src/images/imagesForReadMe/ui-components/feedback2.png)
-![[feedback-opened|center]]!(./src/images/imagesForReadMe/ui-components/feedback-opened.png)
+![feedback](./src/images/imagesForReadMe/ui-components/feedback.png)
+![feedback2](./src/images/imagesForReadMe/ui-components/feedback2.png)
+![feedback-opened](./src/images/imagesForReadMe/ui-components/feedback-opened.png)
 
 5. Карта с чекпоинтами:
-![[./src/images/imagesForReadMe/ui-components/map.png]]
+![./src/images/imagesForReadMe/ui-components/map.png]
 
 6. Тянущийся роут:
 ![route2|300](./src/images/imagesForReadMe/ui-components/route2.png)![route|300](./src/images/imagesForReadMe/ui-components/route.png)
@@ -76,7 +78,7 @@ pnpm dev
 1. Форма бронирования:
 ![alt-text-1|300](./src/images/imagesForReadMe/ui-components/reservation-form.png)![alt-text-1|262](./src/images/imagesForReadMe/ui-components/calendar.png)
 
-![options|280](./src/images/imagesForReadMe/ui-components/options.png)![[checkout|230]](./src/images/imagesForReadMe/ui-components/checkout.png)
+![options|280](./src/images/imagesForReadMe/ui-components/options.png)![checkout|230](./src/images/imagesForReadMe/ui-components/checkout.png)
 
 2. Отзывы:
 ![[./src/images/imagesForReadMe/ui-components/feedback-form.png|500]]
