@@ -1,34 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Веб-приложение для бронирования туров в ОАЭ и Дубай
 
-## Getting Started
+## Запуск приложения
 
-First, run the development server:
+Команды для запуска сервера для разработки:
 
+1. Установка зависимостей:
+
+`npm run i`
+
+2. Запуск сервера:
 ```bash
+
 npm run dev
+
 # or
+
 yarn dev
+
 # or
+
 pnpm dev
+
 ```
+3. Запуск приложения в браузере:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Запустите [http://localhost:3000](http://localhost:3000), чтобы отобразить результат запуска.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Превью страниц
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+В превью представлены некоторые страницы с функционалом, которые были разработаны мною в рамках проекта по бронированию туров:
 
-## Learn More
+1. [Основная страница](http://localhost:3000)
 
-To learn more about Next.js, take a look at the following resources:
+![Скрин главной страницы](./src/images/imagesForReadMe/pages/main.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. [Страница с турами](http://localhost:3000/catalogue)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Скрин каталога](./src/images/imagesForReadMe/pages/catalogue.png)
 
-## Deploy on Vercel
+3. [Детальная страница тура](http://localhost:3000/catalogue/tour-details)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Скрин детальной страницы](./src/images/imagesForReadMe/pages/tour-details.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## UI-компоненты
+
+1. Выпадающее меню:
+![dropdown|317](./src/images/imagesForReadMe/ui-components/dropdown.png)![dropdown2|300](./src/images/imagesForReadMe/ui-components/dropdown2.png "title-2")
+
+2. Разнообразные слайдеры:
+- C кнопками: ![[./src/images/imagesForReadMe/ui-components/buttons-slider.png]]
+
+- C изображениями:
+![[./src/images/imagesForReadMe/ui-components/destination.png]]
+![[./src/images/imagesForReadMe/ui-components/combo-pkg.png]]
+![[guide.png]]![[slider-with-one-pic.png]]
+![zoom-slider2|367](./src/images/imagesForReadMe/ui-components/zoom-slider.png)![zoom-slider|300](./src/images/imagesForReadMe/ui-components/zoom-slider2.png)
+
+3. Аккордеон 
+![[./src/images/imagesForReadMe/ui-components/faq.png|700]]
+![[./src/images/imagesForReadMe/ui-components/faq2.png|700]]
+
+4. Отзывы:
+![[feedback]]!(./src/images/imagesForReadMe/ui-components/feedback.png)
+![[feedback2]]!(./src/images/imagesForReadMe/ui-components/feedback2.png)
+![[feedback-opened|center]]!(./src/images/imagesForReadMe/ui-components/feedback-opened.png)
+
+5. Карта с чекпоинтами:
+![[./src/images/imagesForReadMe/ui-components/map.png]]
+
+6. Тянущийся роут:
+![route2|300](./src/images/imagesForReadMe/ui-components/route2.png)![route|300](./src/images/imagesForReadMe/ui-components/route.png)
+
+## Формы
+
+1. Форма бронирования:
+![alt-text-1|300](./src/images/imagesForReadMe/ui-components/reservation-form.png)![alt-text-1|262](./src/images/imagesForReadMe/ui-components/calendar.png)
+
+![options|280](./src/images/imagesForReadMe/ui-components/options.png)![[checkout|230]](./src/images/imagesForReadMe/ui-components/checkout.png)
+
+2. Отзывы:
+![[./src/images/imagesForReadMe/ui-components/feedback-form.png|500]]
+
+## Меню-бургер
+
+![burger|324](./src/images/imagesForReadMe/ui-components/burger.png)![burger-opened|300](./src/images/imagesForReadMe/ui-components/burger-opened.png) 
