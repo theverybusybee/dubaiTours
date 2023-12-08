@@ -65,11 +65,11 @@ pnpm dev
 <p align="center">
   <img src='./src/images/imagesForReadMe/ui-components/destination.png' alt="destination-slider" width='500'>
     <hr />
-  <img src='./src/images/imagesForReadMe/ui-components/slider-with-one-pic.png' alt="combo-pkg-slider" width='500'>
+  <img align="center" src='./src/images/imagesForReadMe/ui-components/slider-with-one-pic.png' alt="combo-pkg-slider" width='500'>
     <hr />
-  <img src='./src/images/imagesForReadMe/ui-components/guide.png' alt="guide-slider" width='500'>
+  <img align="center" src='./src/images/imagesForReadMe/ui-components/guide.png' alt="guide-slider" width='500'>
    <hr />
-  <img src='./src/images/imagesForReadMe/ui-components/slider-with-one-pic.png' alt="guide-slider" width='500'>
+  <img align="center" src='./src/images/imagesForReadMe/ui-components/slider-with-one-pic.png' alt="guide-slider" width='500'>
 </p>
 
 <p align="center">
@@ -83,7 +83,7 @@ pnpm dev
 <p align="center">
   <img src='./src/images/imagesForReadMe/ui-components/faq.png' alt="accordeon1" width='400'>
   <hr />
-  <img src='./src/images/imagesForReadMe/ui-components/faq2.png' alt="accordeon2" width='400'>
+  <img align="center" src='./src/images/imagesForReadMe/ui-components/faq2.png' alt="accordeon2" width='400'>
 </p>
 
 4. Отзывы:
@@ -91,9 +91,9 @@ pnpm dev
 <p align="center">
   <img src='./src/images/imagesForReadMe/ui-components/feedback.png' alt="feedback" width='400'>
   <hr />
-  <img src='./src/images/imagesForReadMe/ui-components/feedback2.png' alt="feedback2" width='400'>
+  <img align="center" src='./src/images/imagesForReadMe/ui-components/feedback2.png' alt="feedback2" width='400'>
   <hr />
-  <img src='./src/images/imagesForReadMe/ui-components/feedback-opened.png' alt="map" width='400'>
+  <img align="center" src='./src/images/imagesForReadMe/ui-components/feedback-opened.png' alt="map" width='400'>
 </p>
 
 5. Карта с чекпоинтами:
