@@ -45,7 +45,8 @@ pnpm dev
 ## UI-компоненты
 
 1. Выпадающее меню:
-![dropdown|317](./src/images/imagesForReadMe/ui-components/dropdown.png)![dropdown2|300](./src/images/imagesForReadMe/ui-components/dropdown2.png "title-2")
+![dropdown](./src/images/imagesForReadMe/ui-components/dropdown.png)
+![dropdown2](./src/images/imagesForReadMe/ui-components/dropdown2.png)
 
 2. Разнообразные слайдеры:
 
@@ -56,11 +57,12 @@ pnpm dev
 ![destination-slider](./src/images/imagesForReadMe/ui-components/destination.png)
 ![combo-pkg-slider](./src/images/imagesForReadMe/ui-components/combo.png)
 ![guide-slider](./src/images/imagesForReadMe/ui-components/slider-with-one-pic.png)
-![zoom-slider2|300](./src/images/imagesForReadMe/ui-components/zoom-slider.png)![zoom-slider|300](./src/images/imagesForReadMe/ui-components/zoom-slider2.png)
+![zoom-slider2](./src/images/imagesForReadMe/ui-components/zoom-slider.png)
+![zoom-slider](./src/images/imagesForReadMe/ui-components/zoom-slider2.png)
 
 3. Аккордеон 
-![[./src/images/imagesForReadMe/ui-components/faq.png|700]]
-![[./src/images/imagesForReadMe/ui-components/faq2.png|700]]
+![accordeon1](./src/images/imagesForReadMe/ui-components/faq.png)
+![accordeon2](./src/images/imagesForReadMe/ui-components/faq2.png)
 
 4. Отзывы:
 ![feedback](./src/images/imagesForReadMe/ui-components/feedback.png)
@@ -68,21 +70,28 @@ pnpm dev
 ![feedback-opened](./src/images/imagesForReadMe/ui-components/feedback-opened.png)
 
 5. Карта с чекпоинтами:
-![./src/images/imagesForReadMe/ui-components/map.png]
+![map](./src/images/imagesForReadMe/ui-components/map.png)
 
 6. Тянущийся роут:
-![route2|300](./src/images/imagesForReadMe/ui-components/route2.png)![route|300](./src/images/imagesForReadMe/ui-components/route.png)
+![route2|300](./src/images/imagesForReadMe/ui-components/route2.png)
+![route](./src/images/imagesForReadMe/ui-components/route.png)
 
 ## Формы
 
 1. Форма бронирования:
-![alt-text-1|300](./src/images/imagesForReadMe/ui-components/reservation-form.png)![alt-text-1|262](./src/images/imagesForReadMe/ui-components/calendar.png)
+![alt-text-1](./src/images/imagesForReadMe/ui-components/reservation-form.png)
+![alt-text-1](./src/images/imagesForReadMe/ui-components/calendar.png)
 
-![options|280](./src/images/imagesForReadMe/ui-components/options.png)![checkout|230](./src/images/imagesForReadMe/ui-components/checkout.png)
+![options](./src/images/imagesForReadMe/ui-components/options.png)
+![checkout](./src/images/imagesForReadMe/ui-components/checkout.png)
 
 2. Отзывы:
-![[./src/images/imagesForReadMe/ui-components/feedback-form.png|500]]
+![feedback](./src/images/imagesForReadMe/ui-components/feedback-form.png)
 
 ## Меню-бургер
 
-![burger|324](./src/images/imagesForReadMe/ui-components/burger.png)![burger-opened|300](./src/images/imagesForReadMe/ui-components/burger-opened.png) 
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/burger.png' alt="burger-menu" width='324'>
+  &nbsp; &nbsp;
+  <img src='./src/images/imagesForReadMe/ui-components/burger-opened.png' alt="burger-menu-opened" width='300'>
+</p>
