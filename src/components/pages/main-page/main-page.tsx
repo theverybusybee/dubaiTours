@@ -6,7 +6,6 @@ import {
   ComboPackagesSection,
   CardWithImageSliderSection,
   GuideSection,
-  CardWithPriceSliderSection,
   StepsSection,
   SearchSection,
   ButtonsSliderSection,
@@ -30,10 +29,6 @@ function MainPage({ data }: Props) {
           extraClass={styles.buttonsSlider}
           data={data.Categories}
         />
-        {/* <CardWithPriceSliderSection
-          extraClass={styles.cardWithPriceSection}
-          data={data.P}
-        /> */}
         <CardWithImageSliderSection
           data={data?.Destination}
           extraClass={styles.destinationSection}
@@ -41,11 +36,11 @@ function MainPage({ data }: Props) {
         />
         <ComboPackagesSection data={data.Combo} hasButtons={true} />
         <StepsSection data={data} />
-
         <GuideSection
           name={data.Guide.title}
           description={data.Guide.description}
           countries={data.Guide.countries}
+          cardExtraClass={styles.card}
         />
         <LearnMoreSection data={data} />
       </main>

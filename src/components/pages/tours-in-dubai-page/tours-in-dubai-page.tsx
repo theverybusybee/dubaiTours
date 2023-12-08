@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-'use client'
+("use client");
 import styles from "./tours-in-dubai-page.module.scss";
 import Header from "@/components/header/header";
 import {
@@ -17,21 +17,8 @@ interface Props {
   extraClass?: string;
 }
 
-const ToursInDubaiPage: NextPage<Props> = ({
-  extraClass,
-  data,
-}: Props) => {
-  // const [pageNumber, setPageNumber] = useState<number>(0);
-
-  // const increaseNumber = () => {
-  //   setPageNumber((prevState) => prevState + 1);
-  // };
-
-  // useEffect(() => {
-  //   setPageNumber(params.pageNumber);
-  // }, []);
-
-  const { headTitle, Categories, Catalog, Faq, Tag, Destination } = data.Tour;
+const ToursInDubaiPage: NextPage<Props> = ({ extraClass, data }: Props) => {
+  const { headTitle, Categories, Faq, Tag, Destination } = data.Tour;
   return (
     <div className={`${styles.container} ${extraClass}`}>
       <Header
@@ -66,18 +53,6 @@ const ToursInDubaiPage: NextPage<Props> = ({
             buttons="right"
           />
         )}
-
-        {/* {Catalog && (
-          <CatalogueSection
-            extraClass={styles.catalogue}
-            params={params}
-            data={data}
-            title={Catalog.title}
-            titlePosition="left"
-            setPageNumber={increaseNumber}
-            pageNumber={pageNumber}
-          />
-        )} */}
 
         {Destination && (
           <CardWithImageSliderSection

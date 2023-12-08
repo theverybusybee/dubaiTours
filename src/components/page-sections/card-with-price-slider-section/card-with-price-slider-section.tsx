@@ -8,6 +8,7 @@ interface Props {
   hasButtons?: boolean;
   titlePosition?: "center" | "left";
   extraClass?: string;
+  cardExtraClass?: string;
 }
 
 const CardWithPriceSliderSection = ({
@@ -15,6 +16,7 @@ const CardWithPriceSliderSection = ({
   hasButtons,
   titlePosition,
   extraClass,
+  cardExtraClass
 }: Props) => {
   return data ? (
     <section className={`${styles.section} ${extraClass}`}>
@@ -35,7 +37,7 @@ const CardWithPriceSliderSection = ({
         </p>
         <SplideMultipleSlider
           cardArray={data?.product}
-          cardExtraClass={styles.card}
+          cardExtraClass={cardExtraClass}
           hasButtons={hasButtons}
         />
       </div>

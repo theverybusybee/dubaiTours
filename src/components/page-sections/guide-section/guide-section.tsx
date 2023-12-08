@@ -16,6 +16,7 @@ interface IBasicProps {
   name: string;
   description?: string;
   extraClass?: string;
+  cardExtraClass?: string;
 }
 
 type ConditionalProps = {
@@ -32,6 +33,7 @@ function GuideSection({
   name,
   description,
   extraClass,
+  cardExtraClass
 }: combinedProps) {
   const [buttonState, setButtonState] = useState<string>();
   const isMobile = useMediaQuery("(max-width:810px)");
@@ -96,10 +98,10 @@ function GuideSection({
           ) : (
             <SplideMultipleSlider
               cardArray={guideCardsData ? guideCardsData?.product : products}
-              cardExtraClass={styles.cardExtraClass}
               like="none"
               label="none"
               cardImageType="cover"
+              cardExtraClass={styles.card}
             />
           )}
         </ul>
