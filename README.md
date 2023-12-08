@@ -45,48 +45,91 @@ pnpm dev
 ## UI-компоненты
 
 1. Выпадающее меню:
-![dropdown](./src/images/imagesForReadMe/ui-components/dropdown.png)
-![dropdown2](./src/images/imagesForReadMe/ui-components/dropdown2.png)
+
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/dropdown.png' alt="dropdown" width='317'>
+    &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src='./src/images/imagesForReadMe/ui-components/dropdown2.png' alt="dropdown2" width='300'>
+</p>
 
 2. Разнообразные слайдеры:
 
 - C кнопками: 
-![buttons-slider](./src/images/imagesForReadMe/ui-components/buttons-slider.png)
+
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/buttons-slider.png' alt="buttons-slider" width='500'>
+</p>
 
 - C изображениями:
-![destination-slider](./src/images/imagesForReadMe/ui-components/destination.png)
-![combo-pkg-slider](./src/images/imagesForReadMe/ui-components/combo.png)
-![guide-slider](./src/images/imagesForReadMe/ui-components/slider-with-one-pic.png)
-![zoom-slider2](./src/images/imagesForReadMe/ui-components/zoom-slider.png)
-![zoom-slider](./src/images/imagesForReadMe/ui-components/zoom-slider2.png)
+
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/destination.png' alt="destination-slider" width='500'>
+    <br />
+  <img src='./src/images/imagesForReadMe/ui-components/slider-with-one-pic.png' alt="combo-pkg-slider" width='500'>
+    <br />
+  <img src='./src/images/imagesForReadMe/ui-components/guide.png' alt="guide-slider" width='500'>
+    <br />
+  <img src='ui-components/slider-with-one-pic.png' alt="guide-slider" width='500'>
+</p>
+
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/zoom-slider.png' alt="zoom-slider2" width='400'>
+    &nbsp; &nbsp;
+  <img src='./src/images/imagesForReadMe/ui-components/zoom-slider2.png' alt="zoom-slider" width='400'>
+</p>
 
 3. Аккордеон 
-![accordeon1](./src/images/imagesForReadMe/ui-components/faq.png)
-![accordeon2](./src/images/imagesForReadMe/ui-components/faq2.png)
+
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/faq.png' alt="accordeon1" width='400'>
+  <br />
+  <img src='./src/images/imagesForReadMe/ui-components/faq2.png' alt="accordeon2" width='400'>
+</p>
 
 4. Отзывы:
-![feedback](./src/images/imagesForReadMe/ui-components/feedback.png)
-![feedback2](./src/images/imagesForReadMe/ui-components/feedback2.png)
-![feedback-opened](./src/images/imagesForReadMe/ui-components/feedback-opened.png)
+
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/feedback.png' alt="feedback" width='400'>
+  <br />
+  <img src='./src/images/imagesForReadMe/ui-components/feedback2.png' alt="feedback2" width='400'>
+  <br />
+  <img src='./src/images/imagesForReadMe/ui-components/feedback-opened.png' alt="map" width='400'>
+</p>
 
 5. Карта с чекпоинтами:
-![map](./src/images/imagesForReadMe/ui-components/map.png)
+
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/map.png' alt="map" width='400'>
+</p>
 
 6. Тянущийся роут:
-![route2|300](./src/images/imagesForReadMe/ui-components/route2.png)
-![route](./src/images/imagesForReadMe/ui-components/route.png)
+
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/route2.png' alt="route2" width='300'>
+  &nbsp; &nbsp;
+  <img src='./src/images/imagesForReadMe/ui-components/route.png' alt="route" width='196'>
+</p>
 
 ## Формы
 
 1. Форма бронирования:
-![alt-text-1](./src/images/imagesForReadMe/ui-components/reservation-form.png)
-![alt-text-1](./src/images/imagesForReadMe/ui-components/calendar.png)
 
-![options](./src/images/imagesForReadMe/ui-components/options.png)
-![checkout](./src/images/imagesForReadMe/ui-components/checkout.png)
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/reservation-form.png' alt="reservation-form" width='300'>
+  &nbsp; &nbsp;
+  <img src='./src/images/imagesForReadMe/ui-components/calendar.png' alt="calendar" width='263'>
+</p>
+
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/options.png' alt="options" width='280'>
+  <img src='./src/images/imagesForReadMe/ui-components/checkout.png' alt="checkout" width='230'>
+</p>
 
 2. Отзывы:
-![feedback](./src/images/imagesForReadMe/ui-components/feedback-form.png)
+
+<p align="center">
+  <img src='./src/images/imagesForReadMe/ui-components/feedback-form.png' alt="feedback-form" width='400'>
+</p>
 
 ## Меню-бургер
 
