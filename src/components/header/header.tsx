@@ -113,13 +113,7 @@ function Header({
                   />
                 </div>
                 <ul className={styles.menuContainer}>
-                  <Link className={styles.link} href={"/en/tour"}>
-                    <li className={styles.menuItem}>
-                      {headerApiData.menu[0].name}
-                    </li>
-                  </Link>
-
-                  <Link href={"/en/tour"}>
+                  <Link href={"/catalogue"}>
                     <li className={styles.menuItem}>
                       {headerApiData.menu[0].name}
                     </li>

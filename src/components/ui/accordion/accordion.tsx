@@ -11,7 +11,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MIUAccordion from "@mui/material/Accordion";
 import Typography from "@mui/material/Typography";
 import React, { useState } from "react";
-import { BorderBottom } from "@mui/icons-material";
 
 interface Props {
   summary: string;
@@ -140,9 +139,7 @@ function Accordion({ summary, details }: Props) {
               paddingTop: 0,
               paddingLeft: "21px",
               paddingRight: "25px",
-              // background: "#f4f4f4",
               background: "#fff",
-
               borderBottomLeftRadius: "5px",
               borderBottomRightRadius: "5px",
               border: "1px solid #ddd",

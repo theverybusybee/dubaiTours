@@ -81,7 +81,7 @@ const ToursInDubaiPage: NextPage<Props> = ({ extraClass, data }: Props) => {
         )}
       </main>
 
-      <Footer extraClass={styles.footer} data={data} />
+      <Footer footerData={data.Footer} headerData={data.Header} />
     </div>
   );
 };

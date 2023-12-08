@@ -8,7 +8,6 @@ import TelegramLogo from "@/images/logos/icons/telegram.svg";
 
 interface ILinksData {
   text: string;
-  icon: string;
 }
 
 interface Props {

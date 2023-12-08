@@ -73,7 +73,13 @@ function SplideSinglePhotoSlider({ extraClass, data }: IProps) {
             {data.map((el: { url: string }, index: number) => {
               return (
                 <SplideSlide key={index} className={styles.splideSlide}>
-                  <Image className={styles.image} src={el?.url} alt="photo" />
+                  <Image
+                    className={styles.image}
+                    src={el?.url}
+                    alt="photo"
+                    width={606}
+                    height={405}
+                  />
                 </SplideSlide>
               );
             })}

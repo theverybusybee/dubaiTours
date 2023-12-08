@@ -44,7 +44,7 @@ function MainPage({ data }: Props) {
         />
         <LearnMoreSection data={data} />
       </main>
-      <Footer data={data} />
+      <Footer footerData={data.Footer} headerData={data.Header} />
     </>
   ) : null;
 }

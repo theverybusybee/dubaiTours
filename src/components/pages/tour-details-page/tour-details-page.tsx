@@ -128,7 +128,7 @@ const TourDetailsPage: NextPage<Props> = ({ data, tourId }) => {
         )}
       </div>
 
-      <Footer data={data} />
+      <Footer footerData={data.Footer} headerData={data.Header} />
     </div>
   );
 };
