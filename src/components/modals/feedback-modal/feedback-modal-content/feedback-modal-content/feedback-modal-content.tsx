@@ -4,6 +4,7 @@ import { FormEvent, SyntheticEvent, useEffect, useState } from "react";
 import StarRatingProgressBar from "@/components/ui/progress-bars/star-rating-progress-bar/star-rating-progress-bar";
 // import { sendFeedback } from "@/utils/fetches";
 import { IStringObj } from "@/utils/types";
+import Image from "next/image";
 
 interface Props {
   data: any;
@@ -189,7 +190,7 @@ function FeedbackModalContent({ data, tourId }: Props) {
               ? picture.asUrl.map((el: any, index: number) => {
                   return (
                     <li key={index} className={styles.feedbackPhotosItem}>
-                      <img
+                      <Image
                         className={styles.feedbackPhoto}
                         src={el}
                         alt="feedback-photo"

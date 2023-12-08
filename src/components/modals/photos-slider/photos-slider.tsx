@@ -7,6 +7,7 @@ import Modal from "react-modal";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import RoundArrowButton from "@/components/ui/buttons/round-arrow-button/round-arrow-button";
 import { useMediaQuery } from "@mui/material";
+import Image from "next/image";
 
 interface Props {
   data: {
@@ -88,12 +89,12 @@ function PhotosSlider({ data, isOpen, closePopup }: Props) {
             return (
               <SplideSlide key={index}>
                 <div className={`${styles.imageContainer} imageContainer`}>
-                  <img
+                  <Image
                     className={styles.image}
                     src={url ? url : photoReviewUrl}
                     alt={"tour photo"}
-                    // width={1660}
-                    // height={923}
+                    width={1660}
+                    height={923}
                   />
                 </div>
               </SplideSlide>

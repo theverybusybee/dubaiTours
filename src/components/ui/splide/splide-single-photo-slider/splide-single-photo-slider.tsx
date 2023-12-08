@@ -7,6 +7,7 @@ import RoundArrowButton from "../../buttons/round-arrow-button/round-arrow-butto
 import LikeIconTransparent from "@/images/logos/icons/heart.svg";
 import LikeIconSolid from "@/images/logos/icons/heart-solid.svg";
 import PhotosSlider from "@/components/modals/photos-slider/photos-slider";
+import Image from "next/image";
 
 interface IProps {
   extraClass?: string;
@@ -41,7 +42,7 @@ function SplideSinglePhotoSlider({ extraClass, data }: IProps) {
             {!likeState ? (
               <LikeIconTransparent width={30} height={30} />
             ) : (
-              <LikeIconSolid width={33} height={33} />
+              <LikeIconSolid width={36} height={36} />
             )}
           </button>
         </div>
@@ -72,7 +73,7 @@ function SplideSinglePhotoSlider({ extraClass, data }: IProps) {
             {data.map((el: { url: string }, index: number) => {
               return (
                 <SplideSlide key={index} className={styles.splideSlide}>
-                  <img className={styles.image} src={el?.url} alt="photo" />
+                  <Image className={styles.image} src={el?.url} alt="photo" />
                 </SplideSlide>
               );
             })}

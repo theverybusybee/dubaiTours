@@ -99,7 +99,7 @@ function FeedbackCard({
                 setIsFeedbackPhotoModalOpened(true);
               }}
             >
-              <img
+              <Image
                 className={styles.reviewPhoto}
                 src={photo?.photoReviewUrl}
                 alt="user's photo"

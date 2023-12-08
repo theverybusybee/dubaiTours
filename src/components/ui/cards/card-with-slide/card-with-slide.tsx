@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import styles from "./card-with-slide.module.scss";
 
 interface IProps {
@@ -10,7 +11,7 @@ interface IProps {
 function CardWithSlide({ title, subtitle, image }: IProps) {
   return (
     <div className={styles.container}>
-      <img className={styles.image} src={image} alt={title} />
+      <Image className={styles.image} src={image} alt={title} width={423} height={300}/>
       <div className={styles.contentContainer}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.text}>
