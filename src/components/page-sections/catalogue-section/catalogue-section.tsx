@@ -2,7 +2,6 @@ import styles from "./catalogue-section.module.scss";
 import { NextPage } from "next";
 import SectionTitle from "@/components/ui/section-title/section-title";
 import LazyLoadCards from "../../ui/lazy-load-cards/lazy-load-cards";
-import { IGetTourDataArgs } from "@/utils/types";
 
 interface Props {
   data: any;

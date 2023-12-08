@@ -5,9 +5,8 @@ import ArrowRight from "@/images/logos/icons/arrow-right.svg";
 import clsx from "clsx";
 import { SyntheticEvent, useMemo, useState, useEffect } from "react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import { getCookie, pushCookie, setCookie } from "@/utils/cookie";
+import { getCookie } from "@/utils/cookie";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import HeartTransparent from "@/images/logos/icons/heartTransparent.svg";
 import Heart from "@/images/logos/icons/heart-solid.svg";
 import StarIcon from "@/images/logos/icons/star.svg";
@@ -45,16 +44,10 @@ function CardWithImage({
   currentPrice,
   imgType = "square",
   labelStyle,
-  path,
-  push,
   onClick,
 }: IProps) {
   const [token, setToken] = useState<any>(null);
-  const cookieLiveTime = 1140;
-  const arr: any = [];
   const [likeState, setLikeState] = useState(false);
-
-  const pathName = usePathname();
 
   useEffect(() => {
     setToken(getCookie("array"));
@@ -84,10 +77,6 @@ function CardWithImage({
     console.log(e.target);
     e.preventDefault();
     setLikeState(!likeState);
-    // if (token === undefined) {
-    //   setCookie("array", arr, { "max-age": cookieLiveTime });
-    // }
-    // pushCookie("array", push);
   };
 
   return (

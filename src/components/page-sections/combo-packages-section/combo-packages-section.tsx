@@ -19,13 +19,11 @@ function ComboPackagesSection({
     <section className={styles.main}>
       <div className={styles.contentContainer}>
         <SectionTitle content={data?.title} position={titlePosition} />
-        <div className={styles.slider}>
           <SplideMultipleSlider
             cardArray={data?.product}
             hasButtons={hasButtons}
             cardExtraClass={styles.card}
           />
-        </div>
         <div className={styles.buttonContainer}>
           {data?.button && (
             <Button extraClass={styles.button} content={data?.button} />
