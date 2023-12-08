@@ -1,29 +1,29 @@
-@import "../../../styles/settings/settings.scss";
+@import "@/styles/settings/settings.scss";
 
 .input {
-    color: #717171;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 397px;
-    border: 0;
-    outline: none;
+  color: $greyThird;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 397px;
+  border: 0;
+  outline: none;
 }
 
 .input::placeholder {
-    @include inputPlaceholder;
+  @include inputPlaceholder;
 }
 
 .inputContainer {
-    padding: 16px 12px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    gap: 8px;
-    align-items: center;
-    width: 397px;
-    background: $white;
-    border: 1px solid #DDDDDD;
-    border-radius: 5px;
+  padding: 16px 12px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  gap: 8px;
+  align-items: center;
+  width: 397px;
+  background: $white;
+  border: 1px solid $greySecond;
+  border-radius: 5px;
 }

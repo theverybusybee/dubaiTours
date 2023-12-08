@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: flex-start;
     border-radius: 5px;
-    background: #FFF;
+    background: $white;
 }
 
 .image {
@@ -27,7 +27,7 @@
     padding: 0;
     margin-top: 20px;
     font-family: var(--montserrat);
-    color: #000;
+    color: $totalBlack;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -41,7 +41,7 @@
     margin: 0;
     padding: 0;
     margin-top: 8px;
-    color:  #5E5E5E;
+    color:  $neutral08;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

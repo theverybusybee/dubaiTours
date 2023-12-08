@@ -101,7 +101,7 @@
 }
 
 .react-calendar__year-view__months__month {
-  background: #000;
+  background: $totalBlack;
 }
 
 .react-calendar__year-view .react-calendar__tile,
@@ -166,7 +166,7 @@
 }
 
 .react-calendar--selectRange .react-calendar__tile--hover {
-  background-color: #e6e6e6;
+  background-color: $datePicker;
 }
 
 @media screen and (max-width: 800px) {

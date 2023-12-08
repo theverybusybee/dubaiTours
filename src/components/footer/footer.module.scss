@@ -7,10 +7,10 @@
   justify-content: center;
   background: linear-gradient(
     to right,
-    #1e293b 0%,
-    #1e293b 56.5%,
-    #172132 56.5%,
-    #172132 100%
+    $blueFirst 0%,
+    $blueFirst 56.5%,
+    $blueSecond 56.5%,
+    $blueSecond 100%
   );
   position: relative;
 }
@@ -94,10 +94,10 @@
   .footer {
     background: linear-gradient(
       to right,
-      #1e293b 0%,
-      #1e293b 61%,
-      #172132 61%,
-      #172132 100%
+      $blueFirst 0%,
+      $blueFirst 61%,
+      $blueSecond 61%,
+      $blueSecond 100%
     );
   }
   .linksSection {
@@ -167,7 +167,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  color: #1e293b;
+  color: $blueFirst;
   padding-top: 12px;
   padding-bottom: 11px;
   margin-left: 14px;
@@ -196,16 +196,14 @@
   gap: 5px;
 }
 
-
-
 @media screen and (max-width: 1200px) {
   .footer {
     background: linear-gradient(
       to right,
-      #1e293b 0%,
-      #1e293b 56%,
-      #172132 56%,
-      #172132 100%
+      $blueFirst 0%,
+      $blueFirst 56%,
+      $blueSecond 56%,
+      $blueSecond 100%
     );
   }
   .linksSection {
