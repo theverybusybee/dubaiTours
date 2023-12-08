@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import styles from "./map.module.scss";
 import GoogleMapReact from "google-map-react";
 

@@ -1,6 +1,5 @@
 import { IReservationData } from "@/app/lib/types/reservation-types";
 import { baseUrl, checkResponse } from "./constants";
-import { IReservationFormData } from "./types";
 
 export type TRequestOptions = {
   method: "POST" | "GET" | "PATCH";
@@ -134,7 +133,7 @@ export const getProfile = () => {
       },
     }),
   };
-  return fetch(`http://localhost:3000`, requestOptions).then(checkResponse);
+  return fetch(`${baseUrl}`, requestOptions).then(checkResponse);
 };
 
 export const getReservationData = (

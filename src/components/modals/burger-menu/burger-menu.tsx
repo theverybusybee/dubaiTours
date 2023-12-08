@@ -2,6 +2,7 @@
 
 import styles from "./burger-menu.module.scss";
 import Modal from "react-modal";
+import LogoDark from "@/images/logos/footer-logo-dark.svg";
 import HeartWithNotification from "@/images/logos/icons/heartModal.svg";
 import HeartIcon from "@/images/logos/icons/heart-dark.svg";
 import LoopModal from "@/images/logos/icons/loopModal.svg";
@@ -63,14 +64,13 @@ function BurgerMenu({ apiData, isOpen, setIsOpen }: Props) {
     >
       <div className={styles.container}>
         <div className={styles.heading}>
-          <Image
-            className={styles.logo}
-            src={apiData?.logo}
-            alt="logo"
+          <LogoDark
+            className={styles.mainLogo}
             width={253}
             height={106}
-            priority
+            alt="logo"
           />
+
           <div className={styles.headingButtonsContainer}>
             <button className={styles.button}>
               <GlobeLogoDark

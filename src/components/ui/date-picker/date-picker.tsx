@@ -2,7 +2,7 @@
 
 import "./date-picker.scss";
 import "moment/locale/ru";
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Calendar from "react-calendar";
 import RoundArrowButton from "../buttons/round-arrow-button/round-arrow-button";
 import moment from "moment";

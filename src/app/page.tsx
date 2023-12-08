@@ -1,4 +1,3 @@
-import React from "react";
 import MainPage from "@/components/pages/main-page/main-page";
 import { getHomeData } from "@/utils/fetches";
 
