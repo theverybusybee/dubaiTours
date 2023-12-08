@@ -1,8 +1,7 @@
 import { getReserveData } from "@/app/lib/reserve-data";
-import { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";
 
-export const GET = async (req: NextApiRequest, res: NextApiResponse) => {
+export const GET = async (req: Request, res: Response) => {
   try {
     const reservationData = getReserveData();
     return NextResponse.json(

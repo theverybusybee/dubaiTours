@@ -1,7 +1,6 @@
-import { NextApiRequest, NextApiResponse } from "next";
 import { NextRequest, NextResponse } from "next/server";
 
-export const GET = async (req: NextRequest, res: NextApiResponse) => {
+export const GET = async (req: NextRequest, res: NextResponse) => {
   try {
     const calc = req.nextUrl.searchParams.get("calc");
     return NextResponse.json({ message: "OK", res: calc }, { status: 200 });
