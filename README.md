@@ -1,32 +1,40 @@
 # Веб-приложение для бронирования туров в ОАЭ и Дубай
 
+## Tech Stack
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![TypeScript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
+![Express](https://img.shields.io/badge/-Express-black?style=flat-square&logo=express)
+![HTML5](https://img.shields.io/badge/-HTML5-black?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-black?style=flat-square&logo=css3)
+![SCSS](https://img.shields.io/badge/scss-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+
 ## Запуск приложения
 
-Команды для запуска сервера для разработки:
+### Установка зависимостей и запуск проекта
 
-1. Установка зависимостей:
-
-`npm run i`
-
-2. Запуск сервера:
+#### install dependencies
 ```bash
-
-npm run dev
-
-# or
-
-yarn dev
-
-# or
-
-pnpm dev
-
+$ npm install
 ```
-3. Запуск приложения в браузере:
+
+#### build project
+```bash
+$ npm run build
+```
+
+#### run prod mode
+```bash
+$ npm run dev
+```
+
+## Запуск приложения
 
 Запустите [http://localhost:3000](http://localhost:3000), чтобы отобразить результат запуска.
 
-## Превью страниц
+## Demo
 
 В превью представлены некоторые страницы с функционалом, которые были разработаны мною в рамках проекта по бронированию туров:
 
@@ -120,7 +128,6 @@ pnpm dev
 <p align="center">
   <img src='./src/images/imagesForReadMe/ui-components/feedback-opened.png' alt="map" width='400'>
 </p>
-
 
 5. Карта с чекпоинтами:
 
