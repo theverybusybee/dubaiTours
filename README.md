@@ -13,7 +13,11 @@
 
 ## Запуск приложения
 
-### Установка зависимостей и запуск проекта
+## Клонирование репозитория 
+
+```bash
+$ git clone git@github.com:theverybusybee/dubaiTours.git
+```
 
 #### install dependencies
 ```bash
