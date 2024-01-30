@@ -55,7 +55,6 @@ function LazyLoadCards({ allData }: Props) {
 
   useEffect(() => {
     if (pageNumber === 1 || pageNumber < 1) return;
-
     setLoading(true);
     getTourData()
       .then((res) => {
@@ -66,15 +65,14 @@ function LazyLoadCards({ allData }: Props) {
   }, [pageNumber]);
 
   useEffect(() => {
-    additionalCardsData?.length !== 0 &&
-      setCardsData?.length !== 0 &&
-      setCardsData((cardsData as TCard[]).concat(additionalCardsData));
-    setAdditionalCardsData([]);
-    return;
-  }, [
-    [...additionalCardsData]?.length,
-    // [...cardsData]
-  ]);
+    const addPhotos = () => {
+      if (additionalCardsData?.length !== 0 && setCardsData?.length !== 0)
+        setCardsData((cardsData as TCard[]).concat(additionalCardsData));
+      setAdditionalCardsData([]);
+      return;
+    };
+    addPhotos();
+  }, [[...additionalCardsData]?.length]);
 
   return (
     <>
