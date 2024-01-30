@@ -30,13 +30,12 @@ export interface IGetTourData {
   type: string;
   city?: string;
   attraction?: string;
-  // currency: string;
   pageNumber: number;
 }
 
 export interface IGetTourDataArgs {
   main: {
-    url: string;
+    url?: string;
     city: string;
     lang: string;
     currency: string;
@@ -46,7 +45,7 @@ export interface IGetTourDataArgs {
 
 export interface IGetTourDetailsArgs {
   main: {
-    url: string;
+    url?: string;
     city: string;
     lang: string;
     currency: string;

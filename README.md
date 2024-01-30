@@ -1,5 +1,11 @@
 # Веб-приложение для бронирования туров в ОАЭ и Дубай
 
+Ссылка на задеплоенный проект: 
+
+- Главная страница: https://dubai-tour.vercel.app/
+- Каталог: https://dubai-tour.vercel.app/catalogue
+- Детальная туров: https://dubai-tour.vercel.app/catalogue/tour-details
+
 ## Tech Stack
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript)

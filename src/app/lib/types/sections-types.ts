@@ -3,8 +3,8 @@ import { StaticImageData } from "next/image";
 export type TCard = {
   id: string;
   type?: string;
-  url: string;
-  photo: { url: string }[];
+  url?: string;
+  photo: { url?: string }[];
   mark?: {
     name: string;
   }[];
@@ -22,7 +22,7 @@ export type TCardWithPriceSliderSection = {
 };
 
 export type TCity = {
-  url: string;
+  url?: string;
   photo: string;
   name: string;
   description: string | null;
@@ -42,7 +42,7 @@ export type THeader = {
   };
   currency: {
     exchange: {
-      url: string;
+      url?: string;
       currency: string;
       code: string;
     }[];
@@ -58,7 +58,7 @@ export type THeader = {
   }[];
   wishlist: {
     name: string;
-    url: string;
+    url?: string;
   };
   registration: string;
   mobile: {
@@ -229,9 +229,9 @@ export type TTourSimilar = {
   title: string;
   product: {
     id: string;
-    url: string;
+    url?: string;
     photo: {
-      url: string;
+      url?: string;
     }[];
 
     mark: {
@@ -247,7 +247,7 @@ export type TTourSimilar = {
     title: string;
     nesting: {
       name: string;
-      url: string;
+      url?: string;
     }[];
   };
 };
@@ -273,7 +273,7 @@ export type TCategories = {
     url?: string;
     nesting?: {
       name: string;
-      url: string;
+      url?: string;
     }[];
   }[];
 };
@@ -310,10 +310,10 @@ export type TFooter = {
   city: string;
   menu: {
     name: string;
-    url: string;
+    url?: string;
     nesting: {
       name: string;
-      url: string;
+      url?: string;
     }[];
   }[];
 };
@@ -342,7 +342,7 @@ export type TGuideProduct = {
   name: string;
   desc: string;
   photo: string;
-  url: string;
+  url?: string;
 };
 
 export type TGuide = {
@@ -378,6 +378,6 @@ export type TGuideDetailsProduct = {
     name: string;
     desc: string;
     photo: string;
-    url: string;
+    url?: string;
   }[];
 };

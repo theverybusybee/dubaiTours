@@ -4,7 +4,6 @@ import greenSheet from "@/images/logos/steps/green-sheet.png";
 import greenLocationClip from "@/images/logos/steps/green-location-clip.png";
 import { globe, magnifyingGlassBold } from "@/images/logos/icons/icons";
 
-
 const mainData: TMain = {
   Header: {
     location: {
@@ -47,12 +46,12 @@ const mainData: TMain = {
     },
     menu: [
       {
-        name: "Tours",
-        url: "/en/tour",
+        name: "Catalogue",
+        url: "/catalogue",
       },
       {
-        name: "Transfer",
-        url: "/en/transfer",
+        name: "Tour details",
+        url: "/tour-details",
       },
       {
         name: "Company",
@@ -128,7 +127,7 @@ const mainData: TMain = {
   },
   Banner: {
     background:
-      "https://images.unsplash.com/photo-1591609073408-f3d66d8fc11d?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1591609073408-f3d66d8fc11d?q=50&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Dubai very love",
     search: {
       text: "Search destinations or activities",
@@ -141,27 +140,22 @@ const mainData: TMain = {
       {
         id: "1",
         name: "Theme Parks",
-        url: "/en/tour/dubai/theme-parks",
       },
       {
         id: "2",
         name: "Water Parks",
-        url: "/en/tour/dubai/water-parks",
       },
       {
         id: "3",
         name: "Museums",
-        url: "/en/tour/dubai/museums",
       },
       {
         id: "4",
         name: "Observation Decks",
-        url: "/en/tour/dubai/observation-decks",
       },
       {
         id: "5",
         name: "Shows",
-        url: "/en/tour/dubai/shows",
       },
     ],
   },
@@ -347,7 +341,6 @@ const mainData: TMain = {
       {
         type: "tour",
         id: "1",
-        url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
         photo: [
           {
             url: "https://images.unsplash.com/photo-1578152882785-df9744e359e5?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -376,7 +369,6 @@ const mainData: TMain = {
       {
         type: "tour",
         id: "2",
-        url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
         photo: [
           {
             url: "https://images.unsplash.com/photo-1544161513-0179fe746fd5?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -405,7 +397,6 @@ const mainData: TMain = {
       {
         type: "tour",
         id: "3",
-        url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
         photo: [
           {
             url: "https://images.unsplash.com/photo-1578152882785-df9744e359e5?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -434,7 +425,6 @@ const mainData: TMain = {
       {
         type: "tour",
         id: "4",
-        url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
         photo: [
           {
             url: "https://images.unsplash.com/photo-1544161513-0179fe746fd5?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -463,7 +453,6 @@ const mainData: TMain = {
       {
         type: "tour",
         id: "5",
-        url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
         photo: [
           {
             url: "https://images.unsplash.com/photo-1578152882785-df9744e359e5?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -492,7 +481,6 @@ const mainData: TMain = {
       {
         type: "tour",
         id: "6",
-        url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
         photo: [
           {
             url: "https://images.unsplash.com/photo-1544161513-0179fe746fd5?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -521,7 +509,6 @@ const mainData: TMain = {
       {
         type: "tour",
         id: "7",
-        url: "/en/tour/dubai/theme-parks/ferrari-world-park-abu-dhabi-tickets",
         photo: [
           {
             url: "https://images.unsplash.com/photo-1578152882785-df9744e359e5?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -592,7 +579,6 @@ const mainData: TMain = {
             desc: "Еntertainment in Dubai that must be visited!",
             photo:
               "https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            url: "/en/guide/dubai/theme-parks",
           },
           {
             city_id: "2",
@@ -638,7 +624,6 @@ const mainData: TMain = {
             desc: "The most popular attractions of Dubai, UAE. Overview of the most interesting, visited and memorable places in the Arab Emirates.",
             photo:
               "https://images.unsplash.com/photo-1568836653164-21613beff4f2?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            url: "/en/guide/dubai/attractions",
           },
           {
             city_id: "2",
@@ -646,7 +631,6 @@ const mainData: TMain = {
             desc: "The most popular attractions of Dubai, UAE. Overview of the most interesting, visited and memorable places in the Arab Emirates.",
             photo:
               "https://images.unsplash.com/photo-1575538439014-1b8bc5fcaa1d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            url: "/en/guide/dubai/attractions",
           },
           {
             city_id: "2",
@@ -654,7 +638,6 @@ const mainData: TMain = {
             desc: "Еntertainment in Dubai that must be visited!",
             photo:
               "https://images.unsplash.com/photo-1598963086364-4b985a95376a?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            url: "/en/guide/dubai/theme-parks",
           },
           {
             city_id: "2",

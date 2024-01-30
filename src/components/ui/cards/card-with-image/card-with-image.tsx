@@ -74,7 +74,6 @@ function CardWithImage({
   };
 
   const setLike = (e: React.MouseEvent<HTMLElement>) => {
-    console.log(e.target);
     e.preventDefault();
     setLikeState(!likeState);
   };
