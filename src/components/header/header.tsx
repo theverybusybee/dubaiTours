@@ -113,14 +113,16 @@ function Header({
                   />
                 </div>
                 <ul className={styles.menuContainer}>
-                  <Link href={"/catalogue"}>
+                  <Link href={headerApiData.menu[0].url}>
                     <li className={styles.menuItem}>
                       {headerApiData.menu[0].name}
                     </li>
                   </Link>
 
                   <li className={styles.menuItem}>
-                    {headerApiData.menu[1].name}
+                    <Link href={headerApiData.menu[1].url}>
+                      {headerApiData.menu[1].name}
+                    </Link>
                   </li>
                   <li className={styles.menuItem}>
                     <DropDown

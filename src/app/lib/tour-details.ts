@@ -51,12 +51,12 @@ const tourDetails: TTourDetailsData = {
     },
     menu: [
       {
-        name: "Tour",
-        url: "/en/dubai/tour",
+        name: "Catalogue",
+        url: "/catalogue",
       },
       {
-        name: "Transfer",
-        url: "/en/dubai/transfer",
+        name: "Tour details",
+        url: "/catalogue/tour-details",
       },
       {
         name: "Company",

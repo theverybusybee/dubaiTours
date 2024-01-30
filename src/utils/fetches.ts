@@ -1,5 +1,6 @@
 import { IReservationData } from "@/app/lib/types/reservation-types";
 import { baseUrl, checkResponse } from "./constants";
+import { TCatalogue, TTourDetailsData } from "@/app/lib/types/pages-types";
 
 export type TRequestOptions = {
   method: "POST" | "GET" | "PATCH";
@@ -21,7 +22,7 @@ export type TRequestOptions = {
 };
 
 // тестовый
-export const getHomeData = () => {
+export async function getHomeData() {
   const requestOptions: TRequestOptions = {
     method: "GET",
     credentials: "same-origin",
@@ -34,10 +35,11 @@ export const getHomeData = () => {
     referrerPolicy: "no-referrer",
   };
 
-  return fetch(`${baseUrl}/api/main/`, requestOptions).then(checkResponse);
-};
+  const res = await fetch(`${baseUrl}/api/main/`, requestOptions);
+  return checkResponse(res);
+}
 
-export const getCatalogueData = () => {
+export const getCatalogueData = async (): Promise<{ res: TCatalogue }> => {
   const requestOptions: TRequestOptions = {
     method: "GET",
     credentials: "same-origin",
@@ -50,7 +52,8 @@ export const getCatalogueData = () => {
     referrerPolicy: "no-referrer",
   };
 
-  return fetch(`${baseUrl}/api/catalogue/`, requestOptions).then(checkResponse);
+  const res = await fetch(`${baseUrl}/api/catalogue/`, requestOptions);
+  return checkResponse(res);
 };
 
 export const getCatalogueCards = (pageNumber: number) => {
@@ -95,7 +98,7 @@ export async function getTourData() {
   return fetch(`${baseUrl}/api/gallery`, requestOptions).then(checkResponse);
 }
 
-export const getTourDetails = () => {
+export const getTourDetails = async (): Promise<{ res: TTourDetailsData }> => {
   const requestOptions: TRequestOptions = {
     method: "GET",
     credentials: "same-origin",
@@ -108,9 +111,8 @@ export const getTourDetails = () => {
     referrerPolicy: "no-referrer",
   };
 
-  return fetch(`${baseUrl}/api/tour-details`, requestOptions).then(
-    checkResponse
-  );
+  const res = await fetch(`${baseUrl}/api/tour-details`, requestOptions);
+  return checkResponse(res);
 };
 
 export const getProfile = () => {
@@ -156,48 +158,3 @@ export const getReservationData = (
     requestOptions
   ).then(checkResponse);
 };
-
-// export const registernRequest = async (form: TRegisterForm) => {
-//   return await fetch(`${baseUrl}/api/register`, {
-//     method: "POST",
-//     mode: "cors",
-//     cache: "no-cache",
-//     credentials: "same-origin",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     redirect: "follow",
-//     referrerPolicy: "no-referrer",
-//     body: JSON.stringify(form),
-//   }).then(checkResponse);
-// };
-
-// export const getReservationUpdatedData = (form: IReservationFormData) => {
-//   const requestOptions: TRequestOptions = {
-//     method: "GET",
-//     credentials: "same-origin",
-//     cache: "no-cache",
-//     mode: "cors",
-
-//     headers: {
-//       "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-//     },
-//     redirect: "follow",
-//     referrerPolicy: "no-referrer",
-//   };
-
-//   const params = new URLSearchParams({
-//     calc: form.calc,
-//     type: form.type,
-//     id: form.id,
-//     date: `${form.date.arrivalDate}%20${form.date.returnDate}`,
-//     time: form.time,
-//     adults: form.adults,
-//     children: form.children,
-//     options: form.options,
-//   }).toString();
-
-//   return fetch(`${baseUrl}/api/reserve/checkout` + "?" + params, requestOptions).then(
-//     checkResponse
-//   );
-// };

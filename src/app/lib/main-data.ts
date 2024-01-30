@@ -4,7 +4,6 @@ import greenSheet from "@/images/logos/steps/green-sheet.png";
 import greenLocationClip from "@/images/logos/steps/green-location-clip.png";
 import { globe, magnifyingGlassBold } from "@/images/logos/icons/icons";
 
-
 const mainData: TMain = {
   Header: {
     location: {
@@ -47,12 +46,12 @@ const mainData: TMain = {
     },
     menu: [
       {
-        name: "Tours",
-        url: "/en/tour",
+        name: "Catalogue",
+        url: "/catalogue",
       },
       {
-        name: "Transfer",
-        url: "/en/transfer",
+        name: "Tour details",
+        url: "/tour-details",
       },
       {
         name: "Company",
@@ -128,7 +127,7 @@ const mainData: TMain = {
   },
   Banner: {
     background:
-      "https://images.unsplash.com/photo-1591609073408-f3d66d8fc11d?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1591609073408-f3d66d8fc11d?q=50&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Dubai very love",
     search: {
       text: "Search destinations or activities",

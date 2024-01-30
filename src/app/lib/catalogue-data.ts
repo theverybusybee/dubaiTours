@@ -39,12 +39,12 @@ const catalogue: TCatalogue = {
     },
     menu: [
       {
-        name: "Tour",
-        url: "/en/dubai/tour",
+        name: "Catalogue",
+        url: "/catalogue",
       },
       {
-        name: "Transfer",
-        url: "/en/dubai/transfer",
+        name: "Tour details",
+        url: "/catalogue/tour-details",
       },
       {
         name: "Company",
@@ -123,7 +123,7 @@ const catalogue: TCatalogue = {
   },
   Banner: {
     background:
-      "https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?q=50&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "All in Dubai",
     bread: [
       {
