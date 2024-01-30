@@ -34,7 +34,7 @@ export type THeader = {
   };
   language: {
     list: {
-      url?: string;
+      url: string;
       urlCode: string;
       icon: string;
       lang: string;
@@ -49,11 +49,11 @@ export type THeader = {
   };
   menu: {
     name: string;
-    url?: string;
+    url: string;
     arrowIcon?: string;
     nesting?: {
       name: string;
-      url?: string;
+      url: string;
     }[];
   }[];
   wishlist: {
