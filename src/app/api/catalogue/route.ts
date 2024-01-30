@@ -1,7 +1,7 @@
 import { getCatalogue } from "@/app/lib/catalogue-data";
 import { NextResponse } from "next/server";
 
-export const GET = async (req: Request): Promise<any> => {
+export const GET = async (req: Request) => {
   try {
     const catalogue = getCatalogue();
     return NextResponse.json(

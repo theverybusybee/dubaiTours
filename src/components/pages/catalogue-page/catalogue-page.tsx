@@ -13,23 +13,30 @@ import {
 } from "@/components/page-sections/page-sections";
 import Footer from "@/components/footer/footer";
 import { TCatalogue } from "@/app/lib/types/pages-types";
+import { useEffect, useState } from "react";
+import { getCatalogueData } from "@/utils/fetches";
 
 interface Props {
-  data: TCatalogue;
   extraClass?: string;
 }
 
-const CataloguePage: NextPage<Props> = ({ data: data, extraClass }) => {
-  const { Categories } = data;
+const CataloguePage: NextPage<Props> = ({ extraClass }) => {
+  
+  const [data, setData] = useState<null | TCatalogue>();
 
-  return (
+  useEffect(() => {
+    getCatalogueData()
+      .then((res) => setData(res.res))
+      .catch((err) => console.log(err));
+  }, []);
+
+  return data ? (
     <div className={`${styles.container} ${extraClass}`}>
       <Header headerApiData={data.Header} searchSectionSize="fixed" />
       <SearchSection bannerApiData={data.Banner} sectionSize="fixed" />
-      <ButtonsSliderSection data={Categories} titlePosition="left" />
+      <ButtonsSliderSection data={data.Categories} titlePosition="left" />
       <CardWithPriceSliderSection
         data={data.Popular}
-        // cardsApiData={data?.Popular}
         hasButtons={false}
         titlePosition="left"
       />
@@ -47,6 +54,8 @@ const CataloguePage: NextPage<Props> = ({ data: data, extraClass }) => {
       <LearnMoreSection data={data} />
       <Footer footerData={data.Footer} headerData={data.Header} />
     </div>
+  ) : (
+    <>Loading...</>
   );
 };
 

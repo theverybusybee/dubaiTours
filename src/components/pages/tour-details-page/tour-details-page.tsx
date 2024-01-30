@@ -1,5 +1,5 @@
+"use client";
 import styles from "./tour-details-page.module.scss";
-import { NextPage } from "next";
 import Header from "@/components/header/header";
 import {
   TourDescriptionSection,
@@ -16,18 +16,23 @@ import Footer from "@/components/footer/footer";
 import SplideSinglePhotoSlider from "@/components/ui/splide/splide-single-photo-slider/splide-single-photo-slider";
 import ReservationHandler from "@/components/modals/reservation-components/reservation-handler/reservation-handler";
 import { TTourDetailsData } from "@/app/lib/types/pages-types";
+import { useEffect, useState } from "react";
+import { getTourDetails } from "@/utils/fetches";
 
-interface Props {
-  data: TTourDetailsData;
-  tourId: string;
-}
+const TourDetailsPage = () => {
+  const [data, setData] = useState<null | TTourDetailsData>();
 
-const TourDetailsPage: NextPage<Props> = ({ data, tourId }) => {
+  useEffect(() => {
+    getTourDetails()
+      .then((res) => setData(res.res))
+      .catch((err) => console.log(err));
+  }, []);
+
   const tourDetailsData = data?.Product?.Details;
 
-  return (
+  return data ? (
     <div className={styles.page}>
-      <ReservationHandler data={data} tourId={tourId} />
+      <ReservationHandler data={data} tourId={"1"} />
 
       <Header
         extraClass={styles.header}
@@ -109,15 +114,6 @@ const TourDetailsPage: NextPage<Props> = ({ data, tourId }) => {
             showAllButton={tourDetailsData.Reviews.reviewPeople.allButton}
           />
         )}
-        {/* {data.Product.Similar && (
-          <CardWithPriceSliderSection
-            extraClass={styles.cards}
-            titlePosition="left"
-            data={data}
-            cardsApiData={data.Product.Similar.product}
-          />
-        )} */}
-
         {data?.Product?.Similar?.Tag && (
           <ButtonsSection
             extraClass={styles.buttons}
@@ -130,6 +126,8 @@ const TourDetailsPage: NextPage<Props> = ({ data, tourId }) => {
 
       <Footer footerData={data.Footer} headerData={data.Header} />
     </div>
+  ) : (
+    <>Loading...</>
   );
 };
 

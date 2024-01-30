@@ -1,12 +1,16 @@
 import MainPage from "@/components/pages/main-page/main-page";
 import { getHomeData } from "@/utils/fetches";
 
-export default async function Home() {
-  const data = getHomeData();
+async function getData() {
+  const res =
+    (await getHomeData()
+      .then((res) => res.res)
+      .catch((err) => console.log(err))) || null;
 
-  return (await data)?.res.Header ? (
-    <MainPage data={(await data)?.res} />
-  ) : (
-    <div>404 Not Found</div>
-  );
+  return res;
+}
+
+export default async function Home() {
+  const data = await getData();
+  return data ? <MainPage data={data} /> : <div>404 Not Found</div>;
 }
