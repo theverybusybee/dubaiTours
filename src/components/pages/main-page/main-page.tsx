@@ -12,12 +12,22 @@ import {
 } from "@/components/page-sections/page-sections";
 import Footer from "@/components/footer/footer";
 import { TMain } from "@/app/lib/types/pages-types";
+import { useEffect, useState } from "react";
+import { getHomeData } from "@/utils/fetches";
 
 interface Props {
   data: TMain;
 }
 
-function MainPage({ data }: Props) {
+function MainPage() {
+  const [data, setData] = useState<null | TMain>();
+
+  useEffect(() => {
+    getHomeData()
+      .then((res) => setData(res.res))
+      .catch((err) => console.log(err));
+  }, []);
+
   return data ? (
     <>
       <Header headerApiData={data.Header} />
@@ -46,7 +56,9 @@ function MainPage({ data }: Props) {
       </main>
       <Footer footerData={data.Footer} headerData={data.Header} />
     </>
-  ) : null;
+  ) : (
+    <>Loading...</>
+  );
 }
 
 export default MainPage;

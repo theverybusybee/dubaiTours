@@ -2,6 +2,7 @@
 const nextConfig = {
   env: {
     baseUrl: "https://dubai-tour.vercel.app",
+    // baseUrl: "http://localhost:3000",
   },
   images: {
     formats: ["image/avif", "image/webp"],

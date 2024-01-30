@@ -1,6 +1,10 @@
 import { IReservationData } from "@/app/lib/types/reservation-types";
 import { baseUrl, checkResponse } from "./constants";
-import { TCatalogue, TTourDetailsData } from "@/app/lib/types/pages-types";
+import {
+  TCatalogue,
+  TMain,
+  TTourDetailsData,
+} from "@/app/lib/types/pages-types";
 
 export type TRequestOptions = {
   method: "POST" | "GET" | "PATCH";
@@ -21,8 +25,7 @@ export type TRequestOptions = {
   body?: any;
 };
 
-// тестовый
-export async function getHomeData() {
+export const getHomeData = async (): Promise<{ res: TMain }> => {
   const requestOptions: TRequestOptions = {
     method: "GET",
     credentials: "same-origin",
@@ -37,7 +40,7 @@ export async function getHomeData() {
 
   const res = await fetch(`${baseUrl}/api/main/`, requestOptions);
   return checkResponse(res);
-}
+};
 
 export const getCatalogueData = async (): Promise<{ res: TCatalogue }> => {
   const requestOptions: TRequestOptions = {
@@ -113,29 +116,6 @@ export const getTourDetails = async (): Promise<{ res: TTourDetailsData }> => {
 
   const res = await fetch(`${baseUrl}/api/tour-details`, requestOptions);
   return checkResponse(res);
-};
-
-export const getProfile = () => {
-  const requestOptions: TRequestOptions = {
-    method: "POST",
-    credentials: "same-origin",
-    cache: "no-cache",
-    mode: "cors",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    redirect: "follow",
-    referrerPolicy: "no-referrer",
-    body: JSON.stringify({
-      main: {
-        url: "/en/dubai/personal/",
-        city: "dubai",
-        lang: "english",
-        currency: "usd",
-      },
-    }),
-  };
-  return fetch(`${baseUrl}`, requestOptions).then(checkResponse);
 };
 
 export const getReservationData = (
