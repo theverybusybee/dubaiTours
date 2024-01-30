@@ -6,4 +6,4 @@ export function checkResponse(res: Response) {
   }
 }
 
-export const baseUrl = "http://127.0.0.1:3000";
+export const baseUrl = process.env.baseUrl;

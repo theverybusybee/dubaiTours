@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: {
+    baseUrl: "http://localhost:3000",
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
@@ -13,8 +16,8 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "uxwing.com"
-      }
+        hostname: "uxwing.com",
+      },
     ],
   },
   webpack(config) {
