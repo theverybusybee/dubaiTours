@@ -4,7 +4,7 @@ export type TCard = {
   id: string;
   type?: string;
   url?: string;
-  photo: { url: string }[];
+  photo: { url?: string }[];
   mark?: {
     name: string;
   }[];
@@ -22,7 +22,7 @@ export type TCardWithPriceSliderSection = {
 };
 
 export type TCity = {
-  url: string;
+  url?: string;
   photo: string;
   name: string;
   description: string | null;
@@ -34,7 +34,7 @@ export type THeader = {
   };
   language: {
     list: {
-      url: string;
+      url?: string;
       urlCode: string;
       icon: string;
       lang: string;
@@ -42,23 +42,23 @@ export type THeader = {
   };
   currency: {
     exchange: {
-      url: string;
+      url?: string;
       currency: string;
       code: string;
     }[];
   };
   menu: {
     name: string;
-    url: string;
+    url?: string;
     arrowIcon?: string;
     nesting?: {
       name: string;
-      url: string;
+      url?: string;
     }[];
   }[];
   wishlist: {
     name: string;
-    url: string;
+    url?: string;
   };
   registration: string;
   mobile: {
@@ -378,6 +378,6 @@ export type TGuideDetailsProduct = {
     name: string;
     desc: string;
     photo: string;
-    url: string;
+    url?: string;
   }[];
 };
