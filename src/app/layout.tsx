@@ -8,18 +8,14 @@ export const metadata = {
 };
 
 export default function RootLayout({
-  children, authModules
+  children,
 }: {
   children: React.ReactNode;
-  authModules: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={montserrat.variable}>
-        <Providers>
-          {children}
-          {authModules}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
