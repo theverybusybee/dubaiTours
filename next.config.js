@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    baseUrl: "http://localhost:3000",
+    baseUrl: "https://dubai-tour.vercel.app",
   },
   images: {
     formats: ["image/avif", "image/webp"],
