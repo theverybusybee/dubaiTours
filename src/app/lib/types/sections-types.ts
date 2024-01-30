@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 export type TCard = {
   id: string;
   type?: string;
-  url: string;
+  url?: string;
   photo: { url: string }[];
   mark?: {
     name: string;
@@ -229,9 +229,9 @@ export type TTourSimilar = {
   title: string;
   product: {
     id: string;
-    url: string;
+    url?: string;
     photo: {
-      url: string;
+      url?: string;
     }[];
 
     mark: {
@@ -247,7 +247,7 @@ export type TTourSimilar = {
     title: string;
     nesting: {
       name: string;
-      url: string;
+      url?: string;
     }[];
   };
 };
@@ -273,7 +273,7 @@ export type TCategories = {
     url?: string;
     nesting?: {
       name: string;
-      url: string;
+      url?: string;
     }[];
   }[];
 };
@@ -310,10 +310,10 @@ export type TFooter = {
   city: string;
   menu: {
     name: string;
-    url: string;
+    url?: string;
     nesting: {
       name: string;
-      url: string;
+      url?: string;
     }[];
   }[];
 };
@@ -342,7 +342,7 @@ export type TGuideProduct = {
   name: string;
   desc: string;
   photo: string;
-  url: string;
+  url?: string;
 };
 
 export type TGuide = {
