@@ -104,7 +104,6 @@
 @media screen and (max-width: 1200px) {
   .mainLogo {
     max-width: 131px;
-    height: fit-content;
   }
   .buttonsContainer {
     padding-bottom: 0;
@@ -138,7 +137,7 @@
       "logo buttons"
       "location location";
     grid-template-columns: min-content 1fr;
-    gap: 18px 0;
+    gap: 0;
     height: fit-content;
   }
   .mobileContainer {
