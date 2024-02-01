@@ -51,7 +51,7 @@ const mainData: TMain = {
       },
       {
         name: "Tour details",
-        url: "/tour-details",
+        url: "/catalogue/tour-details",
       },
       {
         name: "Company",
