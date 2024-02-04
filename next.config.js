@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    baseUrl: "https://dubai-tour.vercel.app",
+    baseUrl: 'https://dubai-tours-awr9-theverybusybees-projects-314b8cea',
+    // baseUrl: "https://dubai-tour.vercel.app",
     // baseUrl: "http://localhost:3000",
   },
   images: {
